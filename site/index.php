@@ -32,19 +32,19 @@
 
                         <li class="list-inline-item">
         
-                            <a class="active" href="./"> Work </a>
+                            <a class="active navigation-anchor" href="./"> Work </a>
         
                         </li>
         
                         <li class="list-inline-item">
         
-                            <a href="./about.php"> About </a>
+                            <a class="navigation-anchor" href="./about.php"> About </a>
         
                         </li>
         
                         <li class="list-inline-item">
         
-                            <button class="copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                            <button class="copy-tooltip navigation-anchor"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
         
                         </li>
         
@@ -106,6 +106,40 @@
     <main>
 
     </main>
+
+    <footer class="py-11">
+
+        <div class="container">
+
+            <div class="row d-flex justify-content-around align-items-center">
+
+                <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
+
+                    <li class="bold mb-5 mb-md-0 me-md-8 pt-1"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+
+                    <li class="mb-3 mb-md-0 me-md-8"> <a class="active navigation-anchor" href="./"> Work </a> </li>
+
+                    <li class="mb-3 mb-md-0 me-md-8"> <a class="navigation-anchor" href="./about.php"> About </a> </li>
+
+                    <li>
+            
+                        <button class="copy-tooltip navigation-anchor"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+
+                    </li>
+
+                </ul>
+
+                <div class="col-48 col-md-16 mt-7 mt-md-0 text-md-end">
+
+                    <a class="navigation-anchor" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </footer>
 
     <script src="./js/app.min.js" defer></script>
 

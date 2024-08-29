@@ -19,9 +19,6 @@ body {
         justify-content: center;
         padding: 2px 12px;
         border-radius: 3px;
-        bottom: calc(-100% - 12px);
-        background-color: $color_5;
-        color: $color_2;
         opacity: 0;
         transition: opacity 0.5s;
         width: 0;
@@ -37,6 +34,36 @@ body {
         &::before {
             width: initial;
             height: initial;
+        }
+    }
+}
+
+.navigation-anchor {
+    font-weight: 400;
+    padding: 2px 0;
+    letter-spacing: initial;
+    position: relative;
+    text-decoration: none;
+    &::after {
+        position: absolute;
+        content: " ";
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        width: 0;
+        transition: width 0.25s;
+    }
+    &:hover,
+    &:focus {
+        &::after {
+            left: 0;
+            width: 100%;
+        }
+    }
+    &.active {
+        transition: none;
+        &::after {
+            width: 100%;
         }
     }
 }

@@ -1,0 +1,26 @@
+footer {
+    background-color: $color_4;
+    color: $color_2;
+    a {
+        color: inherit;
+    }
+    button {
+        &::before {
+            left: calc(100% + 20px);
+            background-color: $color_2;
+            color: $color_5;
+        }
+        &:disabled {
+            color: $color_2;
+        }
+    }
+    a,
+    button {
+        &::after {
+            background-color: $color_2;
+        }
+    }
+    .bold {
+        font-weight: 700;
+    }
+}
