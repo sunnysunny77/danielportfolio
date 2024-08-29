@@ -6,7 +6,7 @@
     <meta name="keywords" content="Web Developer, Front End Web Development" />
     <meta name="author" content="D.Costello" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Work</title>
+    <title>Portfolio - About</title>
     <link href="./css/app.min.css" rel="stylesheet" type="text/css" />
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="images/pwa-logo-small.png" />
@@ -32,13 +32,13 @@
 
                         <li class="list-inline-item">
         
-                            <a class="active" href="./"> Work </a>
+                            <a href="./"> Work </a>
         
                         </li>
         
                         <li class="list-inline-item">
         
-                            <a href="./about.html"> About </a>
+                            <a class="active" href="./about.php"> About </a>
         
                         </li>
         
