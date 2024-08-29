@@ -1,71 +1,47 @@
 header {
     background-color: $color_3;
-    color: $color_5;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.067em;
-    a,
-    button {
-        color: $color_6;
-        text-decoration: none;
-        font-weight: 400;
-        padding: 2px 0;
-        position: relative;
-        letter-spacing: initial;
-        &::after {
-            position: absolute;
-            content: " ";
-            right: 0;
-            bottom: 0;
-            height: 1px;
-            width: 0;
-            background-color: $color_6;
-            transition: width 0.25s;
+    nav {
+        color: $color_5;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.067em;
+        a {
+            text-decoration: none;
+            position: relative;
         }
-        &:hover,
-        &:focus {
-            &::after {
-                left: 0;
-                width: 100%;
-            }
-        }
-        &.active {
-            transition: none;
-            &::after {
-                width: 100%;
-            }
-        }
-    }
-    button {
-        background-color: transparent;
-        border: none;
-        &::before {
-            position: absolute;
-            content: " Copied ";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2px 12px;
-            border-radius: 3px;
-            right: 0;
-            bottom: calc(-100% - 12px);
-            background-color: $color_5;
-            color: $color_2;
-            opacity: 0;
-            transition: opacity 0.5s;
-            width: 0;
-            height: 0;
-            overflow: hidden;
-        }
-        &.has-opacity {
+        button {
             &::before {
-                opacity: 1;
+                right: 0;
             }
         }
-        &.has-display {
-            &::before {
-                width: initial;
-                height: initial;
+        a,
+        button {
+            color: $color_6;
+            font-weight: 400;
+            padding: 2px 0;
+            letter-spacing: initial;
+            &::after {
+                position: absolute;
+                content: " ";
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                width: 0;
+                background-color: $color_6;
+                transition: width 0.25s;
+            }
+            &:hover,
+            &:focus {
+                &::after {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            &.active {
+                transition: none;
+                &::after {
+                    width: 100%;
+                }
             }
         }
     }

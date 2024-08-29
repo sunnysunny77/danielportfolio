@@ -1,0 +1,24 @@
+.work-section {
+    color: $color_5;
+    .slogan {
+        font-size: clamp(30px, 4vw, 50px);
+        font-weight: 700;
+    }
+    a,
+    button {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.25s;
+        color: $color_5;
+        &:hover,
+        &:focus {
+            text-decoration-color: $color_5;
+        }
+    }
+    button {
+        color: $color_5;
+        &::before {
+            left: 0;
+        }
+    }
+}

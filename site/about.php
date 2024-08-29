@@ -16,38 +16,38 @@
 
     <header class="container-fluid">
 
-        <nav class="container pt-7 pt-sm-9 pb-11">
+        <nav class="container pt-7 pt-sm-9 pb-11 pb-lg-13">
 
-            <ul class="list-inline d-flex flex-column flex-sm-row m-0">
+            <ul class="list-inline row d-flex flex-column flex-sm-row m-0">
 
-                <li class="list-inline-item flex-fill mx-0 mb-5 mb-sm-0">
+                <li class="list-inline-item col-48 col-sm-12 col-lg-16 mx-0 mb-5 mb-sm-0">
 
                     D.Costello
 
                 </li>
 
-                <li class="list-inline-item align-self-end w-75">
+                <li class="list-inline-item align-self-end col-36 col-lg-32">
 
-                    <ul class="list-inline d-flex justify-content-around justify-content-sm-between">
+                    <ul class="list-inline d-flex justify-content-around justify-content-md-between">
 
                         <li class="list-inline-item">
-        
+
                             <a href="./"> Work </a>
-        
+
                         </li>
-        
+
                         <li class="list-inline-item">
-        
+
                             <a class="active" href="./about.php"> About </a>
-        
+
                         </li>
-        
+
                         <li class="list-inline-item">
-        
-                            <button class="m-0" id="copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
-        
+
+                            <button class="copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+
                         </li>
-        
+
                     </ul>
 
                 </li>

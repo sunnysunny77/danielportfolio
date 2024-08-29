@@ -6,3 +6,37 @@ body {
     margin: 0;
     font-family: $font;
 }
+
+.copy-tooltip {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: " Copied ";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 12px;
+        border-radius: 3px;
+        bottom: calc(-100% - 12px);
+        background-color: $color_5;
+        color: $color_2;
+        opacity: 0;
+        transition: opacity 0.5s;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    &.has-opacity {
+        &::before {
+            opacity: 1;
+        }
+    }
+    &.has-display {
+        &::before {
+            width: initial;
+            height: initial;
+        }
+    }
+}
