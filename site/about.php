@@ -44,7 +44,7 @@
         
                         <li class="list-inline-item">
         
-                            <p class="m-0" id="copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </p>
+                            <button class="m-0" id="copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
         
                         </li>
         

@@ -5,7 +5,7 @@ header {
     font-weight: 700;
     letter-spacing: 0.067em;
     a,
-    p {
+    button {
         color: $color_6;
         text-decoration: none;
         font-weight: 400;
@@ -36,7 +36,9 @@ header {
             }
         }
     }
-    p {
+    button {
+        background-color: transparent;
+        border: none;
         &::before {
             position: absolute;
             content: " Copied ";
@@ -51,10 +53,19 @@ header {
             color: $color_2;
             opacity: 0;
             transition: opacity 0.5s;
+            width: 0;
+            height: 0;
+            overflow: hidden;
         }
         &.has-opacity {
             &::before {
                 opacity: 1;
+            }
+        }
+        &.has-display {
+            &::before {
+                width: initial;
+                height: initial;
             }
         }
     }

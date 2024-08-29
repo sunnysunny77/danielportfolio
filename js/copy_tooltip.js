@@ -12,6 +12,7 @@ export const copy_tooltip = () => {
   events(obj, "click", async (event) => {
 
     const obj = event.currentTarget;
+    obj.disabled = true;
 
     try {
 
@@ -22,9 +23,15 @@ export const copy_tooltip = () => {
     }
 
     obj.classList.add("has-opacity");
+    obj.classList.add("has-display");
     setTimeout(() => {
 
       obj.classList.remove("has-opacity");
+      setTimeout(() => {
+
+        obj.classList.remove("has-display");
+        obj.disabled = "";
+      }, 500);
     }, 1000);
   });
 };
