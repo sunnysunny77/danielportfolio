@@ -74,9 +74,9 @@
 
                     <li class="bold py-md-3 mb-1 mb-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
 
-                    <li class="me-md-8"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
+                    <li class="me-md-8"> <a class="navigation-anchor px-0 py-3" href="./"> Work </a> </li>
 
-                    <li class="me-md-8"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
+                    <li class="me-md-8"> <a class="active navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
 
                     <li>
             
