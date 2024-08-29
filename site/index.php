@@ -16,15 +16,15 @@
 
     <header class="container-fluid">
 
-        <nav class="container pt-7 pt-sm-9 pb-11 pb-lg-13">
+        <nav class="container pt-8 pt-sm-9 pb-11 pb-lg-13">
 
             <ul class="list-inline row d-flex m-0">
 
-                <li class="list-inline-item col-12 col-lg-16 m-0 pe-2">
+                <li class="list-inline-item col-12 col-lg-16 m-0">
 
-                    <span class="d-none d-sm-block"> D.Costello </span>
+                    <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
 
-                    <span class="d-sm-none"> D.C </span>
+                    <span class="d-sm-none pb-3 me-2"> D.C </span>
 
                 </li>
 
@@ -34,19 +34,19 @@
 
                         <li class="list-inline-item">
         
-                            <a class="active navigation-anchor" href="./"> Work </a>
+                            <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
         
                         </li>
         
                         <li class="list-inline-item">
         
-                            <a class="navigation-anchor" href="./about.php"> About </a>
+                            <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
         
                         </li>
         
                         <li class="list-inline-item">
         
-                            <button class="copy-tooltip navigation-anchor"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                            <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
         
                         </li>
         
@@ -148,23 +148,23 @@
 
                 <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
 
-                    <li class="bold mb-5 mb-md-0 me-md-8 pt-1"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+                    <li class="bold py-md-3 mb-1 mb-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
 
-                    <li class="mb-3 mb-md-0 me-md-8"> <a class="active navigation-anchor" href="./"> Work </a> </li>
+                    <li class="me-md-8"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
 
-                    <li class="mb-3 mb-md-0 me-md-8"> <a class="navigation-anchor" href="./about.php"> About </a> </li>
+                    <li class="me-md-8"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
 
                     <li>
             
-                        <button class="copy-tooltip navigation-anchor"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                        <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
                     </li>
 
                 </ul>
 
-                <div class="col-48 col-md-16 mt-7 mt-md-0 text-md-end">
+                <div class="col-48 col-md-16 d-flex justify-content-md-end mt-7 mt-md-0">
 
-                    <a class="navigation-anchor" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+                    <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
 
                 </div>
 

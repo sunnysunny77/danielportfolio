@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     font-family: $font;
+    overflow-y: scroll;
 }
 
 .copy-tooltip {
@@ -40,15 +41,16 @@ body {
 
 .navigation-anchor {
     font-weight: 400;
-    padding: 2px 0;
     letter-spacing: initial;
     position: relative;
     text-decoration: none;
+    display: block;
+    width: fit-content;
     &::after {
         position: absolute;
         content: " ";
         right: 0;
-        bottom: 0;
+        bottom: 8px;
         height: 1px;
         width: 0;
         transition: width 0.25s;

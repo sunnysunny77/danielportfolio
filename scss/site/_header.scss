@@ -12,7 +12,7 @@ header {
             color: $color_6;
             &::before {
                 right: 0;
-                bottom: calc(-100% - 12px);
+                bottom: calc(-100% + 4px);
                 background-color: $color_5;
                 color: $color_2;
             }
