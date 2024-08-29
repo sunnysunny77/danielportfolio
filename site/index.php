@@ -103,7 +103,38 @@
 
     </header>
 
-    <main>
+    <main class="work-main py-12 py-lg-14">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-48 col-sm-16">
+
+                    <h2 class="m-0">
+                        
+                        title
+
+                    </h2>
+                    
+                    <p class="mb-3">
+                        
+                        subtitle
+
+                    </p> 
+
+
+                </div>
+
+                <div class="col-48 col-sm-32">
+
+                    <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
+
+                </div>
+            
+            </div>
+
+        </div>
 
     </main>
 

@@ -11,8 +11,6 @@ export const copy_tooltip = () => {
 
   for (const index of obj) {
 
-    console.log(index)
-
     events(index, "click", async (event) => {
 
       const obj = event.currentTarget;
