@@ -20,7 +20,7 @@
 
             <ul class="list-inline row d-flex m-0">
 
-                <li class="list-inline-item col-12 col-lg-16 m-0 ">
+                <li class="list-inline-item col-12 col-lg-16 m-0 pe-2">
 
                     <span class="d-none d-sm-block"> D.Costello </span>
 
