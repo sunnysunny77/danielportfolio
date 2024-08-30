@@ -12,11 +12,11 @@
     <link rel="apple-touch-icon" href="images/pwa-logo-small.png" />
 </head>
 
-<body>
+<body class="pt-6 pt-lg-9">
 
-    <header class="container-fluid">
+    <nav class="container-fuild has-static d-flex align-items-center pt-3">
 
-        <nav class="container pt-8 pt-sm-9 pb-11 pb-lg-13">
+        <div class="container">
 
             <ul class="list-inline row d-flex m-0">
 
@@ -56,9 +56,9 @@
 
             </ul>
 
-        </nav>
+        </div>
 
-    </header>
+    </nav>
 
     <main>
 

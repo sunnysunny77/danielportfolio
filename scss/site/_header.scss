@@ -1,29 +1,52 @@
 header {
-    background-color: $color_3;
-    nav {
-        color: $color_5;
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.067em;
-        a {
+    position: relative;
+    z-index: 999;
+}
+
+nav {
+    color: $color_5;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.067em;
+    &.has-static {
+        position: static;
+        top: initial;
+        height: 65px;
+    }
+    &.has-sticky {
+        position: sticky;
+        top: 0;
+        z-index: 998;
+        background-color: transparentize($color_3, 0.1);
+        height: 55px;
+        transition: height 1s;
+        button::before {
+            top: 0;
+            right: -12px;
+            bottom: 8px;
+            left: -12px;
+        }
+    }
+    a {
+        color: $color_6;
+    }
+    button {
+        color: $color_6;
+        &::before {
+            right: 0;
+            bottom: calc(-100% + 8px);
+            background-color: $color_5;
+            color: $color_2;
+            z-index: 1000;
+        }
+        &:disabled {
             color: $color_6;
         }
-        button {
-            color: $color_6;
-            &::before {
-                right: 0;
-                bottom: calc(-100% + 4px);
-                background-color: $color_5;
-                color: $color_2;
-            }
-            &:disabled {
-                color: $color_6;
-            }
-        }
-        a, button {
-            &::after {
-                background-color: $color_6; 
-            }
+    }
+    a,
+    button {
+        &::after {
+            background-color: $color_6;
         }
     }
 }

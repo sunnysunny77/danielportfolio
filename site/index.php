@@ -12,11 +12,11 @@
     <link rel="apple-touch-icon" href="images/pwa-logo-small.png" />
 </head>
 
-<body>
+<body class="pt-6 pt-lg-9">
 
-    <header class="container-fluid">
+    <nav class="container-fuild has-static d-flex align-items-center pt-3">
 
-        <nav class="container pt-8 pt-sm-9 pb-11 pb-lg-13">
+        <div class="container">
 
             <ul class="list-inline row d-flex m-0">
 
@@ -33,30 +33,34 @@
                     <ul class="list-inline d-flex justify-content-around justify-content-md-between">
 
                         <li class="list-inline-item">
-        
+
                             <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
-        
+
                         </li>
-        
+
                         <li class="list-inline-item">
-        
+
                             <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
-        
+
                         </li>
-        
+
                         <li class="list-inline-item">
-        
+
                             <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
-        
+
                         </li>
-        
+
                     </ul>
 
                 </li>
 
             </ul>
 
-        </nav>
+        </div>
+
+    </nav>
+
+    <header class="container-fluid pt-9 pt-lg-12">
 
         <section class="container work-section pb-12 pb-lg-13">
 
@@ -128,12 +132,57 @@
 
                 </div>
 
+                <div class="col-48 col-sm-32  mb-12">
+
+                    <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
+
+                </div>
+
+                <div class="col-48 col-sm-16">
+
+                    <h2 class="m-0">
+                        
+                        title
+
+                    </h2>
+
+                    <p class="mb-3">
+                        
+                        subtitle
+
+                    </p> 
+
+
+                </div>
+
+                <div class="col-48 col-sm-32  mb-12">
+
+                    <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
+
+                </div>
+
+                <div class="col-48 col-sm-16">
+
+                    <h2 class="m-0">
+                        
+                        title
+
+                    </h2>
+
+                    <p class="mb-3">
+                        
+                        subtitle
+
+                    </p> 
+
+                </div>
+
                 <div class="col-48 col-sm-32">
 
                     <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
 
                 </div>
-            
+                            
             </div>
 
         </div>

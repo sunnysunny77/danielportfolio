@@ -14,9 +14,11 @@
 //import { service_worker } from "./service_worker.js";
 import { events } from "./utillites.js";
 import { copy_tooltip } from "./copy_tooltip.js";
+import { nav } from "./nav.js";
 
 events(window, "load", () => {
 
+    nav();
     copy_tooltip();
     //service_worker();
 });
