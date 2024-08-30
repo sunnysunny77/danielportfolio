@@ -142,6 +142,10 @@
 
                 </div>
 
+            </div>
+
+            <div class="has-move row justify-content-md-between">
+
                 <div class="col-48 col-md-16 col-lg-11">
 
                     <h2 class="mb-3">
@@ -172,6 +176,10 @@
 
                 </div>
 
+            </div>
+
+            <div class="has-move row justify-content-md-between">
+
                 <div class="col-48 col-md-16 col-lg-11">
 
                     <h2 class="mb-3">
@@ -201,6 +209,10 @@
                     <img src="./images/access.jpg" width="760" height="475" alt="Access Robotics" />
 
                 </div>
+
+            </div>
+
+            <div class="has-move row justify-content-md-between">
 
                 <div class="col-48 col-md-16 col-lg-11">
 
@@ -238,6 +250,10 @@
 
                 </div>
 
+            </div>
+
+            <div class="has-move row justify-content-md-between">
+
                 <div class="col-48 col-md-16 col-lg-11">
 
                     <h2 class="mb-3">
@@ -263,6 +279,10 @@
                     <img src="./images/business.jpg" width="760" height="475" alt="Business" />
 
                 </div>
+
+            </div>
+
+            <div class="has-move row justify-content-md-between">
 
                 <div class="col-48 col-md-16 col-lg-11">
 
@@ -298,6 +318,10 @@
 
                 </div>
 
+            </div>
+
+            <div class="has-move row justify-content-md-between">
+
                 <div class="col-48 col-md-16 col-lg-11">
 
                     <h2 class="mb-3">
@@ -327,6 +351,10 @@
                     <img src="./images/weather.jpg" width="760" height="475" alt="Weather App" />
 
                 </div>
+
+            </div>
+
+            <div class="has-move row justify-content-md-between">
 
                 <div class="col-48 col-md-16 col-lg-11">
 
@@ -361,6 +389,10 @@
                     <img src="./images/sliders.jpg" width="760" height="475" alt="Sliders" />
 
                 </div>
+
+            </div>
+
+            <div class="has-move row justify-content-md-between">
 
                 <div class="col-48 col-md-16 col-lg-11">
 

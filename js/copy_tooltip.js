@@ -36,6 +36,5 @@ export const copy_tooltip = () => {
         }, 500);
       }, 1000);
     });
-
   }
 };

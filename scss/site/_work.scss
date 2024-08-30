@@ -73,3 +73,13 @@
         }
     }
 }
+
+.has-move {
+    position: relative;
+    bottom: -88px;
+    transition: bottom 1s;
+    will-change:  bottom;
+    &.has-bottom {
+        bottom: 0;
+    }
+}
