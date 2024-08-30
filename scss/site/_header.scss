@@ -21,6 +21,7 @@ nav {
         background-color: transparentize($color_3, 0.1);
         height: 55px;
         transition: height 1s;
+        will-change: height;
         button::before {
             top: 0;
             right: -12px;
