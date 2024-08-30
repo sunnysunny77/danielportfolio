@@ -116,13 +116,15 @@
 
             <div class="row justify-content-md-between">
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Furniture Warehouse
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
                     
                     <p class="mb-1">
                         
@@ -134,19 +136,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/furniture.jpg" width="760" height="475" alt="Furniture" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Fasera
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
                     
                     <p class="mb-1">
                         
@@ -162,19 +166,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/fasera.jpg" width="760" height="475" alt="Fasera" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Access Robotics
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">
                         
@@ -190,19 +196,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/access.jpg" width="760" height="475" alt="Access Robotics" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Daves Blog
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">
                         
@@ -224,19 +232,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/daves.jpg" width="760" height="475" alt="Daves Blog" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Business
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">
                         
@@ -248,19 +258,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/business.jpg" width="760" height="475" alt="Business" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Candid Cleaning
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">    
                         
@@ -280,19 +292,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/candid.jpg" width="760" height="475" alt="Candid Cleaning" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Weather App
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">    
                         
@@ -308,19 +322,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/weather.jpg" width="760" height="475" alt="Weather App" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Sliders
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">    
                         
@@ -340,19 +356,21 @@
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
                     <img src="./images/sliders.jpg" width="760" height="475" alt="Sliders" />
 
                 </div>
 
-                <div class="col-48 col-md-18 col-lg-10">
+                <div class="col-48 col-md-16 col-lg-11">
 
-                    <h2 class="m-0">
+                    <h2 class="mb-3">
                         
                         Login App
 
                     </h2>
+
+                    <hr class="mb-5 mb-md-2">
 
                     <p class="mb-1">    
                         
