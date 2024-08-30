@@ -39,4 +39,16 @@
         width: 100%;
         height: 100%;
     }
+    a {
+        text-decoration: underline;
+        text-decoration-color: $color_6;
+        transition: text-decoration-color 0.25s;
+        color: $color_6;
+        width: fit-content;
+        &:hover,
+        &:focus {
+            text-decoration-color: transparent;
+        }
+
+    }
 }

@@ -115,74 +115,174 @@
 
             <div class="row">
 
-                <div class="col-48 col-sm-16">
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
 
                     <h2 class="m-0">
                         
-                        title
+                        Furniture warehouse
 
                     </h2>
                     
-                    <p class="mb-3">
+                    <p class="mb-1">
                         
-                        subtitle
+                        Design copy
 
                     </p> 
 
+                    <a class="d-inline-block mb-6" target="Furniture" href="https://furniture.sunnyhome.site/">Visit</a>
 
                 </div>
 
-                <div class="col-48 col-sm-32  mb-12">
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
 
-                    <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
+                    <img src="./images/furniture.jpg" width="760" height="475" alt="Furniture" />
 
                 </div>
 
-                <div class="col-48 col-sm-16">
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
 
                     <h2 class="m-0">
                         
-                        title
+                        Fasera
 
                     </h2>
-
-                    <p class="mb-3">
+                    
+                    <p class="mb-1">
                         
-                        subtitle
+                        Wordpress theme
+                        <br>
+                        © Lateral Aspect
+                        <br>
+                        Design copy
 
                     </p> 
 
+                    <a class="d-inline-block mb-6" target="Fasera" href="https://www.fasera.com/">Visit</a>
 
                 </div>
 
-                <div class="col-48 col-sm-32  mb-12">
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
 
-                    <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
+                    <img src="./images/fasera.jpg" width="760" height="475" alt="Fasera" />
 
                 </div>
 
-                <div class="col-48 col-sm-16">
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
 
                     <h2 class="m-0">
                         
-                        title
+                        Access Robotics
 
                     </h2>
 
-                    <p class="mb-3">
+                    <p class="mb-1">
                         
-                        subtitle
+                        Wordpress theme
+                        <br>
+                        © Lateral Aspect
+                        <br>
+                        Design copy
 
                     </p> 
 
-                </div>
-
-                <div class="col-48 col-sm-32">
-
-                    <img src="https://placehold.co/600x400/EEE/31343C" width="760" height="507" alt="Placehold" />
+                    <a class="d-inline-block mb-6" target="Access Robotics" href="https://access.vm1.lateralaspect.com.au/">Visit</a>
 
                 </div>
-                            
+
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+
+                    <img src="./images/access.jpg" width="760" height="475" alt="Access Robotics" />
+
+                </div>
+
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+
+                    <h2 class="m-0">
+                        
+                        Daves Blog
+
+                    </h2>
+
+                    <p class="mb-1">
+                        
+                        Design copy
+                        <br>
+                        MVC - OOP - SQL - CMS
+                        <br> 
+                        PHP template
+                        <br>
+                        user: demo
+                        <br>
+                        pass: demo
+                
+                    </p> 
+
+                    <a class="d-inline-block mb-6" target="Daves Blog" href="https://davesblog.sunnyhome.site/">Visit</a>
+
+                </div>
+
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+
+                    <img src="./images/daves.jpg" width="760" height="475" alt="Daves Blog" />
+
+                </div>
+
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+
+                    <h2 class="m-0">
+                        
+                        Business
+
+                    </h2>
+
+                    <p class="mb-1">
+                        
+                        Homepage
+
+                    </p> 
+
+                    <a class="d-inline-block mb-6" target="Business" href="https://business.sunnyhome.site/">Visit</a>
+
+                </div>
+
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+
+                    <img src="./images/business.jpg" width="760" height="475" alt="Business" />
+
+                </div>
+
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+
+                    <h2 class="m-0">
+                        
+                        Candid Cleaning
+
+                    </h2>
+
+                    <p class="mb-1">    
+                        
+                        React/JSX - NodeJS - Mongo
+                        <br>
+                        SASS
+                        <br>
+                        Material UI
+                        <br>
+                        Googleapis OAUTH email
+                        <br>
+                        Google drive used as CMS
+
+                    </p> 
+
+                    <a class="d-inline-block mb-6" target="Candid Cleaning" href="https://candidcleaning.sunnyhome.site/">Visit</a>
+
+                </div>
+
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+
+                    <img src="./images/candid.jpg" width="760" height="475" alt="Candid Cleaning" />
+
+                </div>
+
             </div>
 
         </div>
