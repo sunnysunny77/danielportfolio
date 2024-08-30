@@ -283,6 +283,102 @@
 
                 </div>
 
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+
+                    <h2 class="m-0">
+                        
+                        Weather App
+
+                    </h2>
+
+                    <p class="mb-1">    
+                        
+                        Weather App
+                        <br>
+                        PHP - XML
+                        <br>
+                        PWA
+
+                    </p> 
+
+                    <a class="d-inline-block mb-6" target="Weather App" href="https://sticky.sunnyhome.site/">Visit</a>
+
+                </div>
+
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+
+                    <img src="./images/weather.jpg" width="760" height="475" alt="Weather App" />
+
+                </div>
+
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+
+                    <h2 class="m-0">
+                        
+                        Sliders
+
+                    </h2>
+
+                    <p class="mb-1">    
+                        
+                        Eight slider demo's
+                        <br>
+                        PWA service worker
+                        <br>
+                        Mozilla observatory A+
+                        <br>
+                        SSL A+
+                        <br>
+                        JavaScript SCSS minifier
+
+                    </p> 
+
+                    <a class="d-inline-block mb-6" target="Sliders" href="https://sliders.sunnyhome.site/">Visit</a>
+
+                </div>
+
+                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+
+                    <img src="./images/sliders.jpg" width="760" height="475" alt="Sliders" />
+
+                </div>
+
+                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+
+                    <h2 class="m-0">
+                        
+                        Login App
+
+                    </h2>
+
+                    <p class="mb-1">    
+                        
+                        React/JSX - PHP - Cookies
+                        <br>
+                        Mozilla observatory A+
+                        <br>
+                        SSL A+
+                        <br>
+                        Caputcha signup
+                        <br>
+                        PayPal sandbox:
+                        <br>
+                        sb-iyl4x21604127@personal.example.com
+                        <br>
+                        pass: *]T0%Ae8
+
+                    </p> 
+
+                    <a class="d-inline-block mb-6" target="Login App" href="https://login.sunnyhome.site/">Visit</a>
+
+                </div>
+
+                <div class="col-48 col-sm-28 col-lg-32">
+
+                    <img src="./images/login.jpg" width="760" height="475" alt="Login App" />
+
+                </div>
+
             </div>
 
         </div>
