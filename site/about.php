@@ -122,6 +122,14 @@
 
                         <div class="col-48 col-md-16 col-lg-20">
 
+                            <h2 class="mb-3">Favourites<h2>
+
+                            <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub </a>
+
+                            <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
+
+                            <a class="mb-6 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
+
                             <h2 class="mb-3">Socials<h2>
 
                             <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
