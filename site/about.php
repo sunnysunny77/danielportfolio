@@ -63,7 +63,7 @@
 
     <main class="about-main pt-10 pb-12 pb-lg-14 pt-lg-14">
 
-        <div class="container">
+        <section class="container">
 
             <div class="row justify-content-center justify-content-md-between">
 
@@ -79,7 +79,7 @@
 
                         <div class="col-48 col-md-25 col-lg-20">
 
-                            <h1 class="mb-3">G'day<h1>
+                            <h1 class="mb-3"> G'day </h1>
 
                             <p class="mb-9">
 
@@ -89,7 +89,7 @@
    
                             <img class="d-lg-none mb-9" src="./images/daniel.jpg" width="760" height="475" alt="Daniel" />
 
-                            <h2 class="mb-3">Qualifications<h1>
+                            <h2 class="mb-3"> Qualifications </h2>
 
                             <p class="mb-9">
 
@@ -110,7 +110,7 @@
 
                             </p>
 
-                            <h2 class="mb-3">Recent partners<h1>
+                            <h2 class="mb-3"> Recent partners </h2>
 
                             <p class="mb-9">
 
@@ -126,7 +126,7 @@
 
                                 <div class="col-24 col-md-48 order-2 order-md-1">
 
-                                    <h2 class="mb-3">Favourites<h2>
+                                    <h2 class="mb-3"> Favourites </h2>
 
                                     <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub <i class="fa-regular fa-heart"></i> </a>
 
@@ -138,13 +138,13 @@
 
                                 <div class="col-24 col-md-48 order-1 order-md-2">
 
-                                    <h2 class="mb-3">Socials<h2>
+                                    <h2 class="mb-3"> Socials </h2>
 
                                     <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
 
-                                    <h2 class="mb-3">Contact<h2>
+                                    <h2 class="mb-3"> Contact </h2>
 
-                                    <a class="d-block mb-2" href="tel:+61 434 984983"> +61 434 984 983 </a>
+                                    <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
                                     <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
                                     
@@ -160,7 +160,7 @@
 
             </div>
             
-        </div>
+        </section>
 
     </main>
 

@@ -82,7 +82,7 @@
 
                     <div class="d-none d-lg-block">
 
-                        <a class="d-block mb-2" href="tel:+61 434 984983"> +61 434 984 983 </a>
+                        <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
                         <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
@@ -98,7 +98,7 @@
 
                 <div class="d-lg-none">
 
-                    <a class="d-block mb-2" href="tel:+61 434 984983"> +61 434 984 983 </a>
+                    <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
                     <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
@@ -112,7 +112,7 @@
 
     <main class="work-main py-12 py-lg-14">
 
-        <div class="container">
+        <section class="container">
 
             <div class="row justify-content-md-between">
 
@@ -384,7 +384,7 @@
 
             </div>
 
-        </div>
+        </section>
 
     </main>
 
