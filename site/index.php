@@ -74,7 +74,7 @@
                         <?php
 
                             date_default_timezone_set("Australia/Perth");
-                            echo  date("h:i a") . " &mdash; Perth";
+                            echo  date("g:i a") . " &mdash; Perth";
                             
                         ?>
 
@@ -396,7 +396,7 @@
 
                 <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
 
-                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> <i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
 
                     <li class="me-md-8 order-1 order-md-2"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
 

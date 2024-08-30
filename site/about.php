@@ -122,23 +122,35 @@
 
                         <div class="col-48 col-md-16 col-lg-20">
 
-                            <h2 class="mb-3">Favourites<h2>
+                            <div class="row justify-content-between">
 
-                            <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub </a>
+                                <div class="col-24 col-md-48 order-2 order-md-1">
 
-                            <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
+                                    <h2 class="mb-3">Favourites<h2>
 
-                            <a class="mb-6 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
+                                    <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub <i class="fa-regular fa-heart"></i> </a>
 
-                            <h2 class="mb-3">Socials<h2>
+                                    <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
 
-                            <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+                                    <a class="mb-md-6 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
 
-                            <h2 class="mb-3">Contact<h2>
+                                </div>
 
-                            <a class="d-block mb-2" href="tel:+61 434 984983"> +61 434 984 983 </a>
+                                <div class="col-24 col-md-48 order-1 order-md-2">
 
-                            <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>  
+                                    <h2 class="mb-3">Socials<h2>
+
+                                    <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+
+                                    <h2 class="mb-3">Contact<h2>
+
+                                    <a class="d-block mb-2" href="tel:+61 434 984983"> +61 434 984 983 </a>
+
+                                    <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                    
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -160,7 +172,7 @@
 
                 <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
 
-                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> <i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
 
                     <li class="me-md-8 order-1 order-md-2"> <a class="navigation-anchor px-0 py-3" href="./"> Work </a> </li>
 
