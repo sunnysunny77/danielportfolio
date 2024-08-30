@@ -73,9 +73,9 @@
 
                         <?php
 
-                            $date_time = new DateTime("now", new DateTimeZone("Australia/Perth"));
-                            echo $date_time->format(" g:i a") . " &mdash; Perth";
-
+                            date_default_timezone_set("Australia/Perth");
+                            echo  date("h:i a") . " &mdash; Perth";
+                            
                         ?>
 
                     </div>
@@ -120,7 +120,7 @@
 
                     <h2 class="m-0">
                         
-                        Furniture warehouse
+                        Furniture Warehouse
 
                     </h2>
                     
