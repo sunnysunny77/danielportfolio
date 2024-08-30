@@ -132,7 +132,7 @@
 
                                     <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
 
-                                    <a class="mb-md-6 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
+                                    <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
 
                                 </div>
 
@@ -141,13 +141,17 @@
                                     <h2 class="mb-3"> Socials </h2>
 
                                     <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+                                    
+                                </div>
+
+                                <div class="col-48 order-3">
 
                                     <h2 class="mb-3"> Contact </h2>
 
                                     <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
                                     <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
-                                    
+
                                 </div>
 
                             </div>
