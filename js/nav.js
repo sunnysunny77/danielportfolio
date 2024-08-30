@@ -16,7 +16,7 @@ export const nav = () => {
 
       let positive = false;
 
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 992) {
 
         nav.classList.remove("has-fixed");
         return;
