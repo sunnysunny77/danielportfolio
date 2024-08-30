@@ -9,25 +9,34 @@ nav {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.067em;
-    &.has-static {
-        position: static;
-        top: initial;
-        height: 65px;
-    }
-    &.has-sticky {
-        position: sticky;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 60px 0;
+    box-sizing: content-box;
+    height: 35.5px;
+    &.has-fixed {
+        transition: background-color 0.5s, height 0.5s;
+        will-change: background-color, height;
+        position: fixed;
+        box-sizing: border-box;
         top: 0;
+        right: 0;
+        left: 0;
         z-index: 998;
-        background-color: transparentize($color_3, 0.1);
-        height: 55px;
-        transition: height 1s;
-        will-change: height;
+        background-color: transparentize($color_3, 0.15);
+        padding: 15px 0 5px 0;
+        height: 67px;
         button::before {
+            background-color: $color_5;
+            color: $color_2;
+            z-index: 1000;
             top: 0;
             right: -12px;
             bottom: 8px;
             left: -12px;
-            transition: opacity 0.137s;
+            padding: 2px 12px;
         }
     }
     a {
@@ -41,6 +50,7 @@ nav {
             background-color: $color_5;
             color: $color_2;
             z-index: 1000;
+            padding: 2px 12px;
         }
         &:disabled {
             color: $color_6;

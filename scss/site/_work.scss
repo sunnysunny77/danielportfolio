@@ -14,16 +14,13 @@
         &:focus {
             text-decoration-color: $color_5;
         }
-
     }
-    button {
-        color: $color_5;
-        &::before {
-            bottom: calc(-100% - 12px);
-            left: 0;
-            background-color: $color_5;
-            color: $color_2;
-        }
+    button::before {
+        bottom: calc(-100% - 12px);
+        left: 0;
+        background-color: $color_5;
+        color: $color_2;
+        padding: 2px 12px;
     }
 }
 
@@ -50,7 +47,6 @@
         &:focus {
             text-decoration-color: transparent;
         }
-
     }
     button {
         text-decoration: underline;

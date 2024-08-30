@@ -16,6 +16,12 @@ export const nav = () => {
 
       let positive = false;
 
+      if (window.innerWidth > 768) {
+
+        nav.classList.remove("has-fixed");
+        return;
+      }
+
       if (window.scrollY > scrollY) {
 
         positive = true;
@@ -26,18 +32,15 @@ export const nav = () => {
 
       scrollY = window.scrollY;
   
-      if (scrollY > main.offsetTop - nav.offsetHeight && !positive) {
+      if (scrollY > main.offsetTop && !positive) {
   
-        nav.classList.add("has-sticky");
-        nav.classList.remove("has-static");
+        nav.classList.add("has-fixed");
       } else if (positive) {
 
-        nav.classList.add("has-static");
-        nav.classList.remove("has-sticky");
+        nav.classList.remove("has-fixed");
       } else if (scrollY <= main.offsetTop) {
 
-        nav.classList.add("has-static");
-        nav.classList.remove("has-sticky");
+        nav.classList.remove("has-fixed");
       }
     };
 

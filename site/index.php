@@ -12,9 +12,9 @@
     <link rel="apple-touch-icon" href="images/pwa-logo-small.png" />
 </head>
 
-<body class="pt-6 pt-lg-9">
+<body>
 
-    <nav class="container-fuild has-static d-flex align-items-center pt-3">
+    <nav class="container-fuild has-static d-flex align-items-center">
 
         <div class="container">
 
@@ -60,7 +60,7 @@
 
     </nav>
 
-    <header class="container-fluid pt-9 pt-lg-12">
+    <header class="container-fluid pt-7 pt-lg-12">
 
         <section class="container work-section pb-12 pb-lg-13">
 
@@ -395,13 +395,13 @@
 
                 <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
 
-                    <li class="bold py-md-3 mb-1 mb-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
 
-                    <li class="me-md-8"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
+                    <li class="me-md-8 order-1 order-md-2"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
 
-                    <li class="me-md-8"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
+                    <li class="me-md-8 order-2 order-md-3"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
 
-                    <li>
+                    <li class="order-3 order-md-4">
             
                         <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
@@ -409,7 +409,7 @@
 
                 </ul>
 
-                <div class="col-48 col-md-16 d-flex justify-content-md-end mt-7 mt-md-0">
+                <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
 
                     <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
 

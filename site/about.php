@@ -12,9 +12,9 @@
     <link rel="apple-touch-icon" href="images/pwa-logo-small.png" />
 </head>
 
-<body class="pt-6 pt-lg-9">
+<body>
 
-    <nav class="container-fuild has-static d-flex align-items-center pt-3">
+    <nav class="container-fuild has-static d-flex align-items-center">
 
         <div class="container">
 
@@ -60,7 +60,86 @@
 
     </nav>
 
-    <main>
+    <main class="about-main pt-10 pb-12 pb-lg-14 pt-lg-14">
+
+        <div class="container">
+
+            <div class="row justify-content-center justify-content-md-between">
+
+                <div class="col-lg-12 d-none d-lg-block">
+
+                    <img src="./images/daniel.jpg" width="760" height="475" alt="Daniel" />
+
+                </div>
+
+                <div class="col-48 col-lg-32">
+
+                    <div class="row justify-content-between">
+
+                        <div class="col-48 col-md-25 col-lg-20">
+
+                            <h1 class="mb-3">G'day<h1>
+
+                            <p class="mb-9">
+
+                                Try get it right... Try try again
+
+                            </p>
+   
+                            <img class="d-lg-none mb-9" src="./images/daniel.jpg" width="760" height="475" alt="Daniel" />
+
+                            <h2 class="mb-3">Qualifications<h1>
+
+                            <p class="mb-9">
+
+                                Certificate 4
+                                <br />
+                                ICT40315 Web Based Technologies
+                                <br />
+                                <br />
+                                2021
+                                <br />
+                                <br />
+                                Diploma
+                                <br />
+                                ICT50220-AC26 Diploma of Information Technology (Front End Web Development)
+                                <br />
+                                <br />
+                                2022
+
+                            </p>
+
+                            <h2 class="mb-3">Recent partners<h1>
+
+                            <p class="mb-9">
+
+                                Lateral Aspect
+
+                            </p>
+
+                        </div>
+
+                        <div class="col-48 col-md-16 col-lg-20">
+
+                            <h2 class="mb-3">Socials<h2>
+
+                            <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+
+                            <h2 class="mb-3">Contact<h2>
+
+                            <a class="d-block mb-2" href="tel:+61 434 984983"> +61 434 984 983 </a>
+
+                            <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>  
+
+                        </div>
+
+                    </div>
+        
+                </div>
+
+            </div>
+            
+        </div>
 
     </main>
 
@@ -72,13 +151,13 @@
 
                 <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
 
-                    <li class="bold py-md-3 mb-1 mb-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> &copy;&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
 
-                    <li class="me-md-8"> <a class="navigation-anchor px-0 py-3" href="./"> Work </a> </li>
+                    <li class="me-md-8 order-1 order-md-2"> <a class="navigation-anchor px-0 py-3" href="./"> Work </a> </li>
 
-                    <li class="me-md-8"> <a class="active navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
+                    <li class="me-md-8 order-2 order-md-3"> <a class="active navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
 
-                    <li>
+                    <li class="order-3 order-md-4">
             
                         <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
@@ -86,7 +165,7 @@
 
                 </ul>
 
-                <div class="col-48 col-md-16 d-flex justify-content-md-end mt-7 mt-md-0">
+                <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
 
                     <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
 

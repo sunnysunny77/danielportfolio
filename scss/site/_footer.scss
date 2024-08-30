@@ -9,6 +9,7 @@ footer {
             left: calc(100% + 20px);
             background-color: $color_2;
             color: $color_5;
+            padding: 2px 12px;
         }
         &:disabled {
             color: $color_2;
