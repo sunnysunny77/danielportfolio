@@ -113,9 +113,9 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row justify-content-md-between">
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -133,13 +133,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/furniture.jpg" width="760" height="475" alt="Furniture" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -161,13 +161,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/fasera.jpg" width="760" height="475" alt="Fasera" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -189,13 +189,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/access.jpg" width="760" height="475" alt="Access Robotics" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -211,9 +211,11 @@
                         <br> 
                         PHP template
                         <br>
-                        user: demo
+                        Admin:
                         <br>
-                        pass: demo
+                        <button class="copy-tooltip"> Username <span class="d-none"> demo </span> </button>
+                        <br>
+                        <button class="copy-tooltip"> Password <span class="d-none"> demo </span> </button>
                 
                     </p> 
 
@@ -221,13 +223,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/daves.jpg" width="760" height="475" alt="Daves Blog" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -245,13 +247,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/business.jpg" width="760" height="475" alt="Business" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -277,13 +279,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/candid.jpg" width="760" height="475" alt="Candid Cleaning" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -305,13 +307,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/weather.jpg" width="760" height="475" alt="Weather App" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -337,13 +339,13 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32 mb-10 mb-md-12">
+                <div class="col-48 col-md-26 col-lg-32 mb-10 mb-md-12">
 
                     <img src="./images/sliders.jpg" width="760" height="475" alt="Sliders" />
 
                 </div>
 
-                <div class="col-48 col-sm-20 col-lg-16 pe-7">
+                <div class="col-48 col-md-18 col-lg-10">
 
                     <h2 class="m-0">
                         
@@ -363,9 +365,9 @@
                         <br>
                         PayPal sandbox:
                         <br>
-                        sb-iyl4x21604127@personal.example.com
+                        <button class="copy-tooltip"> Username <span class="d-none"> sb-iyl4x21604127@personal.example.com </span> </button>
                         <br>
-                        pass: *]T0%Ae8
+                        <button class="copy-tooltip"> Password <span class="d-none"> *]T0%Ae8 </span> </button>
 
                     </p> 
 
@@ -373,7 +375,7 @@
 
                 </div>
 
-                <div class="col-48 col-sm-28 col-lg-32">
+                <div class="col-48 col-md-26 col-lg-32">
 
                     <img src="./images/login.jpg" width="760" height="475" alt="Login App" />
 

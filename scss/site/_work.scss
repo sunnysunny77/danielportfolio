@@ -38,9 +38,10 @@
     }
     img {
         width: 100%;
-        height: 100%;
+        height: fit-content;
     }
     a {
+
         text-decoration: underline;
         text-decoration-color: $color_6;
         transition: text-decoration-color 0.25s;
@@ -51,5 +52,26 @@
             text-decoration-color: transparent;
         }
 
+    }
+    button {
+        text-decoration: underline;
+        padding: 0;
+        text-decoration-color: $color_6;
+        transition: text-decoration-color 0.25s;
+        color: $color_6;
+        width: fit-content;
+        &:hover,
+        &:focus {
+            text-decoration-color: transparent;
+        }
+        &::before {
+            padding: 0;
+            top: 2px;
+            right: -80px;
+            bottom: 2px;
+            left: calc(100% + 12px);
+            background-color: $color_5;
+            color: $color_2;
+        }
     }
 }
