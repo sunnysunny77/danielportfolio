@@ -49,7 +49,7 @@
 
                             <li class="list-inline-item">
 
-                                <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none">costellodaniel686@gmail.com</span> </button>
 
                             </li>
 
@@ -152,7 +152,7 @@
 
                                         <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
-                                        <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                        <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none">costellodaniel686@gmail.com</span> </button>
 
                                     </div>
 
@@ -186,7 +186,7 @@
 
                         <li class="order-3 order-md-4">
                 
-                            <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                            <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none">costellodaniel686@gmail.com</span> </button>
 
                         </li>
 
