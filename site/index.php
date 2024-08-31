@@ -65,7 +65,7 @@
 
         <header class="container-fluid pt-7 pt-lg-12">
 
-            <section class="container work-section pb-12 pb-lg-13">
+            <section class="container work-header pb-12 pb-lg-13">
 
                 <div class="row">
 

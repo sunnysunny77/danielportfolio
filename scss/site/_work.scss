@@ -1,8 +1,11 @@
-.work-section {
+.work-header {
     color: $color_5;
     .slogan {
         font-size: clamp(30px, 4vw, 50px);
-        font-weight: 700;
+        font-weight: 500;
+        @include min_md {
+            font-weight: 700;
+        }
     }
     a,
     button {
