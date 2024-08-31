@@ -22,9 +22,10 @@ nav {
         left: 0;
         padding: 15px 0 5px 0;
         z-index: 999;
+        height: 55.5px;
         background-color: transparentize($color_3, 0.15);
-        transition: top 0.375s, background-color 0.5s;
-        will-change: top, background-color;
+        transition: top 0.375s, background-color 0.5s, height 1s;
+        will-change: top, background-color, height;
         button::before {
             background-color: $color_5;
             color: $color_2;
@@ -39,6 +40,7 @@ nav {
     &.has-top {
         top: -67px;
         background-color: $color_2;
+        height: 0;
     }
     a {
         color: $color_6;
