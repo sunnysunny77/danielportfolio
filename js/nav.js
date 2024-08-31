@@ -32,14 +32,21 @@ export const nav = () => {
 
       scrollY = window.scrollY;
   
-      if (scrollY > main.offsetTop && !positive) {
+      console.log(scrollY , main.offsetTop + nav.offsetHeight)
+
+      if (scrollY < main.offsetTop + nav.offsetHeight && scrollY > main.offsetTop && !positive) {
+
+        nav.classList.add("has-top");
+      } else if (scrollY > main.offsetTop && !positive) {
   
+        nav.classList.remove("has-top");
         nav.classList.add("has-fixed");
-      } else if (positive) {
+      } else if (scrollY > main.offsetTop && positive) {
 
-        nav.classList.remove("has-fixed");
-      } else if (scrollY <= main.offsetTop) {
+        nav.classList.add("has-top");
+      } else if (nav.classList.contains("has-top") || nav.classList.contains("has-fixed")) {
 
+        nav.classList.remove("has-top");
         nav.classList.remove("has-fixed");
       }
     };

@@ -1,6 +1,6 @@
 header {
     position: relative;
-    z-index: 999;
+    z-index: 1000;
     background-color: $color_3;
 }
 
@@ -14,30 +14,31 @@ nav {
     right: 0;
     left: 0;
     padding: 60px 0;
-    box-sizing: content-box;
-    height: 35.5px;
+    z-index: 1000;
     &.has-fixed {
-        transition: background-color 0.5s, height 0.5s;
-        will-change: background-color, height;
         position: fixed;
-        box-sizing: border-box;
         top: 0;
         right: 0;
         left: 0;
-        z-index: 998;
-        background-color: transparentize($color_3, 0.15);
         padding: 15px 0 5px 0;
-        height: 67px;
+        z-index: 999;
+        background-color: transparentize($color_3, 0.15);
+        transition: top 0.375s, background-color 0.5s;
+        will-change: top, background-color;
         button::before {
             background-color: $color_5;
             color: $color_2;
-            z-index: 1000;
+            z-index: 999;
             top: 0;
             right: -12px;
             bottom: 8px;
             left: -12px;
             padding: 2px 12px;
         }
+    }
+    &.has-top {
+        top: -67px;
+        background-color: $color_2;
     }
     a {
         color: $color_6;
