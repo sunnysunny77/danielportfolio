@@ -138,7 +138,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/furniture.jpg" width="760" height="475" alt="Furniture" />
+                    <img src="./images/furniture.webp" width="760" height="475" alt="Furniture" />
 
                 </div>
 
@@ -172,7 +172,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/fasera.jpg" width="760" height="475" alt="Fasera" />
+                    <img src="./images/fasera.webp" width="760" height="475" alt="Fasera" />
 
                 </div>
 
@@ -206,7 +206,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/access.jpg" width="760" height="475" alt="Access Robotics" />
+                    <img src="./images/access.webp" width="760" height="475" alt="Access Robotics" />
 
                 </div>
 
@@ -246,7 +246,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/daves.jpg" width="760" height="475" alt="Daves Blog" />
+                    <img src="./images/daves.webp" width="760" height="475" alt="Daves Blog" />
 
                 </div>
 
@@ -276,7 +276,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/business.jpg" width="760" height="475" alt="Business" />
+                    <img src="./images/business.webp" width="760" height="475" alt="Business" />
 
                 </div>
 
@@ -314,7 +314,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/candid.jpg" width="760" height="475" alt="Candid Cleaning" />
+                    <img src="./images/candid.webp" width="760" height="475" alt="Candid Cleaning" />
 
                 </div>
 
@@ -348,7 +348,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/weather.jpg" width="760" height="475" alt="Weather App" />
+                    <img src="./images/weather.webp" width="760" height="475" alt="Weather App" />
 
                 </div>
 
@@ -386,7 +386,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/sliders.jpg" width="760" height="475" alt="Sliders" />
+                    <img src="./images/sliders.webp" width="760" height="475" alt="Sliders" />
 
                 </div>
 
@@ -428,7 +428,7 @@
 
                 <div class="col-48 col-md-26 col-lg-32">
 
-                    <img src="./images/login.jpg" width="760" height="475" alt="Login App" />
+                    <img src="./images/login.webp" width="760" height="475" alt="Login App" />
 
                 </div>
 

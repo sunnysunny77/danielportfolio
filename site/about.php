@@ -69,7 +69,7 @@
 
                 <div class="col-lg-12 d-none d-lg-block">
 
-                    <img src="./images/daniel.jpg" width="760" height="475" alt="Daniel" />
+                    <img src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                 </div>
 
@@ -87,7 +87,7 @@
 
                             </p>
    
-                            <img class="d-lg-none mb-9" src="./images/daniel.jpg" width="760" height="475" alt="Daniel" />
+                            <img class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                             <h2 class="mb-3"> Qualifications </h2>
 
