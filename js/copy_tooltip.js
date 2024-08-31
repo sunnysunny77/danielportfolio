@@ -18,7 +18,7 @@ export const copy_tooltip = () => {
   
       try {
   
-        await navigator.clipboard.writeText(obj.children[0].innerHTML);
+        await navigator.clipboard.writeText(obj.children[0].innerHTML.trim());
       } catch (error) {
   
         console.error(error.message);
