@@ -5,6 +5,7 @@ footer {
         color: inherit;
     }
     button {
+        color: inherit;
         &::before {
             left: calc(100% + 20px);
             background-color: $color_2;
