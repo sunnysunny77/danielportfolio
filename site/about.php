@@ -122,6 +122,8 @@
 
                             </div>
 
+                            <hr class="d-md-none mb-9">
+
                             <div class="col-48 col-md-16 col-lg-20">
 
                                 <div class="row justify-content-between">
