@@ -18,6 +18,7 @@ export const nav = () => {
 
       if (window.innerWidth > 992) {
 
+        nav.classList.remove("has-top");
         nav.classList.remove("has-fixed");
         return;
       }
