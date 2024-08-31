@@ -32,8 +32,6 @@ export const nav = () => {
       }
 
       scrollY = window.scrollY;
-  
-      console.log(scrollY , main.offsetTop + nav.offsetHeight)
 
       if (scrollY < main.offsetTop + nav.offsetHeight && scrollY > main.offsetTop && !positive) {
 
