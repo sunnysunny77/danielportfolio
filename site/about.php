@@ -15,192 +15,196 @@
 
 <body>
 
-    <nav class="container-fuild has-static d-flex align-items-center">
+    <div id="outer">
 
-        <div class="container">
+        <nav class="container-fuild has-static d-flex align-items-center">
 
-            <ul class="list-inline row d-flex m-0">
+            <div class="container">
 
-                <li class="list-inline-item col-12 col-lg-16 m-0">
+                <ul class="list-inline row d-flex m-0">
 
-                    <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
+                    <li class="list-inline-item col-12 col-lg-16 m-0">
 
-                    <span class="d-sm-none pb-3 me-2"> D.C </span>
+                        <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
 
-                </li>
+                        <span class="d-sm-none pb-3 me-2"> D.C </span>
 
-                <li class="list-inline-item align-self-end col-36 col-lg-32">
+                    </li>
 
-                    <ul class="list-inline d-flex justify-content-around justify-content-md-between">
+                    <li class="list-inline-item align-self-end col-36 col-lg-32">
 
-                        <li class="list-inline-item">
+                        <ul class="list-inline d-flex justify-content-around justify-content-md-between">
 
-                            <a class="navigation-anchor px-0 pb-3" href="./"> Work </a>
+                            <li class="list-inline-item">
 
-                        </li>
+                                <a class="navigation-anchor px-0 pb-3" href="./"> Work </a>
 
-                        <li class="list-inline-item">
+                            </li>
 
-                            <a class="active navigation-anchor px-0 pb-3" href="./about.php"> About </a>
+                            <li class="list-inline-item">
 
-                        </li>
+                                <a class="active navigation-anchor px-0 pb-3" href="./about.php"> About </a>
 
-                        <li class="list-inline-item">
+                            </li>
 
-                            <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                            <li class="list-inline-item">
 
-                        </li>
+                                <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
-                    </ul>
+                            </li>
 
-                </li>
+                        </ul>
 
-            </ul>
+                    </li>
 
-        </div>
+                </ul>
 
-    </nav>
+            </div>
 
-    <main class="about-main pt-10 pb-12 pb-lg-14 pt-lg-14">
+        </nav>
 
-        <section class="container">
+        <main class="about-main pt-10 pb-12 pb-lg-14 pt-lg-14">
 
-            <div class="row justify-content-center justify-content-md-between">
+            <section class="container">
 
-                <div class="col-lg-12 d-none d-lg-block">
+                <div class="row justify-content-center justify-content-md-between">
 
-                    <img src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                    <div class="col-lg-12 d-none d-lg-block">
 
-                </div>
+                        <img src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
-                <div class="col-48 col-lg-32">
+                    </div>
 
-                    <div class="row justify-content-between">
+                    <div class="col-48 col-lg-32">
 
-                        <div class="col-48 col-md-25 col-lg-20">
+                        <div class="row justify-content-between">
 
-                            <h1 class="mb-3"> G'day </h1>
+                            <div class="col-48 col-md-25 col-lg-20">
 
-                            <p class="mb-9">
+                                <h1 class="mb-3"> G'day </h1>
 
-                                Try get it right... Try try again
+                                <p class="mb-9">
 
-                            </p>
-   
-                            <img class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                                    Try get it right... Try try again
 
-                            <h2 class="mb-3"> Qualifications </h2>
+                                </p>
+    
+                                <img class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
-                            <p class="mb-9">
+                                <h2 class="mb-3"> Qualifications </h2>
 
-                                Certificate 4
-                                <br />
-                                ICT40315 Web Based Technologies
-                                <br />
-                                <br />
-                                2021
-                                <br />
-                                <br />
-                                Diploma
-                                <br />
-                                ICT50220-AC26 Diploma of Information Technology (Front End Web Development)
-                                <br />
-                                <br />
-                                2022
+                                <p class="mb-9">
 
-                            </p>
+                                    Certificate 4
+                                    <br />
+                                    ICT40315 Web Based Technologies
+                                    <br />
+                                    <br />
+                                    2021
+                                    <br />
+                                    <br />
+                                    Diploma
+                                    <br />
+                                    ICT50220-AC26 Diploma of Information Technology (Front End Web Development)
+                                    <br />
+                                    <br />
+                                    2022
 
-                            <h2 class="mb-3"> Recent partners </h2>
+                                </p>
 
-                            <p class="mb-9">
+                                <h2 class="mb-3"> Recent partners </h2>
 
-                                Lateral Aspect
+                                <p class="mb-9">
 
-                            </p>
+                                    Lateral Aspect
 
-                        </div>
+                                </p>
 
-                        <div class="col-48 col-md-16 col-lg-20">
+                            </div>
 
-                            <div class="row justify-content-between">
+                            <div class="col-48 col-md-16 col-lg-20">
 
-                                <div class="col-24 col-md-48 order-2 order-md-1">
+                                <div class="row justify-content-between">
 
-                                    <h2 class="mb-3"> Favourites </h2>
+                                    <div class="col-24 col-md-48 order-2 order-md-1">
 
-                                    <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub <i class="fa-regular fa-heart"></i> </a>
+                                        <h2 class="mb-3"> Favourites </h2>
 
-                                    <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
+                                        <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub <i class="fa-regular fa-heart"></i> </a>
 
-                                    <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
+                                        <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
 
-                                </div>
+                                        <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
 
-                                <div class="col-24 col-md-48 order-1 order-md-2">
+                                    </div>
 
-                                    <h2 class="mb-3"> Socials </h2>
+                                    <div class="col-24 col-md-48 order-1 order-md-2">
 
-                                    <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
-                                    
-                                </div>
+                                        <h2 class="mb-3"> Socials </h2>
 
-                                <div class="col-48 order-3">
+                                        <a class="mb-3 d-block" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+                                        
+                                    </div>
 
-                                    <h2 class="mb-3"> Contact </h2>
+                                    <div class="col-48 order-3">
 
-                                    <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
+                                        <h2 class="mb-3"> Contact </h2>
 
-                                    <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                        <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
+
+                                        <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+
+                                    </div>
 
                                 </div>
 
                             </div>
 
                         </div>
+            
+                    </div>
+
+                </div>
+                
+            </section>
+
+        </main>
+
+        <footer class="py-11">
+
+            <div class="container">
+
+                <div class="row d-flex justify-content-around align-items-center">
+
+                    <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
+
+                        <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> <i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+
+                        <li class="me-md-8 order-1 order-md-2"> <a class="navigation-anchor px-0 py-3" href="./"> Work </a> </li>
+
+                        <li class="me-md-8 order-2 order-md-3"> <a class="active navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
+
+                        <li class="order-3 order-md-4">
+                
+                            <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
+
+                        <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
 
                     </div>
-        
-                </div>
-
-            </div>
-            
-        </section>
-
-    </main>
-
-    <footer class="py-11">
-
-        <div class="container">
-
-            <div class="row d-flex justify-content-around align-items-center">
-
-                <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
-
-                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> <i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
-
-                    <li class="me-md-8 order-1 order-md-2"> <a class="navigation-anchor px-0 py-3" href="./"> Work </a> </li>
-
-                    <li class="me-md-8 order-2 order-md-3"> <a class="active navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
-
-                    <li class="order-3 order-md-4">
-            
-                        <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
-
-                    </li>
-
-                </ul>
-
-                <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
-
-                    <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
 
                 </div>
-
+                
             </div>
-            
-        </div>
 
-    </footer>
+        </footer>
+
+    </div>
 
     <script src="./js/app.min.js" defer></script>
 

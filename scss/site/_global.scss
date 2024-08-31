@@ -7,7 +7,6 @@ body {
     font-family: $font;
     overflow-y: scroll;
     background-color: $color_3;
-    padding-top: 155.5px;
 }
 
 .copy-tooltip {
@@ -74,4 +73,34 @@ body {
 
 main {
     background-color: $color_2;
+}
+
+#outer {
+    position: relative;
+    padding-top: 155.5px;
+    &::before {
+        content: " ";
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        animation: intro 0.375s ease-in;
+        animation-fill-mode: forwards;
+        will-change: background-color;
+    }
+}
+
+@keyframes intro {
+    0% {
+        background-color: $color_2;
+        z-index: 1001;
+    }
+    99% {
+        z-index: 1001;
+    }
+    100% {
+        background-color: transparent;
+        z-index: -1;
+    }
 }

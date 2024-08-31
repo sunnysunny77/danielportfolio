@@ -15,72 +15,90 @@
 
 <body>
 
-    <nav class="container-fuild has-static d-flex align-items-center">
+    <div id="outer">
 
-        <div class="container">
+        <nav class="container-fuild has-static d-flex align-items-center">
 
-            <ul class="list-inline row d-flex m-0">
+            <div class="container">
 
-                <li class="list-inline-item col-12 col-lg-16 m-0">
+                <ul class="list-inline row d-flex m-0">
 
-                    <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
+                    <li class="list-inline-item col-12 col-lg-16 m-0">
 
-                    <span class="d-sm-none pb-3 me-2"> D.C </span>
+                        <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
 
-                </li>
+                        <span class="d-sm-none pb-3 me-2"> D.C </span>
 
-                <li class="list-inline-item align-self-end col-36 col-lg-32">
+                    </li>
 
-                    <ul class="list-inline d-flex justify-content-around justify-content-md-between">
+                    <li class="list-inline-item align-self-end col-36 col-lg-32">
 
-                        <li class="list-inline-item">
+                        <ul class="list-inline d-flex justify-content-around justify-content-md-between">
 
-                            <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
+                            <li class="list-inline-item">
 
-                        </li>
+                                <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
 
-                        <li class="list-inline-item">
+                            </li>
 
-                            <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
+                            <li class="list-inline-item">
 
-                        </li>
+                                <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
 
-                        <li class="list-inline-item">
+                            </li>
 
-                            <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                            <li class="list-inline-item">
 
-                        </li>
+                                <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
-                    </ul>
+                            </li>
 
-                </li>
+                        </ul>
 
-            </ul>
+                    </li>
 
-        </div>
+                </ul>
 
-    </nav>
+            </div>
 
-    <header class="container-fluid pt-7 pt-lg-12">
+        </nav>
 
-        <section class="container work-section pb-12 pb-lg-13">
+        <header class="container-fluid pt-7 pt-lg-12">
 
-            <div class="row">
+            <section class="container work-section pb-12 pb-lg-13">
 
-                <div class="col-48 col-lg-16 pe-lg-5">
+                <div class="row">
 
-                    <div class="mb-11 mb-lg-5">
+                    <div class="col-48 col-lg-16 pe-lg-5">
 
-                        <?php
+                        <div class="mb-11 mb-lg-5">
 
-                            date_default_timezone_set("Australia/Perth");
-                            echo  date("g:i a") . " &mdash; Perth";
-                            
-                        ?>
+                            <?php
+
+                                date_default_timezone_set("Australia/Perth");
+                                echo  date("g:i a") . " &mdash; Perth";
+                                
+                            ?>
+
+                        </div>
+
+                        <div class="d-none d-lg-block">
+
+                            <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
+
+                            <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+
+                        </div>
 
                     </div>
 
-                    <div class="d-none d-lg-block">
+                    <h1 class="col-48 col-lg-32 slogan pe-5 pe-lg-9 mb-11 mb-lg-0">
+
+                        Web development partner for digital experiences and solutions.
+
+                    </h1>
+
+                    <div class="d-lg-none">
 
                         <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
@@ -90,387 +108,373 @@
 
                 </div>
 
-                <h1 class="col-48 col-lg-32 slogan pe-5 pe-lg-9 mb-11 mb-lg-0">
+            </section>
 
-                    Web development partner for digital experiences and solutions.
+        </header>
 
-                </h1>
+        <main class="work-main py-12 py-lg-14">
 
-                <div class="d-lg-none">
+            <section class="container">
 
-                    <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
+                <div class="row justify-content-md-between">
 
-                    <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                    <div class="col-48 col-md-16 col-lg-11">
+
+                        <h2 class="mb-3">
+                            
+                            Furniture Warehouse
+
+                        </h2>
+
+                        <hr class="mb-5 mb-md-2">
+                        
+                        <p class="mb-1">
+                            
+                            Design copy
+
+                        </p> 
+
+                        <a class="d-inline-block mb-6" target="Furniture" href="https://furniture.sunnyhome.site/">Visit</a>
+
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+
+                        <img src="./images/furniture.webp" width="760" height="475" alt="Furniture" />
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="has-move row justify-content-md-between">
 
-        </section>
+                    <div class="col-48 col-md-16 col-lg-11">
 
-    </header>
+                        <h2 class="mb-3">
+                            
+                            Fasera
 
-    <main class="work-main py-12 py-lg-14">
+                        </h2>
 
-        <section class="container">
-
-            <div class="row justify-content-md-between">
-
-                <div class="col-48 col-md-16 col-lg-11">
-
-                    <h2 class="mb-3">
+                        <hr class="mb-5 mb-md-2">
                         
-                        Furniture Warehouse
+                        <p class="mb-1">
+                            
+                            Wordpress theme
+                            <br>
+                            © Lateral Aspect
+                            <br>
+                            Design copy
 
-                    </h2>
+                        </p> 
 
-                    <hr class="mb-5 mb-md-2">
+                        <a class="d-inline-block mb-6" target="Fasera" href="https://www.fasera.com/">Visit</a>
+
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+
+                        <img src="./images/fasera.webp" width="760" height="475" alt="Fasera" />
+
+                    </div>
+
+                </div>
+
+                <div class="has-move row justify-content-md-between">
+
+                    <div class="col-48 col-md-16 col-lg-11">
+
+                        <h2 class="mb-3">
+                            
+                            Access Robotics
+
+                        </h2>
+
+                        <hr class="mb-5 mb-md-2">
+
+                        <p class="mb-1">
+                            
+                            Wordpress theme
+                            <br>
+                            © Lateral Aspect
+                            <br>
+                            Design copy
+
+                        </p> 
+
+                        <a class="d-inline-block mb-6" target="Access Robotics" href="https://access.vm1.lateralaspect.com.au/">Visit</a>
+
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+
+                        <img src="./images/access.webp" width="760" height="475" alt="Access Robotics" />
+
+                    </div>
+
+                </div>
+
+                <div class="has-move row justify-content-md-between">
+
+                    <div class="col-48 col-md-16 col-lg-11">
+
+                        <h2 class="mb-3">
+                            
+                            Daves Blog
+
+                        </h2>
+
+                        <hr class="mb-5 mb-md-2">
+
+                        <p class="mb-1">
+                            
+                            Design copy
+                            <br>
+                            MVC - OOP - SQL - CMS
+                            <br> 
+                            PHP template
+                            <br>
+                            Admin:
+                            <br>
+                            <button class="copy-tooltip"> Username <span class="d-none"> demo </span> </button>
+                            <br>
+                            <button class="copy-tooltip"> Password <span class="d-none"> demo </span> </button>
                     
-                    <p class="mb-1">
-                        
-                        Design copy
+                        </p> 
 
-                    </p> 
+                        <a class="d-inline-block mb-6" target="Daves Blog" href="https://davesblog.sunnyhome.site/">Visit</a>
 
-                    <a class="d-inline-block mb-6" target="Furniture" href="https://furniture.sunnyhome.site/">Visit</a>
+                    </div>
 
-                </div>
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+                        <img src="./images/daves.webp" width="760" height="475" alt="Daves Blog" />
 
-                    <img src="./images/furniture.webp" width="760" height="475" alt="Furniture" />
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="has-move row justify-content-md-between">
 
-            <div class="has-move row justify-content-md-between">
+                    <div class="col-48 col-md-16 col-lg-11">
 
-                <div class="col-48 col-md-16 col-lg-11">
+                        <h2 class="mb-3">
+                            
+                            Business
 
-                    <h2 class="mb-3">
-                        
-                        Fasera
+                        </h2>
 
-                    </h2>
+                        <hr class="mb-5 mb-md-2">
 
-                    <hr class="mb-5 mb-md-2">
-                    
-                    <p class="mb-1">
-                        
-                        Wordpress theme
-                        <br>
-                        © Lateral Aspect
-                        <br>
-                        Design copy
+                        <p class="mb-1">
+                            
+                            Homepage
 
-                    </p> 
+                        </p> 
 
-                    <a class="d-inline-block mb-6" target="Fasera" href="https://www.fasera.com/">Visit</a>
+                        <a class="d-inline-block mb-6" target="Business" href="https://business.sunnyhome.site/">Visit</a>
 
-                </div>
+                    </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                    <img src="./images/fasera.webp" width="760" height="475" alt="Fasera" />
+                        <img src="./images/business.webp" width="760" height="475" alt="Business" />
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="has-move row justify-content-md-between">
 
-            <div class="has-move row justify-content-md-between">
+                    <div class="col-48 col-md-16 col-lg-11">
 
-                <div class="col-48 col-md-16 col-lg-11">
+                        <h2 class="mb-3">
+                            
+                            Candid Cleaning
 
-                    <h2 class="mb-3">
-                        
-                        Access Robotics
+                        </h2>
 
-                    </h2>
+                        <hr class="mb-5 mb-md-2">
 
-                    <hr class="mb-5 mb-md-2">
+                        <p class="mb-1">    
+                            
+                            React/JSX - NodeJS - Mongo
+                            <br>
+                            SASS
+                            <br>
+                            Material UI
+                            <br>
+                            Googleapis OAUTH email
+                            <br>
+                            Google drive used as CMS
 
-                    <p class="mb-1">
-                        
-                        Wordpress theme
-                        <br>
-                        © Lateral Aspect
-                        <br>
-                        Design copy
+                        </p> 
 
-                    </p> 
+                        <a class="d-inline-block mb-6" target="Candid Cleaning" href="https://candidcleaning.sunnyhome.site/">Visit</a>
 
-                    <a class="d-inline-block mb-6" target="Access Robotics" href="https://access.vm1.lateralaspect.com.au/">Visit</a>
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+
+                        <img src="./images/candid.webp" width="760" height="475" alt="Candid Cleaning" />
+
+                    </div>
 
                 </div>
 
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+                <div class="has-move row justify-content-md-between">
 
-                    <img src="./images/access.webp" width="760" height="475" alt="Access Robotics" />
+                    <div class="col-48 col-md-16 col-lg-11">
+
+                        <h2 class="mb-3">
+                            
+                            Weather App
+
+                        </h2>
+
+                        <hr class="mb-5 mb-md-2">
+
+                        <p class="mb-1">    
+                            
+                            Weather App
+                            <br>
+                            PHP - XML
+                            <br>
+                            PWA
+
+                        </p> 
+
+                        <a class="d-inline-block mb-6" target="Weather App" href="https://sticky.sunnyhome.site/">Visit</a>
+
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+
+                        <img src="./images/weather.webp" width="760" height="475" alt="Weather App" />
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="has-move row justify-content-md-between">
 
-            <div class="has-move row justify-content-md-between">
+                    <div class="col-48 col-md-16 col-lg-11">
 
-                <div class="col-48 col-md-16 col-lg-11">
+                        <h2 class="mb-3">
+                            
+                            Sliders
 
-                    <h2 class="mb-3">
-                        
-                        Daves Blog
+                        </h2>
 
-                    </h2>
+                        <hr class="mb-5 mb-md-2">
 
-                    <hr class="mb-5 mb-md-2">
+                        <p class="mb-1">    
+                            
+                            Eight slider demo's
+                            <br>
+                            PWA service worker
+                            <br>
+                            Mozilla observatory A+
+                            <br>
+                            SSL A+
+                            <br>
+                            JavaScript SCSS minifier
 
-                    <p class="mb-1">
-                        
-                        Design copy
-                        <br>
-                        MVC - OOP - SQL - CMS
-                        <br> 
-                        PHP template
-                        <br>
-                        Admin:
-                        <br>
-                        <button class="copy-tooltip"> Username <span class="d-none"> demo </span> </button>
-                        <br>
-                        <button class="copy-tooltip"> Password <span class="d-none"> demo </span> </button>
+                        </p> 
+
+                        <a class="d-inline-block mb-6" target="Sliders" href="https://sliders.sunnyhome.site/">Visit</a>
+
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+
+                        <img src="./images/sliders.webp" width="760" height="475" alt="Sliders" />
+
+                    </div>
+
+                </div>
+
+                <div class="has-move row justify-content-md-between">
+
+                    <div class="col-48 col-md-16 col-lg-11">
+
+                        <h2 class="mb-3">
+                            
+                            Login App
+
+                        </h2>
+
+                        <hr class="mb-5 mb-md-2">
+
+                        <p class="mb-1">    
+                            
+                            React/JSX - PHP - Cookies
+                            <br>
+                            Mozilla observatory A+
+                            <br>
+                            SSL A+
+                            <br>
+                            Caputcha signup
+                            <br>
+                            PayPal sandbox:
+                            <br>
+                            <button class="copy-tooltip"> Username <span class="d-none"> sb-iyl4x21604127@personal.example.com </span> </button>
+                            <br>
+                            <button class="copy-tooltip"> Password <span class="d-none"> *]T0%Ae8 </span> </button>
+
+                        </p> 
+
+                        <a class="d-inline-block mb-6" target="Login App" href="https://login.sunnyhome.site/">Visit</a>
+
+                    </div>
+
+                    <div class="col-48 col-md-26 col-lg-32">
+
+                        <img src="./images/login.webp" width="760" height="475" alt="Login App" />
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="py-11">
+
+            <div class="container">
+
+                <div class="row d-flex justify-content-around align-items-center">
+
+                    <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
+
+                        <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> <i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
+
+                        <li class="me-md-8 order-1 order-md-2"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
+
+                        <li class="me-md-8 order-2 order-md-3"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
+
+                        <li class="order-3 order-md-4">
                 
-                    </p> 
+                            <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
 
-                    <a class="d-inline-block mb-6" target="Daves Blog" href="https://davesblog.sunnyhome.site/">Visit</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
+
+                        <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+
+                    </div>
 
                 </div>
-
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                    <img src="./images/daves.webp" width="760" height="475" alt="Daves Blog" />
-
-                </div>
-
+                
             </div>
 
-            <div class="has-move row justify-content-md-between">
-
-                <div class="col-48 col-md-16 col-lg-11">
-
-                    <h2 class="mb-3">
-                        
-                        Business
-
-                    </h2>
-
-                    <hr class="mb-5 mb-md-2">
-
-                    <p class="mb-1">
-                        
-                        Homepage
-
-                    </p> 
-
-                    <a class="d-inline-block mb-6" target="Business" href="https://business.sunnyhome.site/">Visit</a>
-
-                </div>
-
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                    <img src="./images/business.webp" width="760" height="475" alt="Business" />
-
-                </div>
-
-            </div>
-
-            <div class="has-move row justify-content-md-between">
-
-                <div class="col-48 col-md-16 col-lg-11">
-
-                    <h2 class="mb-3">
-                        
-                        Candid Cleaning
-
-                    </h2>
-
-                    <hr class="mb-5 mb-md-2">
-
-                    <p class="mb-1">    
-                        
-                        React/JSX - NodeJS - Mongo
-                        <br>
-                        SASS
-                        <br>
-                        Material UI
-                        <br>
-                        Googleapis OAUTH email
-                        <br>
-                        Google drive used as CMS
-
-                    </p> 
-
-                    <a class="d-inline-block mb-6" target="Candid Cleaning" href="https://candidcleaning.sunnyhome.site/">Visit</a>
-
-                </div>
-
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                    <img src="./images/candid.webp" width="760" height="475" alt="Candid Cleaning" />
-
-                </div>
-
-            </div>
-
-            <div class="has-move row justify-content-md-between">
-
-                <div class="col-48 col-md-16 col-lg-11">
-
-                    <h2 class="mb-3">
-                        
-                        Weather App
-
-                    </h2>
-
-                    <hr class="mb-5 mb-md-2">
-
-                    <p class="mb-1">    
-                        
-                        Weather App
-                        <br>
-                        PHP - XML
-                        <br>
-                        PWA
-
-                    </p> 
-
-                    <a class="d-inline-block mb-6" target="Weather App" href="https://sticky.sunnyhome.site/">Visit</a>
-
-                </div>
-
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                    <img src="./images/weather.webp" width="760" height="475" alt="Weather App" />
-
-                </div>
-
-            </div>
-
-            <div class="has-move row justify-content-md-between">
-
-                <div class="col-48 col-md-16 col-lg-11">
-
-                    <h2 class="mb-3">
-                        
-                        Sliders
-
-                    </h2>
-
-                    <hr class="mb-5 mb-md-2">
-
-                    <p class="mb-1">    
-                        
-                        Eight slider demo's
-                        <br>
-                        PWA service worker
-                        <br>
-                        Mozilla observatory A+
-                        <br>
-                        SSL A+
-                        <br>
-                        JavaScript SCSS minifier
-
-                    </p> 
-
-                    <a class="d-inline-block mb-6" target="Sliders" href="https://sliders.sunnyhome.site/">Visit</a>
-
-                </div>
-
-                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                    <img src="./images/sliders.webp" width="760" height="475" alt="Sliders" />
-
-                </div>
-
-            </div>
-
-            <div class="has-move row justify-content-md-between">
-
-                <div class="col-48 col-md-16 col-lg-11">
-
-                    <h2 class="mb-3">
-                        
-                        Login App
-
-                    </h2>
-
-                    <hr class="mb-5 mb-md-2">
-
-                    <p class="mb-1">    
-                        
-                        React/JSX - PHP - Cookies
-                        <br>
-                        Mozilla observatory A+
-                        <br>
-                        SSL A+
-                        <br>
-                        Caputcha signup
-                        <br>
-                        PayPal sandbox:
-                        <br>
-                        <button class="copy-tooltip"> Username <span class="d-none"> sb-iyl4x21604127@personal.example.com </span> </button>
-                        <br>
-                        <button class="copy-tooltip"> Password <span class="d-none"> *]T0%Ae8 </span> </button>
-
-                    </p> 
-
-                    <a class="d-inline-block mb-6" target="Login App" href="https://login.sunnyhome.site/">Visit</a>
-
-                </div>
-
-                <div class="col-48 col-md-26 col-lg-32">
-
-                    <img src="./images/login.webp" width="760" height="475" alt="Login App" />
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer class="py-11">
-
-        <div class="container">
-
-            <div class="row d-flex justify-content-around align-items-center">
-
-                <ul class="col-48 col-md-32 list-unstyled d-flex flex-column flex-md-row align-items-md-center flex-fill m-0">
-
-                    <li class="bold text-center order-4 order-md-1 py-md-3 mt-3 mt-md-0 me-md-8"> <i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?>&nbsp;D.COSTELLO </li>
-
-                    <li class="me-md-8 order-1 order-md-2"> <a class="active navigation-anchor px-0 py-3" href="./"> Work </a> </li>
-
-                    <li class="me-md-8 order-2 order-md-3"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
-
-                    <li class="order-3 order-md-4">
-            
-                        <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
-
-                    </li>
-
-                </ul>
-
-                <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
-
-                    <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
-
-                </div>
-
-            </div>
-            
-        </div>
-
-    </footer>
+        </footer>
+        
+    </div>  
 
     <script src="./js/app.min.js" defer></script>
 
