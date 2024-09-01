@@ -17,7 +17,7 @@
 
     <div id="outer">
 
-        <nav class="container-fuild has-static d-flex align-items-center">
+        <nav class="container-fuild d-flex align-items-center">
 
             <div class="container">
 

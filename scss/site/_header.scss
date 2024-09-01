@@ -9,12 +9,7 @@ nav {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.067em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     padding: 60px 0;
-    z-index: 1000;
     &.has-fixed {
         position: fixed;
         top: 0;
@@ -22,10 +17,10 @@ nav {
         left: 0;
         padding: 15px 0 5px 0;
         z-index: 999;
-        height: 55.5px;
+        transition: top 0.375s, background-color 0.5s, min-height 1s;
+        will-change: top, min-height;
+        min-height: 55.5px;
         background-color: transparentize($color_3, 0.15);
-        transition: top 0.375s, background-color 0.5s, height 1s;
-        will-change: top, background-color, height;
         button::before {
             background-color: $color_5;
             color: $color_2;
@@ -38,8 +33,13 @@ nav {
         }
     }
     &.has-top {
-        top: -67px;
+        position: fixed;
+        padding: 15px 0 5px 0;
         background-color: $color_2;
+        top: -55.5px;
+        right: 0;
+        left: 0;
+        min-height: 0;
         height: 0;
     }
     a {

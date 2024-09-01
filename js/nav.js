@@ -4,8 +4,9 @@ export const nav = () => {
 
     const nav = document.querySelector("nav");
     const main = document.querySelector("main");
+    const outer = document.querySelector("#outer");
 
-    if (!nav || !main) {
+    if (!nav || !main || !outer) {
 
       return;
     }
@@ -18,6 +19,7 @@ export const nav = () => {
 
       if (window.innerWidth > 992) {
 
+        outer.style.paddingTop = 0;
         nav.classList.remove("has-top");
         nav.classList.remove("has-fixed");
         return;
@@ -42,9 +44,11 @@ export const nav = () => {
         nav.classList.add("has-fixed");
       } else if (scrollY > main.offsetTop && positive) {
 
+        outer.style.paddingTop = "155.5px";
         nav.classList.add("has-top");
       } else if (nav.classList.contains("has-top") || nav.classList.contains("has-fixed")) {
 
+        outer.style.paddingTop = 0;
         nav.classList.remove("has-top");
         nav.classList.remove("has-fixed");
       }
