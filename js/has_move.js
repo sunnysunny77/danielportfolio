@@ -2,11 +2,16 @@ import { events, get_position } from "./utillites.js";
 
 const has_move_init = (index) => {
 
-  let scrollY = window.scrollY + window.innerHeight;
+  if (get_position(index) >  window.innerHeight) {
 
-  if (scrollY > get_position(index)) {
+    index.classList.add("has-move");
 
-    index.classList.add("has-bottom");
+    let scrollY = window.scrollY + window.innerHeight;
+
+    if (scrollY > get_position(index)) {
+
+      index.classList.add("has-bottom");
+    }
   }
 };
 
@@ -21,14 +26,16 @@ export const has_move = () => {
 
     for (const index of obj) {
 
-      if (get_position(index) >  window.innerHeight) {
-
-        index.classList.add("has-move");
-
         events(window, "scroll", () => {
 
           has_move_init(index);
         });
-      }
+
+        events(window, "resize", () => {
+
+          index.classList.remove("has-move");
+          index.classList.remove("has-bottom");
+          has_move_init(index);
+        });
     }
 };
