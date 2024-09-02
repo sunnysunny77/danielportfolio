@@ -25,9 +25,9 @@
 
                     <li class="list-inline-item col-12 col-lg-16 m-0">
 
-                        <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
+                        <span class="d-none d-sm-block pb-3 me-2"> <span class="blink"></span> D.Costello </span>
 
-                        <span class="d-sm-none pb-3 me-2"> D.C </span>
+                        <span class="d-sm-none pb-3 me-2"> <span class="blink"></span> D.C </span>
 
                     </li>
 
@@ -63,7 +63,7 @@
 
         </nav>
 
-        <main class="about-main pt-10 pb-12 pb-lg-14 pt-lg-14">
+        <main class="about-main pt-10 pb-12 pb-lg-15 pt-lg-14">
 
             <section class="container">
 
@@ -71,7 +71,7 @@
 
                     <div class="col-lg-12 d-none d-lg-block">
 
-                        <img src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                        <img data-aos="fade-right"  src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                     </div>
 
@@ -79,7 +79,7 @@
 
                         <div class="row justify-content-between">
 
-                            <div class="col-48 col-md-25 col-lg-20">
+                            <div data-aos="fade-up" class="col-48 col-md-25 col-lg-20">
 
                                 <h1 class="mb-3"> G'day </h1>
 
@@ -124,7 +124,7 @@
 
                             <hr class="d-md-none mb-9">
 
-                            <div class="col-48 col-md-16 col-lg-20">
+                            <div data-aos="fade-up" class="col-48 col-md-16 col-lg-20">
 
                                 <div class="row justify-content-between">
 

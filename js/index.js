@@ -10,6 +10,7 @@
 //import "../node_modules/bootstrap/js/dist/tab";
 ///import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
+import  AOS from "../node_modules/aos/dist/aos.js";
 import "../node_modules/@fortawesome/fontawesome-free/js/all.min.js";
 import { service_worker } from "./service_worker.js";
 import { events } from "./utillites.js";
@@ -20,6 +21,7 @@ import { preload } from "./preload.js";
 
 events(window, "load", () => {
 
+  AOS.init();
   preload();
   has_move();
   nav();

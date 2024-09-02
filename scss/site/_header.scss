@@ -65,4 +65,20 @@ nav {
             background-color: $color_6;
         }
     }
+    .blink {
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        margin: 0 0 2px 0;
+        animation: blink 1.25s infinite ease-out;
+    }
+}
+
+@keyframes blink {
+    0% {
+        background-color: $color_5;
+    }
+    100% {
+        background-color: transparent;
+    }
 }

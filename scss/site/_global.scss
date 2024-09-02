@@ -84,7 +84,7 @@ main {
         right: 0;
         bottom: 0;
         left: 0;
-        animation: intro 0.375s ease-in;
+        animation: intro 0.5s ease-out;
         will-change: background-color;
         z-index: -1;
     }
@@ -95,7 +95,6 @@ main {
         background-color: $color_2;
         z-index: 1001;
     }
-
     100% {
         z-index: 1001;
         background-color: transparent;

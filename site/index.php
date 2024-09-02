@@ -25,9 +25,9 @@
 
                     <li class="list-inline-item col-12 col-lg-16 m-0">
 
-                        <span class="d-none d-sm-block pb-3 me-2"> D.Costello </span>
+                        <span class="d-none d-sm-block pb-3 me-2"> <span class="blink"></span> D.Costello </span>
 
-                        <span class="d-sm-none pb-3 me-2"> D.C </span>
+                        <span class="d-sm-none pb-3 me-2"> <span class="blink"></span> D.C </span>
 
                     </li>
 
@@ -116,7 +116,7 @@
 
             <section class="container">
 
-                <div class="row justify-content-md-between">
+                <div id="has-move-query" class="row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
