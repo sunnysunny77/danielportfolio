@@ -21,7 +21,9 @@ import { preload } from "./preload.js";
 
 events(window, "load", () => {
 
-  AOS.init();
+  AOS.init({
+    once: true,
+   });
   preload();
   has_move();
   nav();

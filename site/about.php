@@ -71,7 +71,7 @@
 
                     <div class="col-lg-12 d-none d-lg-block">
 
-                        <img data-aos="fade-right"  src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                        <img data-aos="slide-right" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                     </div>
 
@@ -79,46 +79,59 @@
 
                         <div class="row justify-content-between">
 
-                            <div data-aos="fade-up" class="col-48 col-md-25 col-lg-20">
+                            <div class="col-48 col-md-25 col-lg-20">
 
-                                <h1 class="mb-3"> G'day </h1>
+                                <div data-aos="fade-up">
 
-                                <p class="mb-9">
+                                    <h1 class="mb-3"> G'day </h1>
 
-                                    Try get it right... Try try again
+                                    <p class="mb-9">
 
-                                </p>
+                                        Try get it right... Try try again
+
+                                    </p>
+
+                                </div>
     
-                                <img class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                                <img data-aos="slide-right" class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
-                                <h2 class="mb-3"> Qualifications </h2>
+                                <div data-aos="fade-up">
+                                        
+                                    <h2 class="mb-3"> Qualifications </h2>
 
-                                <p class="mb-9">
+                                    <p class="mb-9">
 
-                                    Certificate 4
-                                    <br />
-                                    ICT40315 Web Based Technologies
-                                    <br />
-                                    <br />
-                                    2021
-                                    <br />
-                                    <br />
-                                    Diploma
-                                    <br />
-                                    ICT50220-AC26 Diploma of Information Technology (Front End Web Development)
-                                    <br />
-                                    <br />
-                                    2022
+                                        Certificate 4
+                                        <br />
+                                        ICT40315 Web Based Technologies
+                                        <br />
+                                        <br />
+                                        2021
+                                        <br />
+                                        <br />
+                                        Diploma
+                                        <br />
+                                        ICT50220-AC26 Diploma of Information Technology (Front End Web Development)
+                                        <br />
+                                        <br />
+                                        2022
 
-                                </p>
+                                    </p>
 
-                                <h2 class="mb-3"> Recent partners </h2>
+                                </div>
 
-                                <p class="mb-9">
+                                <div data-aos="fade-left">
 
-                                    Lateral Aspect
+                                    <h2 class="mb-3"> Recent partners </h2>
 
-                                </p>
+                                    <p class="mb-9">
+
+                                        Lateral Aspect
+
+                                    </p>
+
+
+                                </div>
 
                             </div>
 
