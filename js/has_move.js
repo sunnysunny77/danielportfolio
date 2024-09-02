@@ -12,29 +12,23 @@ const has_move_init = (index) => {
 
 export const has_move = () => {
 
-    const obj = document.querySelectorAll(".has-move");
-    const query = document.querySelector("#has-move-query");
+    const obj = document.querySelectorAll(".has-test");
 
-    if (obj.length === 0 || !query) {
+    if (obj.length === 0) {
 
       return;
     }
 
-    if (get_position(query) >  window.innerHeight) {
-
-      query.classList.add("has-move");
-      
-      events(window, "scroll", () => {
-
-        has_move_init(query);
-      });
-    }
-
     for (const index of obj) {
 
-      events(window, "scroll", () => {
+      if (get_position(index) >  window.innerHeight) {
 
-        has_move_init(index);
-      });
+        index.classList.add("has-move");
+
+        events(window, "scroll", () => {
+
+          has_move_init(index);
+        });
+      }
     }
 };

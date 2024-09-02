@@ -116,7 +116,7 @@
 
             <section class="container">
 
-                <div id="has-move-query" class="row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -146,7 +146,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -180,7 +180,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -214,7 +214,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -254,7 +254,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -284,7 +284,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -322,7 +322,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -356,7 +356,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
@@ -394,7 +394,7 @@
 
                 </div>
 
-                <div class="has-move row justify-content-md-between">
+                <div class="has-test row justify-content-md-between">
 
                     <div class="col-48 col-md-16 col-lg-11">
 
