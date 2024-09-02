@@ -81,7 +81,7 @@
 
                             <div class="col-48 col-md-25 col-lg-20">
 
-                                <div data-aos="fade-up">
+                                <div data-aos="fade-right">
 
                                     <h1 class="mb-3"> G'day </h1>
 
@@ -91,10 +91,10 @@
 
                                     </p>
 
+                                    <img class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+
                                 </div>
     
-                                <img data-aos="slide-right" class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
-
                                 <div data-aos="fade-up">
                                         
                                     <h2 class="mb-3"> Qualifications </h2>
