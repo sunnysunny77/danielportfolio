@@ -63,7 +63,7 @@
 
         </nav>
 
-        <main class="about-main pt-10 pb-12 pb-lg-15 pt-lg-14">
+        <main class="about-main pt-10 pb-12 py-lg-14">
 
             <section class="container">
 

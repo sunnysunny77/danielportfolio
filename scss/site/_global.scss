@@ -73,6 +73,9 @@ body {
 
 main {
     background-color: $color_2;
+    min-height: calc(100vh - 155.5px);
+    display: flex;
+    align-items: center;
 }
 
 #outer {
