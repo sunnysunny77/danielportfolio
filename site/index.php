@@ -130,6 +130,8 @@
                         
                         <p class="mb-1">
                             
+                            Homepage
+                            <br>
                             Design copy
 
                         </p> 
