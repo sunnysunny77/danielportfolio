@@ -300,8 +300,6 @@
                             
                             React/JSX - NodeJS - Mongo
                             <br>
-                            SASS
-                            <br>
                             Material UI
                             <br>
                             Googleapis OAUTH email
