@@ -69,17 +69,17 @@
 
                 <div class="row justify-content-center justify-content-md-between">
 
-                    <div class="col-lg-12 d-none d-lg-block">
+                    <div class="col-xl-12 d-none d-xl-block">
 
                         <img data-aos="slide-right" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                     </div>
 
-                    <div class="col-48 col-lg-32">
+                    <div class="col-48 col-xl-32">
 
                         <div class="row justify-content-between">
 
-                            <div class="col-48 col-md-25 col-lg-20">
+                            <div class="col-48 col-md-25 col-xl-20">
 
                                 <div data-aos="fade-right">
 
@@ -91,10 +91,10 @@
 
                                     </p>
 
-                                    <img class="d-lg-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                                    <img class="d-xl-none mb-9" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                                 </div>
-    
+
                                 <div data-aos="fade-up">
                                         
                                     <h2 class="mb-3"> Qualifications </h2>
@@ -137,7 +137,7 @@
 
                             <hr class="d-md-none mb-9">
 
-                            <div data-aos="fade-up" class="col-48 col-md-16 col-lg-20">
+                            <div data-aos="fade-up" class="col-48 col-md-16 col-xl-20">
 
                                 <div class="row justify-content-between">
 
@@ -176,11 +176,11 @@
                             </div>
 
                         </div>
-            
+
                     </div>
 
                 </div>
-                
+
             </section>
 
         </main>
