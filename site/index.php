@@ -232,7 +232,7 @@
                             <br>
                             MVC - OOP - SQL - CMS
                             <br> 
-                            PHP template
+                            PHP API Template
                             <br>
                             Admin:
                             <br>
@@ -338,7 +338,7 @@
                             
                             Weather App
                             <br>
-                            PHP - XML
+                            XML
                             <br>
                             PWA
 
@@ -372,13 +372,7 @@
                             
                             Eight slider demo's
                             <br>
-                            PWA service worker
-                            <br>
-                            Mozilla observatory A+
-                            <br>
-                            SSL A+
-                            <br>
-                            JavaScript SCSS minifier
+                            JavaScript
 
                         </p> 
 
@@ -408,7 +402,9 @@
 
                         <p class="mb-1">    
                             
-                            React/JSX - PHP - Cookies
+                            React/JSX
+                            <br>
+                            PHP API - Cookie States  
                             <br>
                             Mozilla observatory A+
                             <br>
