@@ -412,6 +412,8 @@
                             <br>
                             Caputcha signup
                             <br>
+                            Email 2FA
+                            <br>
                             PayPal sandbox:
                             <br>
                             <button class="copy-tooltip"> Username <span class="d-none"> sb-iyl4x21604127@personal.example.com </span> </button>
