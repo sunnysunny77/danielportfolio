@@ -17,14 +17,12 @@ import { events } from "./utillites.js";
 import { copy_tooltip } from "./copy_tooltip.js";
 import { nav } from "./nav.js";
 import { has_move } from "./has_move.js";
-import { preload } from "./preload.js";
 
 events(window, "load", () => {
 
   AOS.init({
     once: true,
    });
-  preload();
   has_move();
   nav();
   copy_tooltip();

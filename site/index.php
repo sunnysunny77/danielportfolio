@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./js/preload.js"></script>
     <link rel="preload" href="./font/NunitoSans.ttf" as="font" type="font/ttf" crossorigin="" />
     <meta charset="utf-8" />
     <meta name="description" content="D.Costello Portfolio" />
