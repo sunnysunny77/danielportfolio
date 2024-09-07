@@ -371,7 +371,7 @@
 
                         <p class="mb-1">    
                             
-                            Eight slider demo's
+                            Nine slider demo's
                             <br>
                             JavaScript
 
