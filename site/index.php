@@ -11,7 +11,7 @@
     <title>Portfolio - Work</title>
     <link href="./css/app.min.css" rel="stylesheet" type="text/css" />
     <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="images/pwa-logo-small.png" />
+    <link rel="apple-touch-icon" href="images/pwa-logo-small.webp" />
 </head>
 
 <body>
