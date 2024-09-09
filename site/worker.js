@@ -10,17 +10,35 @@ self.addEventListener("install", function(event) {
         "./about.php",
         "./css/app.min.css",
         "./js/app.min.js",
-        "./font/NunitoSans.ttf"
+        "./font/NunitoSans.ttf",
+        "./webfonts/fa-regular-400.woff2",
+        "./images/furniture.webp", 
+        "./images/fasera.webp", 
+        "./images/access.webp", 
+        "./images/daves.webp", 
+        "./images/business.webp", 
+        "./images/candid.webp", 
+        "./images/weather.webp", 
+        "./images/sliders.webp", 
+        "./images/login.webp",
+        "./images/daniel.webp"
       ]);
     })
   );
 });
 
 self.addEventListener("fetch", event => {
-  
-  event.respondWith(
-      fetch(event.request).catch(() => {
+
+    event.respondWith(caches.open("v1").then((cache) => {
+
+        return fetch(event.request).then((networkResponse) => {
+
+          cache.put(event.request, networkResponse.clone());
+
+          return networkResponse;
+        }).catch(() => {
+
           return caches.match(event.request);
-      })
-  );
+      } );
+    }));
 });
