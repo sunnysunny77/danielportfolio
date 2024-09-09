@@ -19,9 +19,7 @@ import { has_move } from "./has_move.js";
 
 events(window, "load", () => {
 
-  AOS.init({
-    once: true,
-   });
+  AOS.init({once: true});
   has_move();
   nav();
   copy_tooltip();
