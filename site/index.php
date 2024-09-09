@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <script src="./js/preload.js"></script>
-    <link rel="preload" href="./font/NunitoSans.ttf" as="font" type="font/ttf" crossorigin="" />
     <meta charset="utf-8" />
     <meta name="description" content="D.Costello Portfolio" />
     <meta name="keywords" content="Web Developer, Front End Web Development" />
@@ -165,7 +164,7 @@
                             
                             Wordpress theme
                             <br>
-                            © Lateral Aspect
+                            <i class="fa-regular fa-copyright"></i> Lateral Aspect
                             <br>
                             Design copy
 
@@ -199,7 +198,7 @@
                             
                             Wordpress theme
                             <br>
-                            © Lateral Aspect
+                            <i class="fa-regular fa-copyright"></i> Lateral Aspect
                             <br>
                             Design copy
 

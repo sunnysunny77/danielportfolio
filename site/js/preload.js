@@ -1,9 +1,22 @@
-const preload_image = (url) => {
-  var img = new Image();
-  img.src = url;
+const preload = (href, as) => {
+  const preloadLink = document.createElement("link");
+  preloadLink.href = href;
+  preloadLink.rel = "preload";
+  preloadLink.as = as;
+  if (as === "font") {
+    preloadLink.crossOrigin = "true";
+  }
+  document.head.appendChild(preloadLink);
 };
 
-const urls_work = [
+const path = location.pathname;
+
+const fonts = [
+  "./font/NunitoSans.ttf",
+  "./webfonts/fa-regular-400.woff2"
+];
+
+const href_work = [
   "./images/furniture.webp", 
   "./images/fasera.webp", 
   "./images/access.webp", 
@@ -15,22 +28,28 @@ const urls_work = [
   "./images/login.webp"
 ];
 
-const urls_about = [
+const href_about = [
   "./images/daniel.webp", 
 ];
 
-const path = location.pathname;
-
 if(path.includes("about")) {
 
-  for (const url of urls_about) {
+  for (const index of fonts) {
 
-      preload_image(url);
+    preload(index, "font");
+  }
+  for (const index of href_about) {
+
+    preload(index, "font");
   }
 } else {
 
-  for (const url of urls_work) {
+  for (const index of fonts) {
 
-      preload_image(url);
+    preload(index, "font");
+  }
+  for (const index of href_work) {
+
+    preload(index, "font");
   }
 }
