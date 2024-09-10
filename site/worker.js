@@ -24,7 +24,6 @@ const cacheAssets = [
 self.addEventListener("install", (event) => {
   console.log("Service worker is installed");
 
-/* caching all the assets during install event, this is also known as precaching */
   event.waitUntil(
     caches
       .open(cacheName)
@@ -33,22 +32,6 @@ self.addEventListener("install", (event) => {
         cache.addAll(cacheAssets);
       })
       .then(() => self.skipWaiting())
-  );
-});
-
-self.addEventListener("activate", (event) => {
-  console.log("Service worker is activated");
-
-  // removes old caches
-  event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return cacheNames.map((cache) => {
-        if (cache !== cacheName) {
-          console.log("Clearing old caches");
-          caches.delete(cache);
-        }
-      });
-    })
   );
 });
 
