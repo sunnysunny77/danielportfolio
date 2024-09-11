@@ -1,7 +1,7 @@
 const version = 1;
 const cacheName = `portfolio-v${version}`;
 
-const cacheAssets = [
+const resources = [
   "./",
   "./index.php",
   "./about.php",
@@ -26,33 +26,60 @@ const cacheAssets = [
   "./images/pwa-logo.webp"
 ];
 
+const installResources = async (resources) => {
+
+  const cache = await caches.open(cacheName);
+  await cache.addAll(resources);
+};
+
 self.addEventListener("install", (event) => {
 
   console.log("Service worker is installed");
+  
+  self.skipWaiting();
 
-  event.waitUntil(caches.open(cacheName).then((cache) => {
-
-    console.log("Caching assets");
-    cache.addAll(cacheAssets);
-  }).then(() => {
-
-    self.skipWaiting();
-  }));
+  event.waitUntil(installResources(resources));
 });
+
+const first = async (req) => {
+
+  try {
+
+    const res = await fetch(req);
+
+    if (res) {
+
+      const cache = await caches.open(cacheName);
+
+      if (cache) {
+
+        cache.put(req, res.clone());
+      }
+
+      return res;
+    }
+
+  } catch (error) {
+
+    console.log(error);
+
+    const cache = await caches.match(req);
+      
+    if (cache) {
+
+      return cache;
+    }
+
+    return new Response("Network error happened", {
+      status: 408,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
+};
 
 self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
 
-  event.respondWith(fetch(event.request).then((networkResponse) => {
-    
-    return caches.open(cacheName).then((cache) => {
-
-      cache.put(event.request, networkResponse.clone());
-      return networkResponse;
-    });
-  }).catch(() => {
-    
-    return caches.match(event.request);
-  }));
+  event.respondWith(first(event.request));
 });
