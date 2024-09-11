@@ -5,8 +5,11 @@ const cacheAssets = [
   "./",
   "./index.php",
   "./about.php",
+  "./favicon.ico",
+  "./manifest.json",
   "./css/app.min.css",
   "./js/app.min.js",
+  "./js/preload.js",
   "./font/NunitoSans.ttf",
   "./webfonts/fa-regular-400.woff2",
   "./images/furniture.webp", 
@@ -18,7 +21,9 @@ const cacheAssets = [
   "./images/weather.webp", 
   "./images/sliders.webp", 
   "./images/login.webp",
-  "./images/daniel.webp"
+  "./images/daniel.webp",
+  "./images/pwa-logo-small.webp",
+  "./images/pwa-logo.webp"
 ];
 
 self.addEventListener("install", (event) => {
