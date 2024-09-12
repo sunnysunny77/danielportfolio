@@ -1,0 +1,34 @@
+#fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    min-height: 100vh;
+    width: 100%;
+    background-color: $color_3;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "NunitoSans";
+        color: $color_5;
+        margin: 0 0 1rem 0;
+    }
+    #go-back {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "NunitoSans";
+        border: 1px solid $color_5;
+        border-radius: 20px;
+        background: transparent;
+        outline: none;
+        color: $color_5;
+    }
+}
