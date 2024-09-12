@@ -23,7 +23,8 @@ const resources = [
   "./images/login.webp",
   "./images/daniel.webp",
   "./images/pwa-logo-small.webp",
-  "./images/pwa-logo.webp"
+  "./images/pwa-logo.webp",
+  "./fallback.php"
 ];
 
 const installResources = async (resources) => {
@@ -51,7 +52,9 @@ const first = async (req) => {
 
       const cache = await caches.open(cacheName);
 
-      if (cache) {
+      const match = await cache.match(req);
+
+      if (cache && match) {
 
         cache.put(req, res.clone());
       }
@@ -68,6 +71,13 @@ const first = async (req) => {
     if (cache) {
 
       return cache;
+    }
+
+    const fallback = await caches.match("./fallback.php");
+      
+    if (fallback) {
+
+      return fallback;
     }
 
     return new Response("Network error happened", {
