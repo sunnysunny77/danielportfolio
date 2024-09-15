@@ -204,7 +204,7 @@
 
                         </p> 
 
-                        <a class="d-inline-block mb-6" target="Access Robotics" href="https://access.vm1.lateralaspect.com.au/">Visit</a>
+                        <a class="d-inline-block mb-6" target="Access Robotics" href="https://accessrobotics.com.au/">Visit</a>
 
                     </div>
 
