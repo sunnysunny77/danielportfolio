@@ -12,6 +12,7 @@ const resources = [
   "./js/preload.js",
   "./font/NunitoSans.ttf",
   "./webfonts/fa-regular-400.woff2",
+  "./webfonts/fa-solid-900.woff2",
   "./images/furniture.webp", 
   "./images/fasera.webp", 
   "./images/access.webp", 
@@ -24,6 +25,15 @@ const resources = [
   "./images/daniel.webp",
   "./images/pwa-logo-small.webp",
   "./images/pwa-logo.webp",
+  "./videos/furniture.webp", 
+  "./videos/fasera.webp", 
+  "./videos/access.webp", 
+  "./videos/daves.webp", 
+  "./videos/business.webp", 
+  "./videos/candid.webp", 
+  "./videos/weather.webp", 
+  "./videos/sliders.webp", 
+  "./videos/login.webp",
   "./fallback.php"
 ];
 

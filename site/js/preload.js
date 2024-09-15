@@ -13,19 +13,13 @@ const path = location.pathname;
 
 const fonts = [
   "./font/NunitoSans.ttf",
-  "./webfonts/fa-regular-400.woff2"
+  "./webfonts/fa-regular-400.woff2",
+  "./webfonts/fa-solid-900.woff2"
 ];
 
 const href_work = [
   "./images/furniture.webp", 
   "./images/fasera.webp", 
-  "./images/access.webp", 
-  "./images/daves.webp", 
-  "./images/business.webp", 
-  "./images/candid.webp", 
-  "./images/weather.webp", 
-  "./images/sliders.webp", 
-  "./images/login.webp"
 ];
 
 const href_about = [
