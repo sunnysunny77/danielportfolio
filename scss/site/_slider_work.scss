@@ -103,7 +103,7 @@
     border: 1px solid $color_5;
     video {
         width: 100%;
-        height: fit-content;
+        height: 100%;
         object-fit: cover;
         clip-path: inset(4px 4px 4px 4px);
     }
