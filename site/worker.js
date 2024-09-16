@@ -71,7 +71,7 @@ const first = async (req) => {
     const res = await fetch(req);
 
     cache(req, res.clone());
-
+  
     return res;
 
   } catch (error) {
@@ -102,6 +102,10 @@ const first = async (req) => {
 self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
+
+  if (event.request.headers.has("range")) {
+    return;
+  }
 
   event.respondWith(first(event.request));
   
