@@ -25,15 +25,6 @@ const resources = [
   "./images/daniel.webp",
   "./images/pwa-logo-small.webp",
   "./images/pwa-logo.webp",
-  "./videos/furniture.mp4", 
-  "./videos/fasera.mp4", 
-  "./videos/access.mp4", 
-  "./videos/daves.mp4", 
-  "./videos/business.mp4", 
-  "./videos/candid.mp4", 
-  "./videos/weather.mp4", 
-  "./videos/sliders.mp4", 
-  "./videos/login.mp4",
   "./fallback.php"
 ];
 
