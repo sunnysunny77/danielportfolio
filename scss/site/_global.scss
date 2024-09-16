@@ -57,8 +57,7 @@ body {
         width: 0;
         transition: width 0.25s;
     }
-    &:hover,
-    &:focus {
+    &:hover {
         &::after {
             left: 0;
             width: 100%;

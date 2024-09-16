@@ -131,8 +131,7 @@
                 font-size: 22px;
                 color: $color_3;
                 transition: color 0.25s;
-                &:hover,
-                &:focus {
+                &:hover {
                     color: $color_6;
                 }
             }
