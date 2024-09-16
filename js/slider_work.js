@@ -1,22 +1,26 @@
 import { events } from "./utillites.js";
 
+let bool = [];
+
 const open = (event) => {
   const nav = document.querySelector("nav");
   const paddingRight =  window.innerWidth - document.body.offsetWidth;
   const target = event.currentTarget.getAttribute("aria-controls");
   const obj = document.querySelector(`#${target}`);
   const backdrop = obj.getAttribute("backdrop");
+  const index = obj.getAttribute("index");
   const video = obj.querySelector(".play");
   setTimeout(() => {
-    if (video.paused) {
-      video.play();
-    } else {
+    if (bool[index]) {
       video.load();
+    } else {
+      video.play();
     }
     events(video, "canplaythrough", () => {
-      if (!video.paused) {
-        video.play();
-      }
+        if (bool[index]) {
+          video.play();
+          bool[index] = false;
+        }
     });
   }, 1750);
   document.querySelector(`#${backdrop}`).classList.add("overlay-transition");
@@ -63,6 +67,7 @@ const next = (event) => {
   const controllsCurrent = event.currentTarget.getAttribute("controlls_current");
   const objPrevious = document.querySelector(`#${controllsPrevious}`);
   const objCurrent = document.querySelector(`#${controllsCurrent}`);
+  const indexCurrent = objCurrent.getAttribute("index");
   objPrevious.classList.remove("overlay-fixed") ||
   objPrevious.classList.remove("overlay-fixed-delay");
   document.body.classList.remove("overflow-hidden");
@@ -82,14 +87,15 @@ const next = (event) => {
   objCurrent.setAttribute("aria-expanded", true);
   const videoCurrent = objCurrent.querySelector(".play");
   setTimeout(() => {
-    if (videoCurrent.paused) {
-      videoCurrent.play();
-    } else {
+    if (bool[indexCurrent]) {
       videoCurrent.load();
+    } else {
+      videoCurrent.play();
     }
     events(videoCurrent, "canplaythrough", () => {
-      if (!videoCurrent.paused) {
+      if (bool[indexCurrent]) {
         videoCurrent.play();
+        bool[indexCurrent] = false;
       }
     });
   }, 1750);
@@ -112,14 +118,16 @@ export const slider_work = () => {
 
   for (let i = 0; i < overlay_open.length; i++) {
     overlay_open[i].setAttribute("aria-expanded", false);
-    overlay_open[i].setAttribute("aria-controls", `${overlay_body[i].id}`);
+    const string = `${overlay_body[i].id}`;
+    overlay_open[i].setAttribute("aria-controls", string);
     overlay_close[i].setAttribute("target", "overlay_open-" + i);
-    overlay_close[i].setAttribute("controlls", `${overlay_body[i].id}`);
+    overlay_close[i].setAttribute("controlls", string);
     overlay_body[i].setAttribute("backdrop", `${overlay_backdrop[i].id}`);
-
+    overlay_body[i].setAttribute("index", i);
+    bool[i] = true;
     if (overlay_next[i]) {
       overlay_next[i].setAttribute("target_previous", "overlay_open-" + i);
-      overlay_next[i].setAttribute("controlls_previous", `${overlay_body[i].id}`);
+      overlay_next[i].setAttribute("controlls_previous", string);
       const index = i + 1;
       overlay_next[i].setAttribute("target_current", "overlay_open-" + index);
       overlay_next[i].setAttribute("controlls_current", `${overlay_body[index].id}`);
@@ -130,7 +138,7 @@ export const slider_work = () => {
       overlay_prev[i].setAttribute("target_previous", "overlay_open-" + index);
       overlay_prev[i].setAttribute("controlls_previous", `${overlay_body[index].id}`);
       overlay_prev[i].setAttribute("target_current", "overlay_open-" + index);
-      overlay_prev[i].setAttribute("controlls_current", `${overlay_body[i].id}`);
+      overlay_prev[i].setAttribute("controlls_current", string);
     }
 
     events(overlay_open[i], "click", open);
