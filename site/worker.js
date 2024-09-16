@@ -32,7 +32,7 @@ const resources = [
   "./videos/business.mp4", 
   "./videos/candid.mp4", 
   "./videos/weather.mp4", 
-  "./videos/slider.mp4", 
+  "./videos/sliders.mp4", 
   "./videos/login.mp4",
   "./fallback.php"
 ];
