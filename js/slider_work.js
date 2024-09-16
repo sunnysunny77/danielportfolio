@@ -1,28 +1,18 @@
 import { events } from "./utillites.js";
 
-let bool = [];
-
 const open = (event) => {
   const nav = document.querySelector("nav");
   const paddingRight =  window.innerWidth - document.body.offsetWidth;
   const target = event.currentTarget.getAttribute("aria-controls");
   const obj = document.querySelector(`#${target}`);
   const backdrop = obj.getAttribute("backdrop");
-  const index = obj.getAttribute("index");
   const video = obj.querySelector(".play");
-  setTimeout(() => {
-    if (bool[index]) {
-      video.load();
-    } else {
+  video.load();
+  events(video, "canplaythrough", () => {
+    setTimeout(() => {
       video.play();
-    }
-    events(video, "canplaythrough", () => {
-        if (bool[index]) {
-          video.play();
-          bool[index] = false;
-        }
-    });
-  }, 1750);
+    }, 1750);
+  });
   document.querySelector(`#${backdrop}`).classList.add("overlay-transition");
   obj.classList.add("overlay-fixed");
   event.currentTarget.setAttribute("aria-expanded", true);
@@ -42,7 +32,6 @@ const close = (event) => {
   const video = obj.querySelector(".play");
   setTimeout(() => {
     video.pause();
-    video.currentTime = 0;
   }, 500);
   if (nav.classList.contains("has-fixed")) {
     nav.style.paddingRight = 0;
@@ -67,7 +56,6 @@ const next = (event) => {
   const controllsCurrent = event.currentTarget.getAttribute("controlls_current");
   const objPrevious = document.querySelector(`#${controllsPrevious}`);
   const objCurrent = document.querySelector(`#${controllsCurrent}`);
-  const indexCurrent = objCurrent.getAttribute("index");
   objPrevious.classList.remove("overlay-fixed") ||
   objPrevious.classList.remove("overlay-fixed-delay");
   document.body.classList.remove("overflow-hidden");
@@ -75,7 +63,6 @@ const next = (event) => {
   const videoPrevious = objPrevious.querySelector(".play");
   setTimeout(() => {
     videoPrevious.pause();
-    videoPrevious.currentTime = 0;
   }, 500);
   document.querySelector(`#${targetPrevious}`).setAttribute("aria-expanded", false);
   if (nav.classList.contains("has-fixed")) {
@@ -86,19 +73,12 @@ const next = (event) => {
   objCurrent.classList.add("overlay-fixed-delay");
   objCurrent.setAttribute("aria-expanded", true);
   const videoCurrent = objCurrent.querySelector(".play");
-  setTimeout(() => {
-    if (bool[indexCurrent]) {
-      videoCurrent.load();
-    } else {
+  videoCurrent.load();
+  events(videoCurrent, "canplaythrough", () => {
+    setTimeout(() => {
       videoCurrent.play();
-    }
-    events(videoCurrent, "canplaythrough", () => {
-      if (bool[indexCurrent]) {
-        videoCurrent.play();
-        bool[indexCurrent] = false;
-      }
-    });
-  }, 1750);
+    }, 1750);
+  });
   document.querySelector(`#${targetCurrent}`).setAttribute("aria-expanded", false);
 };
 
@@ -123,8 +103,6 @@ export const slider_work = () => {
     overlay_close[i].setAttribute("target", "overlay_open-" + i);
     overlay_close[i].setAttribute("controlls", string);
     overlay_body[i].setAttribute("backdrop", `${overlay_backdrop[i].id}`);
-    overlay_body[i].setAttribute("index", i);
-    bool[i] = true;
     
     if (overlay_next[i]) {
       overlay_next[i].setAttribute("target_previous", "overlay_open-" + i);
