@@ -28,6 +28,18 @@ const resources = [
   "./fallback.php"
 ];
 
+const videos = [
+  "./videos/furniture.mp4", 
+  "./videos/fasera.mp4", 
+  "./videos/access.mp4", 
+  "./videos/daves.mp4", 
+  "./videos/business.mp4", 
+  "./videos/candid.mp4", 
+  "./videos/weather.mp4", 
+  "./videos/sliders.mp4", 
+  "./videos/login.mp4",
+];
+
 const installResources = async (resources) => {
 
   const cache = await caches.open(cacheName);
@@ -40,7 +52,7 @@ self.addEventListener("install", (event) => {
   
   self.skipWaiting();
 
-  event.waitUntil(installResources(resources));
+  event.waitUntil(installResources(resources), installResources(videos));
 });
 
 const cache = async (req, res) => {
@@ -51,6 +63,39 @@ const cache = async (req, res) => {
   if (match) {
 
     await cache.put(req, res);
+  }
+};
+
+const video = async (req) => {
+
+  try {
+
+    const cache = await caches.match(req);
+      
+    if (cache) {
+
+      return cache;
+    }
+
+    const res = await fetch(req);
+  
+    return res;
+
+  } catch (error) {
+
+    console.log(error);
+
+    const cache = await caches.match(req);
+      
+    if (cache) {
+
+      return cache;
+    }
+
+    return new Response("Network error happened", {
+      status: 408,
+      headers: { "Content-Type": "text/plain" },
+    });
   }
 };
 
@@ -93,10 +138,11 @@ self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
 
-  if (event.request.headers.has("range")) {
-    return;
-  }
+  if (event.request.destination === "video") {
 
-  event.respondWith(first(event.request));
-  
+    event.respondWith(video(event.request));
+  } else {
+
+    event.respondWith(first(event.request));
+  }
 });
