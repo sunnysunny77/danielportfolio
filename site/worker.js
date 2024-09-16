@@ -37,7 +37,6 @@ const resources = [
   "./fallback.php"
 ];
 
-
 const installResources = async (resources) => {
 
   const cache = await caches.open(cacheName);
