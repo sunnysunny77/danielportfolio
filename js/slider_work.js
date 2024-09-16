@@ -125,6 +125,7 @@ export const slider_work = () => {
     overlay_body[i].setAttribute("backdrop", `${overlay_backdrop[i].id}`);
     overlay_body[i].setAttribute("index", i);
     bool[i] = true;
+    
     if (overlay_next[i]) {
       overlay_next[i].setAttribute("target_previous", "overlay_open-" + i);
       overlay_next[i].setAttribute("controlls_previous", string);
