@@ -70,13 +70,6 @@ const video = async (req) => {
 
   try {
 
-    const cache = await caches.match(req);
-      
-    if (cache) {
-
-      return cache;
-    }
-
     const res = await fetch(req);
   
     return res;
