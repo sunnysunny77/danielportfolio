@@ -27,5 +27,5 @@ events(window, "load", () => {
   has_move();
   nav();
   copy_tooltip();
-  //service_worker();
+  service_worker();
 });
