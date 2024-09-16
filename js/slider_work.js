@@ -6,8 +6,18 @@ const open = (event) => {
   const target = event.currentTarget.getAttribute("aria-controls");
   const obj = document.querySelector(`#${target}`);
   const backdrop = obj.getAttribute("backdrop");
+  const video = obj.querySelector(".play");
   setTimeout(() => {
-    obj.querySelector(".play").play();
+    if (video.paused) {
+      video.play();
+    } else {
+      video.load();
+    }
+    events(video, "canplaythrough", () => {
+      if (!video.paused) {
+        video.play();
+      }
+    });
   }, 1750);
   document.querySelector(`#${backdrop}`).classList.add("overlay-transition");
   obj.classList.add("overlay-fixed");
@@ -25,8 +35,10 @@ const close = (event) => {
   const target = event.currentTarget.getAttribute("target");
   const controlls = event.currentTarget.getAttribute("controlls");
   const obj = document.querySelector(`#${controlls}`);
+  const video = obj.querySelector(".play");
   setTimeout(() => {
-    obj.querySelector(".play").load();
+    video.pause();
+    video.currentTime = 0;
   }, 500);
   if (nav.classList.contains("has-fixed")) {
     nav.style.paddingRight = 0;
@@ -55,8 +67,10 @@ const next = (event) => {
   objPrevious.classList.remove("overlay-fixed-delay");
   document.body.classList.remove("overflow-hidden");
   objPrevious.setAttribute("aria-expanded", false);
+  const videoPrevious = objPrevious.querySelector(".play");
   setTimeout(() => {
-    objPrevious.querySelector(".play").load();
+    videoPrevious.pause();
+    videoPrevious.currentTime = 0;
   }, 500);
   document.querySelector(`#${targetPrevious}`).setAttribute("aria-expanded", false);
   if (nav.classList.contains("has-fixed")) {
@@ -66,8 +80,18 @@ const next = (event) => {
   document.body.classList.add("overflow-hidden");
   objCurrent.classList.add("overlay-fixed-delay");
   objCurrent.setAttribute("aria-expanded", true);
+  const videoCurrent = objCurrent.querySelector(".play");
   setTimeout(() => {
-    objCurrent.querySelector(".play").play();
+    if (videoCurrent.paused) {
+      videoCurrent.play();
+    } else {
+      videoCurrent.load();
+    }
+    events(videoCurrent, "canplaythrough", () => {
+      if (!videoCurrent.paused) {
+        videoCurrent.play();
+      }
+    });
   }, 1750);
   document.querySelector(`#${targetCurrent}`).setAttribute("aria-expanded", false);
 };
