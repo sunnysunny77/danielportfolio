@@ -1,5 +1,6 @@
 const version = 1;
 const cacheName = `portfolio-v${version}`;
+const cacheNameVideo = `portfolio-video-v${version}`;
 
 const resources = [
   "./",
@@ -25,6 +26,10 @@ const resources = [
   "./images/daniel.webp",
   "./images/pwa-logo-small.webp",
   "./images/pwa-logo.webp",
+  "./fallback.php"
+];
+
+const resourcesVideo = [
   "./videos/furniture.mp4", 
   "./videos/fasera.mp4", 
   "./videos/access.mp4", 
@@ -33,13 +38,12 @@ const resources = [
   "./videos/candid.mp4", 
   "./videos/weather.mp4", 
   "./videos/sliders.mp4", 
-  "./videos/login.mp4",
-  "./fallback.php"
+  "./videos/login.mp4"
 ];
 
-const installResources = async (resources) => {
+const installResources = async (resources, name) => {
 
-  const cache = await caches.open(cacheName);
+  const cache = await caches.open(name);
   await cache.addAll(resources);
 };
 
@@ -49,7 +53,7 @@ self.addEventListener("install", (event) => {
   
   self.skipWaiting();
 
-  event.waitUntil(installResources(resources));
+  event.waitUntil(installResources(resources, cacheName), installResources(resourcesVideo, cacheNameVideo));
 });
 
 const cache = async (req, res) => {
@@ -60,6 +64,32 @@ const cache = async (req, res) => {
   if (match) {
 
     await cache.put(req, res);
+  }
+};
+
+const video = async (req) => {
+
+  try {
+
+    const cache = await caches.match(req);
+      
+    if (cache) {
+
+      return cache;
+    }
+
+    const res = await fetch(req);
+
+    return res;
+
+  } catch (error) {
+
+    console.log(error);
+
+    return new Response("Network error happened", {
+      status: 408,
+      headers: { "Content-Type": "text/plain" },
+    });
   }
 };
 
@@ -102,5 +132,11 @@ self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
 
-  event.respondWith(first(event.request));
+  if (event.request.destination === "video") {
+
+    event.respondWith(video(event.request));
+  } else {
+
+    event.respondWith(first(event.request));
+  }
 });
