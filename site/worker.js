@@ -28,17 +28,6 @@ const resources = [
   "./fallback.php"
 ];
 
-const videos = [
-  "./videos/furniture.mp4", 
-  "./videos/fasera.mp4", 
-  "./videos/access.mp4", 
-  "./videos/daves.mp4", 
-  "./videos/business.mp4", 
-  "./videos/candid.mp4", 
-  "./videos/weather.mp4", 
-  "./videos/sliders.mp4", 
-  "./videos/login.mp4",
-];
 
 const installResources = async (resources) => {
 
@@ -52,7 +41,7 @@ self.addEventListener("install", (event) => {
   
   self.skipWaiting();
 
-  event.waitUntil(installResources(resources), installResources(videos));
+  event.waitUntil(installResources(resources));
 });
 
 const cache = async (req, res) => {
@@ -77,13 +66,6 @@ const video = async (req) => {
   } catch (error) {
 
     console.log(error);
-
-    const cache = await caches.match(req);
-      
-    if (cache) {
-
-      return cache;
-    }
 
     return new Response("Network error happened", {
       status: 408,
