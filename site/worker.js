@@ -43,11 +43,26 @@ self.addEventListener("install", (event) => {
   event.waitUntil(installResources(resources));
 });
 
+const match_video = async (req, match) => {
+
+  const buffer = await match.arrayBuffer();
+  const bytes = Number(/^bytes=(\d+)-$/g.exec(req.headers.get("range"))[1]);
+  const res = buffer.slice(bytes);
+
+  return new Response(res, {
+    status: 206,
+    statusText: "Partial Content",
+    headers: [
+      ["Content-Type", "video/mp4"],
+      ["Content-Range", "bytes " + bytes + "-" + (buffer.byteLength - 1) + "/" + buffer.byteLength]
+    ]
+  });
+};
+
 const cache_video = async (req, res) => {
 
   const cache = await caches.open(cacheName);
-  const buffer = await res.clone().arrayBuffer();
-  await cache.put(req, new Response(buffer, {
+  await cache.put(req, new Response( await res.clone().arrayBuffer(), {
     status: 200,
     statusText: res.statusText,
     headers: res.headers
@@ -71,7 +86,7 @@ const video = async (req) => {
 
   if (match) {
 
-    return match;
+   return match_video(req, match);
   }
 
   try {

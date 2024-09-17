@@ -31,7 +31,7 @@ const close = (event) => {
   const obj = document.querySelector(`#${controlls}`);
   const video = obj.querySelector(".play");
   setTimeout(() => {
-    video.pause();
+    video.load();
   }, 500);
   if (nav.classList.contains("has-fixed")) {
     nav.style.paddingRight = 0;
@@ -62,7 +62,7 @@ const next = (event) => {
   objPrevious.setAttribute("aria-expanded", false);
   const videoPrevious = objPrevious.querySelector(".play");
   setTimeout(() => {
-    videoPrevious.pause();
+    videoPrevious.load();
   }, 500);
   document.querySelector(`#${targetPrevious}`).setAttribute("aria-expanded", false);
   if (nav.classList.contains("has-fixed")) {
