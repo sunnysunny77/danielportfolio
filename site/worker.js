@@ -75,23 +75,16 @@ const video = async (req) => {
   }
 
   try {
-  
+
     const res = await fetch(req);
 
     cache_video(req, res);
-    
+  
     return res.clone();
 
   } catch (error) {
 
     console.log(error);
-
-    const match = await caches.match(req);
-
-    if (match) {
-
-     return match;
-    }
 
     return new Response("Network error happened", {
       status: 408,
