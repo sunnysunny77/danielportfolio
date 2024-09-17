@@ -71,7 +71,12 @@ const video = async (req) => {
 
     const res = await fetch(req);
 
-    cache_video(req, res, res.clone()); 
+    const match = await caches.match(req);
+
+    if (!match) {
+
+      cache_video(req, res, res.clone()); 
+    }
   
     return res;
     
