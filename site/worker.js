@@ -28,18 +28,6 @@ const resources = [
   "./fallback.php"
 ];
 
-const videos = [
-  "./videos/furniture.mp4", 
-  "./videos/fasera.mp4", 
-  "./videos/access.mp4", 
-  "./videos/daves.mp4", 
-  "./videos/business.mp4", 
-  "./videos/candid.mp4", 
-  "./videos/weather.mp4", 
-  "./videos/sliders.mp4", 
-  "./videos/login.mp4",
-];
-
 const installResources = async (resources) => {
 
   const cache = await caches.open(cacheName);
@@ -52,8 +40,14 @@ self.addEventListener("install", (event) => {
   
   self.skipWaiting();
 
-  event.waitUntil(installResources(resources), installResources(videos));
+  event.waitUntil(installResources(resources));
 });
+
+const cache_video = async (req, res) => {
+
+  const cache = await caches.open(cacheName);
+  await cache.put(req, res);
+};
 
 const cache = async (req, res) => {
 
@@ -71,6 +65,8 @@ const video = async (req) => {
   try {
 
     const res = await fetch(req);
+
+    cache_video(req, res.clone());
   
     return res;
 
