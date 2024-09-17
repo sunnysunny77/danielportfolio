@@ -43,10 +43,10 @@ self.addEventListener("install", (event) => {
   event.waitUntil(installResources(resources));
 });
 
-const cache_video = async (req, res, clone) => {
+const cache_video = async (req, res) => {
 
   const cache = await caches.open(cacheName);
-  const buffer = await clone.arrayBuffer();
+  const buffer = await res.clone().arrayBuffer();
   await cache.put(req, new Response(buffer, {
     status: 200,
     statusText: res.statusText,
@@ -67,19 +67,21 @@ const cache = async (req, res) => {
 
 const video = async (req) => {
 
-  try {
+  const match = await caches.match(req);
 
+  if (match) {
+
+    return match;
+  }
+
+  try {
+  
     const res = await fetch(req);
 
-    const match = await caches.match(req);
-
-    if (!match) {
-
-      cache_video(req, res, res.clone()); 
-    }
-  
-    return res;
+    cache_video(req, res);
     
+    return res.clone();
+
   } catch (error) {
 
     console.log(error);
