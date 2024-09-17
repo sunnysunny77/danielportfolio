@@ -28,7 +28,6 @@ const resources = [
   "./fallback.php"
 ];
 
-
 const installResources = async (resources) => {
 
   const cache = await caches.open(cacheName);
@@ -43,6 +42,17 @@ self.addEventListener("install", (event) => {
 
   event.waitUntil(installResources(resources));
 });
+
+const cache_video = async (req, res, clone) => {
+
+  const cache = await caches.open(cacheName);
+  const buffer = await clone.arrayBuffer();
+  await cache.put(req, new Response(buffer, {
+    status: 200,
+    statusText: res.statusText,
+    headers: res.headers
+  }));
+};
 
 const cache = async (req, res) => {
 
@@ -60,12 +70,21 @@ const video = async (req) => {
   try {
 
     const res = await fetch(req);
+
+    cache_video(req, res, res.clone()); 
   
     return res;
-
+    
   } catch (error) {
 
     console.log(error);
+
+    const match = await caches.match(req);
+
+    if (match) {
+
+     return match;
+    }
 
     return new Response("Network error happened", {
       status: 408,
@@ -73,6 +92,7 @@ const video = async (req) => {
     });
   }
 };
+
 
 const first = async (req) => {
 
