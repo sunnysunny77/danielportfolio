@@ -184,7 +184,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/furniture.mp4" type="video/mp4">
                                             </video>
 
@@ -276,7 +276,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/fasera.mp4" type="video/mp4">
                                             </video>
 
@@ -368,7 +368,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/access.mp4" type="video/mp4">
                                             </video>
 
@@ -470,7 +470,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/daves.mp4" type="video/mp4">
                                             </video>
 
@@ -558,7 +558,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/business.mp4" type="video/mp4">
                                             </video>
 
@@ -652,7 +652,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/candid.mp4" type="video/mp4">
                                             </video>
 
@@ -742,7 +742,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/weather.mp4" type="video/mp4">
                                             </video>
 
@@ -832,7 +832,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/sliders.mp4" type="video/mp4">
                                             </video>
 
@@ -938,7 +938,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video preload class="play" width="1024" height="700" muted loop>
+                                            <video class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/login.mp4" type="video/mp4">
                                             </video>
 
