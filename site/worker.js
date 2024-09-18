@@ -82,6 +82,7 @@ const video = async (req) => {
       cache_video(req, res);
     }
   
+
     return res.clone();
 
   } catch (error) {
@@ -134,7 +135,7 @@ self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
 
-  if (event.request.destination === "video") {
+  if (event.request.headers.has("range")) {
 
     event.respondWith(video(event.request));
   } else {
