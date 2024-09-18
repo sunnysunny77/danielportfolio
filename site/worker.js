@@ -43,16 +43,6 @@ self.addEventListener("install", (event) => {
   event.waitUntil(installResources(resources));
 });
 
-const cache_video = async (req, res) => {
-
-  const cache = await caches.open(cacheName);
-  await cache.put(req, new Response( await res.clone().arrayBuffer(), {
-    status: 200,
-    statusText: res.statusText,
-    headers: res.headers
-  }));
-};
-
 const cache = async (req, res) => {
 
   const cache = await caches.open(cacheName);
@@ -61,38 +51,6 @@ const cache = async (req, res) => {
   if (match) {
 
     await cache.put(req, res);
-  }
-};
-
-const video = async (req) => {
-
-  const match = await caches.match(req);
-
-  if (match) {
-
-   return match;
-  }
-
-  try {
-
-    const res = await fetch(req);
-
-    if (res.status !== 206) {
-      
-      cache_video(req, res);
-    }
-  
-
-    return res.clone();
-
-  } catch (error) {
-
-    console.log(error);
-
-    return new Response("Network error happened", {
-      status: 408,
-      headers: { "Content-Type": "text/plain" },
-    });
   }
 };
 
@@ -131,12 +89,47 @@ const first = async (req) => {
   }
 };
 
+const video_add = async (req) => {
+
+  const cache = await caches.open(cacheName);
+  cache.add(req.url);
+};
+
+const video = async (req) => {
+ 
+  try {
+
+    const match = await caches.match(req);
+
+    if (match) {
+
+      return match;
+    }
+
+    video_add(req);
+
+    const res = await fetch(req);
+
+    return res;
+
+  } catch (error) {
+
+    console.log(error);
+    
+    return new Response("Network error happened", {
+      status: 408,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
+};
+
+
 self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
 
   if (event.request.headers.has("range")) {
-
+    
     event.respondWith(video(event.request));
   } else {
 
