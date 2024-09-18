@@ -89,11 +89,19 @@
 .slider_work-overlay-preview-container {
     padding: 1.5rem;
     border: 1px solid $color_5;
+    position: relative;
+    padding-top: 56%;
     video {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        top:  1.5rem;
+        left: 1.5rem;
+        width: calc(100% - 3rem);
+        height: calc(100% - 3rem);
         object-fit: cover;
         clip-path: inset(4px 4px 4px 4px);
+        @include min_lg {
+            object-fit: contain;
+        }
     }
 }
 
