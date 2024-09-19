@@ -123,7 +123,6 @@ const video = async (req) => {
   }
 };
 
-
 self.addEventListener("fetch", (event) => {
 
   console.log("Fetching via Service worker");
