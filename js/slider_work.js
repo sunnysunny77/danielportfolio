@@ -94,13 +94,16 @@ export const slider_work = () => {
   const overlay_backdrop = document.querySelectorAll(".overlay-backdrop");
   const pause_video = document.querySelectorAll(".pause-video");
   const play_video = document.querySelectorAll(".play-video");
+  const controlls = document.querySelectorAll(".controlls");
   const nav = document.querySelector("nav");
 
-  if (play.length === 0 || overlay_body.length === 0 || overlay_open.length === 0 || overlay_close.length === 0 || overlay_next.length === 0 || overlay_prev.length === 0 || overlay_backdrop.length === 0 || pause_video.length === 0 || play_video.length === 0 ||  !nav) {
+  if (play.length === 0 || overlay_body.length === 0 || overlay_open.length === 0 || overlay_close.length === 0 || overlay_next.length === 0 || overlay_prev.length === 0 || overlay_backdrop.length === 0 || pause_video.length === 0 || play_video.length === 0 ||  controlls.length === 0 || !nav) {
     return;
   }
 
   for (let i = 0; i < overlay_open.length; i++) {
+
+    play.controls = false;
     overlay_open[i].setAttribute("aria-expanded", false);
     const string = `${overlay_body[i].id}`;
     overlay_open[i].setAttribute("aria-controls", string);
@@ -144,7 +147,6 @@ export const slider_work = () => {
     events(overlay_close[i], "click", close);
     events(overlay_next[i], "click", next);
     events(overlay_prev[i], "click", next);
-    events(pause_video[i], "click", video_state);
-    events(play_video[i], "click", video_state);
+    events(controlls[i], "click", video_state);
   }
 };

@@ -142,7 +142,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="overlay_body-0" class="slider_work-overlay-body overlay_body d-flex">
+                        <div id="overlay_body-0" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
                             <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
@@ -190,7 +190,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 
                                                 <source src="./videos/furniture.mp4" type="video/mp4">
 
@@ -246,7 +246,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="overlay_body-1" class="slider_work-overlay-body overlay_body d-flex">
+                        <div id="overlay_body-1" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
                             <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
@@ -292,7 +292,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/fasera.mp4" type="video/mp4">
                                             </video>
 
@@ -346,7 +346,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="overlay_body-2" class="slider_work-overlay-body overlay_body d-flex">
+                        <div id="overlay_body-2" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
                             <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
@@ -392,7 +392,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline>
                                                 <source src="./videos/access.mp4" type="video/mp4">
                                             </video>
 
@@ -456,7 +456,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="overlay_body-3" class="slider_work-overlay-body overlay_body d-flex">
+                        <div id="overlay_body-3" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
                             <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
@@ -508,7 +508,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/daves.mp4" type="video/mp4">
                                             </video>
 
@@ -562,7 +562,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="overlay_body-4" class="slider_work-overlay-body overlay_body d-flex">
+                        <div id="overlay_body-4" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
                             <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
@@ -610,7 +610,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/business.mp4" type="video/mp4">
                                             </video>
 
@@ -664,7 +664,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="overlay_body-5" class="slider_work-overlay-body overlay_body d-flex">
+                        <div id="overlay_body-5" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
                             <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
@@ -710,7 +710,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/weather.mp4" type="video/mp4">
                                             </video>
 
