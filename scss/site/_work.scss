@@ -4,17 +4,17 @@
         font-size: clamp(30px, 4vw, 50px);
         font-weight: 500;
         @include min_md {
-            font-weight: 600;
+            font-weight: 700;
         }
     }
     a,
     button {
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        transition: text-decoration-color 0.25s;
+        text-decoration-line: none;
+        transition: text-decoration-line 0.25s;
         color: $color_5;
         &:hover {
             text-decoration-color: $color_5;
+            text-decoration-line: underline;
         }
     }
     button::before {
@@ -60,14 +60,14 @@
         }
     }
     .copy-tooltip {
-        text-decoration: underline;
+        text-decoration-line: underline;
         padding: 0;
         text-decoration-color: $color_6;
-        transition: text-decoration-color 0.25s;
+        transition:   text-decoration-line 0.25s;
         color: $color_6;
         width: fit-content;
         &:hover {
-            text-decoration-color: transparent;
+            text-decoration-line: none;
         }
         &::before {
             padding: 0;
