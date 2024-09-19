@@ -24,8 +24,5 @@ footer {
     }
     .bold {
         font-weight: 500;
-        @include min_md {
-            font-weight: 700;
-        }
     }
 }
