@@ -190,7 +190,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
                                                 
                                                 <source src="./videos/furniture.mp4" type="video/mp4">
 
@@ -292,7 +292,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
                                                 <source src="./videos/fasera.mp4" type="video/mp4">
                                             </video>
 
@@ -392,7 +392,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
                                                 <source src="./videos/access.mp4" type="video/mp4">
                                             </video>
 
@@ -508,7 +508,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
                                                 <source src="./videos/daves.mp4" type="video/mp4">
                                             </video>
 
@@ -610,7 +610,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
                                                 <source src="./videos/business.mp4" type="video/mp4">
                                             </video>
 
@@ -710,7 +710,7 @@
 
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop controlls="false">
                                                 <source src="./videos/weather.mp4" type="video/mp4">
                                             </video>
 

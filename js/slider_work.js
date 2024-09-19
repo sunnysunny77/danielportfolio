@@ -14,6 +14,7 @@ const open = (event) => {
     }, 1750);
   });
   document.querySelector(`#${backdrop}`).classList.add("overlay-transition");
+  obj.style.transition = "transform 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84)";
   obj.classList.add("overlay-fixed");
   event.currentTarget.setAttribute("aria-expanded", true);
   obj.setAttribute("aria-expanded", true);
@@ -29,6 +30,7 @@ const close = (event) => {
   const target = event.currentTarget.getAttribute("target");
   const controlls = event.currentTarget.getAttribute("controlls");
   const obj = document.querySelector(`#${controlls}`);
+  obj.style.transition = "transform 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84)";
   const video = obj.querySelector(".play");
   setTimeout(() => {
     video.load();
@@ -37,8 +39,7 @@ const close = (event) => {
     nav.style.paddingRight = 0;
   }
   document.body.style.paddingRight = 0;
-  obj.classList.remove("overlay-fixed") ||
-  obj.classList.remove("overlay-fixed-delay");
+  obj.classList.remove("overlay-fixed");
   document.body.classList.remove("overflow-hidden");
   obj.setAttribute("aria-expanded", false);
   document.querySelector(`#${target}`).setAttribute("aria-expanded", false);
@@ -56,10 +57,11 @@ const next = (event) => {
   const controllsCurrent = event.currentTarget.getAttribute("controlls_current");
   const objPrevious = document.querySelector(`#${controllsPrevious}`);
   const objCurrent = document.querySelector(`#${controllsCurrent}`);
-  objPrevious.classList.remove("overlay-fixed") ||
-  objPrevious.classList.remove("overlay-fixed-delay");
+  objPrevious.classList.remove("overlay-fixed");
   document.body.classList.remove("overflow-hidden");
   objPrevious.setAttribute("aria-expanded", false);
+  objPrevious.style.transition = "transform 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84)";
+  objCurrent.style.transition = "transform 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84) 0.5s";
   const videoPrevious = objPrevious.querySelector(".play");
   setTimeout(() => {
     videoPrevious.load();
@@ -70,7 +72,7 @@ const next = (event) => {
   }
   document.body.style.paddingRight = `${paddingRight}px`;
   document.body.classList.add("overflow-hidden");
-  objCurrent.classList.add("overlay-fixed-delay");
+  objCurrent.classList.add("overlay-fixed");
   objCurrent.setAttribute("aria-expanded", true);
   const videoCurrent = objCurrent.querySelector(".play");
   videoCurrent.load();
