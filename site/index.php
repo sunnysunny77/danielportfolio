@@ -176,6 +176,10 @@
 
                                                 <li> Design Copy </li>
 
+                                                <li> HTTP Observatory A+ </li>
+
+                                                <li> SSL A+ </li>
+
                                             </ul>
 
                                             <hr class="mx-lg-10 mt-8 w-100">
@@ -461,6 +465,10 @@
                                                 <li> MVC - OOP - SQL - CMS  </li>
                                         
                                                 <li> PHP API Template  </li>
+
+                                                <li> HTTP Observatory A+ </li>
+
+                                                <li> SSL A+ </li>
                 
                                             </ul>
 
@@ -550,6 +558,10 @@
 
                                                 <li>  Homepage </li>
 
+                                                <li> HTTP Observatory A+ </li>
+
+                                                <li> SSL A+ </li>
+
                                             </ul>
 
                                             <hr class="mx-lg-10 mt-8 w-100">
@@ -637,6 +649,10 @@
                                                 <li> XML </li> 
                                 
                                                 <li> PWA </li>
+
+                                                <li> HTTP Observatory A+ </li>
+
+                                                <li> SSL A+ </li>
                                                 
                                             </ul>
 
