@@ -78,7 +78,7 @@
 .slider_work-overlay-preview-container {
     border: 1px solid $color_5;
     position: relative;
-    padding-top: 56.25%;
+    padding-top: 68%;
     @include min_lg {
         padding-top: 58%;
     }
@@ -88,10 +88,9 @@
         left: 0.25rem;
         width: calc(100% - 0.5rem);
         height: calc(100% - 0.5rem);
-        object-fit: cover;
+        object-fit: contain;
         clip-path: inset(8px 8px 8px 8px);
         @include min_lg {
-            object-fit: contain;
             top: 1.5rem;
             left: 1.5rem;
             width: calc(100% - 3rem);
