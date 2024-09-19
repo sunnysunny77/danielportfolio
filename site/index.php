@@ -191,8 +191,18 @@
                                         <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
+                                                
                                                 <source src="./videos/furniture.mp4" type="video/mp4">
+
                                             </video>
+
+                                            <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+
+                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
 
                                         </div>
 
@@ -286,6 +296,14 @@
                                                 <source src="./videos/fasera.mp4" type="video/mp4">
                                             </video>
 
+                                            <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+
+                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -377,6 +395,14 @@
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/access.mp4" type="video/mp4">
                                             </video>
+
+                                            <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+
+                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
 
                                         </div>
 
@@ -486,6 +512,14 @@
                                                 <source src="./videos/daves.mp4" type="video/mp4">
                                             </video>
 
+                                            <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+
+                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -580,6 +614,14 @@
                                                 <source src="./videos/business.mp4" type="video/mp4">
                                             </video>
 
+                                            <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+
+                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -671,6 +713,14 @@
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop>
                                                 <source src="./videos/weather.mp4" type="video/mp4">
                                             </video>
+
+                                            <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+
+                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
 
                                         </div>
 
