@@ -176,6 +176,8 @@
 
                                                 <li> Design Copy </li>
 
+                                                <li> PWA </li>
+
                                                 <li> HTTP Observatory A+ </li>
 
                                                 <li> SSL A+ </li>
@@ -461,6 +463,8 @@
                                             <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
 
                                                 <li> Design copy  </li>
+
+                                                <li> PWA </li>
                  
                                                 <li> MVC - OOP - SQL - CMS  </li>
                                         
@@ -557,6 +561,8 @@
                                             <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
 
                                                 <li>  Homepage </li>
+
+                                                <li> PWA </li>
 
                                                 <li> HTTP Observatory A+ </li>
 
