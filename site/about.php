@@ -149,7 +149,13 @@
 
                                         <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
 
-                                        <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/"> Demo </a>
+                                        <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/">  Basic Wordpress </a>
+
+                                        <a class="mb-3 d-block" target="Sliders" href="https://sliders.sunnyhome.site/"> Sliders </a>
+
+                                        <a class="mb-3 d-block" target="Candid" href="https://candidcleaning.sunnyhome.site/"> Candid </a>
+
+                                        <a class="mb-3 d-block" target="Login" href="https://login.sunnyhome.site/"> Login App </a>
 
                                     </div>
 
