@@ -24,6 +24,9 @@ const resources = [
   "./images/pwa-logo.webp",
   "./images/play.webp",
   "./images/pause.webp",
+  "./images/visit.webp",
+  "./images/phone.webp",
+  "./images/mail.webp",
   "./fallback.php"
 ];
 

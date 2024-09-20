@@ -188,7 +188,7 @@
 
                                         </div>
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
+                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 
@@ -201,6 +201,74 @@
                                                 <img class="play-video"  width="40" height="40" src="./images/play.webp" />
 
                                                 <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                            <div class="slider_workinner-outer workinner-outer">
+
+                                                <div class="slider_workinner-button-next-container button-container">
+
+                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                </div>
+
+                                                <div class="slider_workinner-container slider-container">
+
+                                                    <a href="https://furniture.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                    <a href="https://furniture.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                    <div class="slider_workinner-inner inner"></div>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                        <div>
+
+                                                            <a href="https://furniture.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
+                                                
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                        <div>
+
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count  d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                        <div>
+
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slider_workinner-percentage percentage">
+
+                                                    <div class="percentage-change"></div>
+
+                                                </div>
 
                                             </div>
 
@@ -290,7 +358,7 @@
 
                                         </div>
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
+                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/fasera.mp4" type="video/mp4">
@@ -301,6 +369,74 @@
                                                 <img class="play-video"  width="40" height="40" src="./images/play.webp" />
 
                                                 <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                            <div class="slider_workinner-outer workinner-outer">
+
+                                                <div class="slider_workinner-button-next-container button-container">
+
+                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                </div>
+
+                                                <div class="slider_workinner-container slider-container">
+
+                                                    <a href="https://www.fasera.com/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                    <a href="https://www.fasera.com/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                    <div class="slider_workinner-inner inner"></div>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                        <div>
+
+                                                            <a href="https://www.fasera.com/" rel="noreferrer" target="_blank">Visit</a>
+                                                
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                        <div>
+
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count  d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                        <div>
+
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slider_workinner-percentage percentage">
+
+                                                    <div class="percentage-change"></div>
+
+                                                </div>
 
                                             </div>
 
@@ -390,7 +526,7 @@
 
                                         </div>
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
+                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline>
                                                 <source src="./videos/access.mp4" type="video/mp4">
@@ -401,6 +537,74 @@
                                                 <img class="play-video"  width="40" height="40" src="./images/play.webp" />
 
                                                 <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                            <div class="slider_workinner-outer workinner-outer">
+
+                                                <div class="slider_workinner-button-next-container button-container">
+
+                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                </div>
+
+                                                <div class="slider_workinner-container slider-container">
+
+                                                    <a href="https://accessrobotics.com.au/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                    <a href="https://accessrobotics.com.au/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                    <div class="slider_workinner-inner inner"></div>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                        <div>
+
+                                                            <a href="https://accessrobotics.com.au/" rel="noreferrer" target="_blank">Visit</a>
+                                                
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                        <div>
+
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count  d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                        <div>
+
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slider_workinner-percentage percentage">
+
+                                                    <div class="percentage-change"></div>
+
+                                                </div>
 
                                             </div>
 
@@ -506,7 +710,7 @@
 
                                         </div>
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
+                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/daves.mp4" type="video/mp4">
@@ -517,6 +721,74 @@
                                                 <img class="play-video"  width="40" height="40" src="./images/play.webp" />
 
                                                 <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                            <div class="slider_workinner-outer workinner-outer">
+
+                                                <div class="slider_workinner-button-next-container button-container">
+
+                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                </div>
+
+                                                <div class="slider_workinner-container slider-container">
+
+                                                    <a href="https://davesblog.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                    <a href="https://davesblog.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                    <div class="slider_workinner-inner inner"></div>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                        <div>
+
+                                                            <a href="https://davesblog.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
+                                                
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                        <div>
+
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count  d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                        <div>
+
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slider_workinner-percentage percentage">
+
+                                                    <div class="percentage-change"></div>
+
+                                                </div>
 
                                             </div>
 
@@ -608,7 +880,7 @@
 
                                         </div>
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
+                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/business.mp4" type="video/mp4">
@@ -619,6 +891,74 @@
                                                 <img class="play-video"  width="40" height="40" src="./images/play.webp" />
 
                                                 <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                            <div class="slider_workinner-outer workinner-outer">
+
+                                                <div class="slider_workinner-button-next-container button-container">
+
+                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                </div>
+
+                                                <div class="slider_workinner-container slider-container">
+
+                                                    <a href="https://business.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                    <a href="https://business.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                    <div class="slider_workinner-inner inner"></div>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                        <div>
+
+                                                            <a href="https://business.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
+                                                
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                        <div>
+
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count  d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                        <div>
+
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slider_workinner-percentage percentage">
+
+                                                    <div class="percentage-change"></div>
+
+                                                </div>
 
                                             </div>
 
@@ -708,7 +1048,7 @@
 
                                         </div>
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-8 mt-lg-11">
+                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                             <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
                                                 <source src="./videos/weather.mp4" type="video/mp4">
@@ -719,6 +1059,74 @@
                                                 <img class="play-video"  width="40" height="40" src="./images/play.webp" />
 
                                                 <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                            <div class="slider_workinner-outer workinner-outer">
+
+                                                <div class="slider_workinner-button-next-container button-container">
+
+                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                </div>
+
+                                                <div class="slider_workinner-container slider-container">
+
+                                                    <a href="https://sticky.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                    <a href="https://sticky.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                    <div class="slider_workinner-inner inner"></div>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                        <div>
+
+                                                            <a href="https://sticky.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
+                                                
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                        <div>
+
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="static-count  d-none">
+
+                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                        <div>
+
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slider_workinner-percentage percentage">
+
+                                                    <div class="percentage-change"></div>
+
+                                                </div>
 
                                             </div>
 
