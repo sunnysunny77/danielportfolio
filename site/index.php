@@ -256,7 +256,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
 
                                                         </div>
 
@@ -424,7 +424,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
 
                                                         </div>
 
@@ -592,7 +592,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
 
                                                         </div>
 
@@ -776,7 +776,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
 
                                                         </div>
 
@@ -946,7 +946,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
 
                                                         </div>
 
@@ -1114,7 +1114,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
 
                                                         </div>
 
