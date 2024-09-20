@@ -158,11 +158,11 @@
 
                                 </div>
 
-                                <div class="col-42 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
 
                                     <div class="row justify-content-center w-100">
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-8 px-5">
+                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
 
                                             <h3 class="text-center m-0"> Furniture Warehouse </h3>
 
@@ -198,9 +198,9 @@
 
                                             <div class="controlls d-flex justify-content-center align-items-center">
 
-                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
 
-                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
 
                                             </div>
 
@@ -332,11 +332,11 @@
 
                                 </div>
 
-                                <div class="col-42 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
 
                                     <div class="row justify-content-center w-100">
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-8 px-5">
+                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
 
                                             <h3 class="text-center m-0"> Fasera </h3>
 
@@ -366,9 +366,9 @@
 
                                             <div class="controlls d-flex justify-content-center align-items-center">
 
-                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
 
-                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
 
                                             </div>
 
@@ -500,11 +500,11 @@
 
                                 </div>
 
-                                <div class="col-42 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
 
                                     <div class="row justify-content-center w-100">
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-8 px-5">
+                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
 
                                             <h3 class="text-center m-0"> Access Robotics </h3>
 
@@ -534,9 +534,9 @@
 
                                             <div class="controlls d-flex justify-content-center align-items-center">
 
-                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
 
-                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
 
                                             </div>
 
@@ -678,11 +678,11 @@
 
                                 </div>
 
-                                <div class="col-42 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
 
                                     <div class="row justify-content-center w-100">
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-8 px-5">
+                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
 
                                             <h3 class="text-center m-0"> Daves Blog </h3>
 
@@ -718,9 +718,9 @@
 
                                             <div class="controlls d-flex justify-content-center align-items-center">
 
-                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
 
-                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
 
                                             </div>
 
@@ -852,11 +852,11 @@
 
                                 </div>
 
-                                <div class="col-42 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
 
                                     <div class="row justify-content-center w-100">
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-8 px-5">
+                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
 
                                             <h3 class="text-center m-0"> Business </h3>
 
@@ -888,9 +888,9 @@
 
                                             <div class="controlls d-flex justify-content-center align-items-center">
 
-                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
 
-                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
 
                                             </div>
 
@@ -1020,11 +1020,11 @@
 
                                 </div>
 
-                                <div class="col-42 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
 
                                     <div class="row justify-content-center w-100">
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-8 px-5">
+                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
 
                                             <h3 class="text-center m-0"> Weather App </h3>
 
@@ -1056,9 +1056,9 @@
 
                                             <div class="controlls d-flex justify-content-center align-items-center">
 
-                                                <img class="play-video"  width="40" height="40" src="./images/play.webp" />
+                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
 
-                                                <img class="pause-video has-pause" width="40" height="40" src="./images/pause.webp" />
+                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
 
                                             </div>
 
