@@ -1,6 +1,6 @@
 <?php
 
-    // work item variables
+    // work item view
 
     $tel = "+61434984983";
     $mailto = "costellodaniel686@gmail.com";
@@ -52,7 +52,6 @@
     ];
 
     $count = count($work) - 1;
-
 ?>
 
 <!DOCTYPE html>
@@ -177,6 +176,23 @@
 
                     foreach ($work as $index=>$row) {
 
+                        $margin_bottom = "mb-12 mb-md-13";
+                        $next = false;
+                        $prev = true;
+
+                        if($index === $count) {
+
+                            $margin_bottom = "mb-0 mb-md-0";
+                        } else {
+
+                            $next = true;
+                        } 
+                        
+                        if ($index === 0) {
+
+                            $prev = false;
+                        }
+
                         ?>
 
                             <div class="has-test row justify-content-md-between">
@@ -280,7 +296,7 @@
 
                                 </div>
 
-                                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+                                <div class="col-48 col-md-26 col-lg-32 <?php echo $margin_bottom; ?>">
 
                                     <?php
 
@@ -313,7 +329,7 @@
 
                                                     <?php
 
-                                                        if($index !== 0) {
+                                                        if ($prev) {
 
                                                             ?>
 
@@ -329,7 +345,7 @@
                                                     
                                                     <?php
 
-                                                        if($index !== $count) {
+                                                        if ($next) {
 
                                                             ?>
 
