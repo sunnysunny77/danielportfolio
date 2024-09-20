@@ -244,7 +244,7 @@
 
                                                         <div>
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
 
                                                         </div>
 
@@ -256,7 +256,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
 
                                                         </div>
 
@@ -412,7 +412,7 @@
 
                                                         <div>
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
 
                                                         </div>
 
@@ -424,7 +424,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
 
                                                         </div>
 
@@ -580,7 +580,7 @@
 
                                                         <div>
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
 
                                                         </div>
 
@@ -592,7 +592,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
 
                                                         </div>
 
@@ -764,7 +764,7 @@
 
                                                         <div>
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
 
                                                         </div>
 
@@ -776,7 +776,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
 
                                                         </div>
 
@@ -934,7 +934,7 @@
 
                                                         <div>
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
 
                                                         </div>
 
@@ -946,7 +946,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
 
                                                         </div>
 
@@ -1102,7 +1102,7 @@
 
                                                         <div>
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank"> +61 434 984 983 </a>
+                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
 
                                                         </div>
 
@@ -1114,7 +1114,7 @@
 
                                                         <div>
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">costellodaniel686@gmail.com</a>
+                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
 
                                                         </div>
 
