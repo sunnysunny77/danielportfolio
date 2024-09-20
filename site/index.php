@@ -1,3 +1,60 @@
+<?php
+
+    // work item variables
+
+    $tel = "+61434984983";
+    $mailto = "costellodaniel686@gmail.com";
+
+    $work =[
+        [ 
+            "title" => "Furniture Warehouse",
+            "link" => "https://furniture.sunnyhome.site/",
+            "image" => [ "src" => "./images/furniture.webp", "alt" => "Furniture" ],
+            "list-item" => [ "Design Copy", "PWA", "HTTP Observatory A+", "SSL A+" ],
+            "mp4" => "./videos/furniture.mp4",
+        ],
+        [ 
+            "title" => "Fasera",
+            "link" => "https://www.fasera.com/",
+            "image" => [ "src" => "./images/fasera.webp", "alt" => "Fasera" ],
+            "list-item" => [ " Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
+            "mp4" => "./videos/fasera.mp4",
+        ],
+        [ 
+            "title" => "Access Robotics",
+            "link" => "https://accessrobotics.com.au/",
+            "image" => [ "src" => "./images/access.webp", "alt" => "Access Robotics" ],
+            "list-item" => [ " Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
+            "mp4" => "./videos/access.mp4",
+        ],
+        [ 
+            "title" => "Daves Blog",
+            "link" => "https://davesblog.sunnyhome.site/",
+            "credentials" => [ "title" => "Admin:", "username" => "demo", "password" => "demo" ],
+            "image" => [ "src" => "./images/daves.webp", "alt" => "Daves Blog" ],
+            "list-item" => [ "Design Copy", "PWA", "MVC - OOP - SQL - CMS", "PHP API Template", "HTTP Observatory A+", "SSL A+" ],
+            "mp4" => "./videos/daves.mp4",
+        ],
+        [ 
+            "title" => "Business",
+            "link" => "https://business.sunnyhome.site/",
+            "image" => [ "src" => "./images/business.webp", "alt" => "Business" ],
+            "list-item" => [ "Homepage", "PWA", "HTTP Observatory A+", "SSL A+" ],
+            "mp4" => "./videos/business.mp4",
+        ],
+        [ 
+            "title" => "Weather App",
+            "link" => "https://sticky.sunnyhome.site/",
+            "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],
+            "list-item" => [ "XML", "PWA", "HTTP Observatory A+", "SSL A+" ],
+            "mp4" => "./videos/weather.mp4",
+        ],
+    ];
+
+    $count = count($work) - 1;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,1035 +173,406 @@
 
             <section class="container">
 
-                <div class="has-test row justify-content-md-between">
+                <?php
 
-                    <div class="col-48 col-md-16 col-lg-11 d-flex flex-column">
+                    foreach ($work as $index=>$row) {
 
-                        <h2 class="mb-3">
-                            
-                            Furniture Warehouse
+                        ?>
 
-                        </h2>
+                            <div class="has-test row justify-content-md-between">
 
-                        <hr class="mb-5 mb-md-2">
+                                <div class="col-48 col-md-16 col-lg-11 d-flex flex-column">
 
-                        <button id="overlay_open-0" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-       
-                        <a class="visit d-inline-block mb-6" target="Furniture" href="https://furniture.sunnyhome.site/">Visit</a>
+                                    <?php
 
-                    </div>
+                                        if (isset($row["title"])) {
 
-                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
+                                            ?>
 
-                        <img src="./images/furniture.webp" width="760" height="475" alt="Furniture" />
+                                                <h2 class="mb-3">
+                                                    
+                                                    <?php echo $row["title"]; ?>
 
-                    </div>
+                                                </h2>
 
-                    <div class="overflow-hidden">
+                                            <?php
+                                        }
 
-                        <div id="overlay_body-0" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
+                                    ?>
 
-                            <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
+                                    <hr class="mb-5 mb-md-2">
 
-                                <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
+                                    <button id="overlay_open-<?php echo $index; ?>" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
 
-                                    <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
+                                    <?php
 
-                                        <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
+                                        if (isset($row["credentials"])) {
 
-                                        <button aria-label="next" class="overlay-next p-2 mx-3"><i class="fa-solid fa-circle-chevron-right"></i></button>  
+                                            ?>
 
-                                    </div>
+                                                <p class="mb-1">
 
-                                </div>
+                                                    <?php
 
-                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+                                                        if (isset($row["credentials"]["title"])) {
 
-                                    <div class="row justify-content-center w-100">
+                                                            ?>
+                                    
+                                                                <span> <?php echo $row["credentials"]["title"] ?> </span>
 
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
+                                                            <?php
 
-                                            <h3 class="text-center m-0"> Furniture Warehouse </h3>
+                                                        }
 
-                                        </div>
+                                                    ?>
 
-                                        <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
+                                                    <br>
 
-                                            <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
+                                                    <?php
 
-                                                <li> Homepage </li>
+                                                        if (isset($row["credentials"]["username"])) {
 
-                                                <li> Design Copy </li>
+                                                            ?>
 
-                                                <li> PWA </li>
+                                                                <button class="copy-tooltip"> Username <span class="d-none"> <?php echo $row["credentials"]["username"] ?> </span> </button>
 
-                                                <li> HTTP Observatory A+ </li>
+                                                            <?php
 
-                                                <li> SSL A+ </li>
+                                                        }
 
-                                            </ul>
+                                                    ?>
 
-                                            <hr class="mx-lg-10 mt-8 w-100">
+                                                    <br>
 
-                                        </div>
+                                                    <?php
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
+                                                        if (isset($row["credentials"]["password"])) {
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
-                                                
-                                                <source src="./videos/furniture.mp4" type="video/mp4">
+                                                            ?>
 
-                                            </video>
+                                                                <button class="copy-tooltip"> Password <span class="d-none"> <?php echo $row["credentials"]["password"] ?> </span> </button>
 
-                                            <div class="controlls d-flex justify-content-center align-items-center">
+                                                            <?php
 
-                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
+                                                        }
 
-                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <div class="slider_workinner-outer workinner-outer">
-
-                                                <div class="slider_workinner-button-next-container button-container">
-
-                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
-
-                                                </div>
-
-                                                <div class="slider_workinner-container slider-container">
-
-                                                    <a href="https://furniture.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
-                                                    <a href="https://furniture.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
-                                                    <div class="slider_workinner-inner inner"></div>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
-
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
-
-                                                        <div>
-
-                                                            <a href="https://furniture.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
-                                                
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
-
-                                                        <div>
-
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count  d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
-
-                                                        <div>
-
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="slider_workinner-percentage percentage">
-
-                                                    <div class="percentage-change"></div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>   
-
-                        <div id="overlay_backdrop-0" class="slider_work-overlay-backdrop overlay-backdrop"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="has-test row justify-content-md-between">
-
-                    <div class="col-48 col-md-16 col-lg-11">
-
-                        <h2 class="mb-3">
-                            
-                            Fasera
-
-                        </h2>
-
-                        <hr class="mb-5 mb-md-2">
-                    
-                        <button id="overlay_open-1" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-       
-                        <a class="visit d-inline-block mb-6" target="Fasera" href="https://www.fasera.com/">Visit</a>
-
-                    </div>
-
-                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                        <img src="./images/fasera.webp" width="760" height="475" alt="Fasera" />
-
-                    </div>
-
-                    <div class="overflow-hidden">
-
-                        <div id="overlay_body-1" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
-
-                            <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
-
-                                <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
-
-                                    <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
-
-                                        <button aria-label="prev" class="overlay-prev p-2 mx-3"><i class="fa-solid fa-circle-chevron-left"></i></button>  
-
-                                        <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
-
-                                        <button aria-label="next" class="overlay-next p-2 mx-3"><i class="fa-solid fa-circle-chevron-right"></i></button>  
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
-
-                                    <div class="row justify-content-center w-100">
-
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
-
-                                            <h3 class="text-center m-0"> Fasera </h3>
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
-
-                                            <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
-
-                                                <li>  Wordpress theme </li>
-
-                                                <li> <i class="fa-regular fa-copyright"></i> Lateral Aspect </li>
-
-                                                <li>  Design copy </li>
-
-                                            </ul>
-
-                                            <hr class="mx-lg-10 mt-8 w-100">
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
-                                                <source src="./videos/fasera.mp4" type="video/mp4">
-                                            </video>
-
-                                            <div class="controlls d-flex justify-content-center align-items-center">
-
-                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
-
-                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <div class="slider_workinner-outer workinner-outer">
-
-                                                <div class="slider_workinner-button-next-container button-container">
-
-                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
-
-                                                </div>
-
-                                                <div class="slider_workinner-container slider-container">
-
-                                                    <a href="https://www.fasera.com/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
-                                                    <a href="https://www.fasera.com/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
-                                                    <div class="slider_workinner-inner inner"></div>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
-
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
-
-                                                        <div>
-
-                                                            <a href="https://www.fasera.com/" rel="noreferrer" target="_blank">Visit</a>
-                                                
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
-
-                                                        <div>
-
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count  d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
-
-                                                        <div>
-
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="slider_workinner-percentage percentage">
-
-                                                    <div class="percentage-change"></div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>   
-
-                        <div id="overlay_backdrop-1" class="slider_work-overlay-backdrop overlay-backdrop"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="has-test row justify-content-md-between">
-
-                    <div class="col-48 col-md-16 col-lg-11">
-
-                        <h2 class="mb-3">
-                            
-                            Access Robotics
-
-                        </h2>
-
-                        <hr class="mb-5 mb-md-2">
-
-                        <button id="overlay_open-2" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-       
-                        <a class="visit d-inline-block mb-6" target="Access Robotics" href="https://accessrobotics.com.au/">Visit</a>
-
-                    </div>
-
-                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                        <img src="./images/access.webp" width="760" height="475" alt="Access Robotics" />
-
-                    </div>
-
-                    <div class="overflow-hidden">
-
-                        <div id="overlay_body-2" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
-
-                            <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
-
-                                <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
-
-                                    <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
-
-                                        <button aria-label="prev" class="overlay-prev p-2 mx-3"><i class="fa-solid fa-circle-chevron-left"></i></button>  
-
-                                        <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
-
-                                        <button aria-label="next" class="overlay-next p-2 mx-3"><i class="fa-solid fa-circle-chevron-right"></i></button>  
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
-
-                                    <div class="row justify-content-center w-100">
-
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
-
-                                            <h3 class="text-center m-0"> Access Robotics </h3>
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
-
-                                            <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
-
-                                                <li>  Wordpress theme </li>
-
-                                                <li> <i class="fa-regular fa-copyright"></i> Lateral Aspect </li>
-
-                                                <li>  Design copy </li>
-
-                                            </ul>
-
-                                            <hr class="mx-lg-10 mt-8 w-100">
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline>
-                                                <source src="./videos/access.mp4" type="video/mp4">
-                                            </video>
-
-                                            <div class="controlls d-flex justify-content-center align-items-center">
-
-                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
-
-                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <div class="slider_workinner-outer workinner-outer">
-
-                                                <div class="slider_workinner-button-next-container button-container">
-
-                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
-
-                                                </div>
-
-                                                <div class="slider_workinner-container slider-container">
-
-                                                    <a href="https://accessrobotics.com.au/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
-                                                    <a href="https://accessrobotics.com.au/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
-                                                    <div class="slider_workinner-inner inner"></div>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
-
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
-
-                                                        <div>
-
-                                                            <a href="https://accessrobotics.com.au/" rel="noreferrer" target="_blank">Visit</a>
-                                                
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
-
-                                                        <div>
-
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count  d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
-
-                                                        <div>
-
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="slider_workinner-percentage percentage">
-
-                                                    <div class="percentage-change"></div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>   
-
-                        <div id="overlay_backdrop-2" class="slider_work-overlay-backdrop overlay-backdrop"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="has-test row justify-content-md-between">
-
-                    <div class="col-48 col-md-16 col-lg-11">
-
-                        <h2 class="mb-3">
-                            
-                            Daves Blog
-
-                        </h2>
-
-                        <hr class="mb-5 mb-md-2">
-
-                        <button id="overlay_open-3" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-
-                        <p class="mb-1">
-                            
-                            Admin:
-                            <br>
-                            <button class="copy-tooltip"> Username <span class="d-none"> demo </span> </button>
-                            <br>
-                            <button class="copy-tooltip"> Password <span class="d-none"> demo </span> </button>
-                    
-                        </p>
-
-                        <a class="visit d-inline-block mb-6" target="Daves Blog" href="https://davesblog.sunnyhome.site/">Visit</a>
-
-                    </div>
-
-                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                        <img src="./images/daves.webp" width="760" height="475" alt="Daves Blog" />
-
-                    </div>
-
-                    <div class="overflow-hidden">
-
-                        <div id="overlay_body-3" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
-
-                            <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
-
-                                <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
-
-                                    <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
-
-                                        <button aria-label="prev" class="overlay-prev p-2 mx-3"><i class="fa-solid fa-circle-chevron-left"></i></button>  
-
-                                        <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
-
-                                        <button aria-label="next" class="overlay-next p-2 mx-3"><i class="fa-solid fa-circle-chevron-right"></i></button>  
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
-
-                                    <div class="row justify-content-center w-100">
-
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
-
-                                            <h3 class="text-center m-0"> Daves Blog </h3>
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
-
-                                            <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
-
-                                                <li> Design copy  </li>
-
-                                                <li> PWA </li>
-                 
-                                                <li> MVC - OOP - SQL - CMS  </li>
+                                                    ?>
                                         
-                                                <li> PHP API Template  </li>
+                                                </p>
 
-                                                <li> HTTP Observatory A+ </li>
+                                            <?php
+                                        }
 
-                                                <li> SSL A+ </li>
-                
-                                            </ul>
+                                    ?>
 
-                                            <hr class="mx-lg-10 mt-8 w-100">
+                                    <?php
 
-                                        </div>
+                                        if (isset($row["link"])) {
 
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
+                                            ?>
+      
+                                                <a class="visit d-inline-block mb-6" target="Furniture" href="<?php echo $row["link"]; ?>">Visit</a>
 
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
-                                                <source src="./videos/daves.mp4" type="video/mp4">
-                                            </video>
+                                            <?php
+                                        }
 
-                                            <div class="controlls d-flex justify-content-center align-items-center">
+                                    ?>
 
-                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
+                                </div>
 
-                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
+                                <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
 
-                                            </div>
+                                    <?php
 
-                                        </div>
+                                        if (isset($row["image"]["src"]) && isset($row["image"]["alt"])) {
 
-                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+                                            ?>
 
-                                            <div class="slider_workinner-outer workinner-outer">
+                                                <h2 class="mb-3">
+                                                    
+                                                    <img src="<?php echo $row["image"]["src"]; ?>" width="760" height="475" alt="<?php echo $row["image"]["alt"]; ?>" />
 
-                                                <div class="slider_workinner-button-next-container button-container">
+                                                </h2>
 
-                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+                                            <?php
+                                        }
 
-                                                </div>
+                                    ?>
 
-                                                <div class="slider_workinner-container slider-container">
+                                </div>
 
-                                                    <a href="https://davesblog.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
-                                                    <a href="https://davesblog.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
-                                                    <div class="slider_workinner-inner inner"></div>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+                                <div class="overflow-hidden">
 
+                                    <div id="overlay_body-<?php echo $index; ?>" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
 
-                                                    <div class="static-count d-none">
+                                        <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 
-                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+                                            <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
 
-                                                        <div>
+                                                <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
 
-                                                            <a href="https://davesblog.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
-                                                
-                                                        </div>
+                                                    <?php
 
-                                                    </div>
+                                                        if($index !== 0) {
 
-                                                    <div class="static-count d-none">
+                                                            ?>
 
-                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+                                                                <button aria-label="prev" class="overlay-prev p-2 mx-3"><i class="fa-solid fa-circle-chevron-left"></i></button>
 
-                                                        <div>
+                                                            <?php
 
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
+                                                        }
 
-                                                        </div>
+                                                    ?>
 
-                                                    </div>
+                                                    <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
+                                                    
+                                                    <?php
 
-                                                    <div class="static-count  d-none">
+                                                        if($index !== $count) {
 
-                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+                                                            ?>
 
-                                                        <div>
+                                                                <button aria-label="next" class="overlay-next p-2 mx-3"><i class="fa-solid fa-circle-chevron-right"></i></button> 
 
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
+                                                            <?php
 
-                                                        </div>
+                                                        }
 
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="slider_workinner-percentage percentage">
-
-                                                    <div class="percentage-change"></div>
+                                                    ?>
 
                                                 </div>
 
                                             </div>
 
+                                            <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
+
+                                                <div class="row justify-content-center w-100">
+
+                                                    <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
+                                    
+                                                        <?php
+
+                                                            if (isset($row["title"])) {
+
+                                                                ?>
+
+                                                                    <h3 class="text-center m-0">      
+                                                                        
+                                                                        <?php echo $row["title"]; ?>
+
+                                                                    </h3>
+
+                                                                <?php
+                                                            }
+
+                                                        ?>
+
+                                                    </div>
+
+                                                    <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
+
+                                                        <?php
+
+                                                            if (isset($row["list-item"])) {
+
+                                                                ?>
+
+                                                                    <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
+
+                                                                        <?php
+
+                                                                            foreach ($row["list-item"] as $item) {
+
+                                                                                ?>
+
+                                                                                    <li> <?php echo $item; ?> </li>
+
+                                                                                <?php
+
+                                                                            }
+
+                                                                        ?>
+                                                    
+                                                                    </ul>
+
+                                                                <?php
+
+                                                            }
+
+                                                        ?>
+
+                                                        <hr class="mx-lg-10 mt-8 w-100">
+
+                                                    </div>
+
+                                                    <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                                        <?php
+
+                                                            if (isset($row["mp4"])) {
+
+                                                                ?>
+
+                                                                    <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline>
+                                                            
+                                                                        <source src="<?php echo $row["mp4"]; ?> " type="video/mp4">
+
+                                                                    </video>
+
+                                                                <?php
+                                                            }
+
+                                                        ?>
+                                        
+                                                        <div class="controlls d-flex justify-content-center align-items-center">
+
+                                                            <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
+
+                                                            <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
+
+                                                        <div class="slider_workinner-outer workinner-outer">
+
+                                                            <div class="slider_workinner-button-next-container button-container">
+
+                                                                <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                                                                <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+                                                            </div>
+
+                                                            <div class="slider_workinner-container slider-container">
+
+                                                                <?php
+
+                                                                    if (isset($row["link"]) && isset($tel)) {
+
+                                                                        ?>
+
+                                                                            <a href="<?php echo $row["link"]; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+
+                                                                            <a href="<?php echo $row["link"]; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+
+                                                                            <div class="slider_workinner-inner inner"></div>
+
+                                                                            <a href="tel:<?php echo $tel; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+
+                                                                            <a href="tel:<?php echo $tel; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+
+
+                                                                        <?php
+
+                                                                    }
+
+                                                                ?>
+
+                                                                <div class="static-count d-none">
+
+                                                                    <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
+
+                                                                    <div>
+
+                                                                        <?php
+
+                                                                            if (isset($row["link"])) {
+
+                                                                                ?>
+
+                                                                                    <a href="<?php echo $row["link"]; ?>" rel="noreferrer" target="_blank">Visit</a>
+
+                                                                                <?php
+
+                                                                            }
+
+                                                                        ?>
+                                                            
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="static-count d-none">
+
+                                                                    <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                                    <div>
+
+                                                                        <?php
+
+                                                                            if (isset($tel)) {
+
+                                                                                ?>
+
+                                                                                    <a href="tel:<?php echo $tel; ?>" rel="noreferrer" target="_blank">Phone</a>
+                                                                                
+                                                                                <?php
+
+                                                                            }
+
+                                                                        ?>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="static-count  d-none">
+
+                                                                    <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+
+                                                                    <div>
+
+                                                                        <?php
+
+                                                                            if (isset($mailto)) {
+
+                                                                                ?>
+
+                                                                                    <a href="mailto:<?php echo $mailto; ?>" rel="noreferrer" target="_blank">Email</a>
+
+                                                                                <?php
+                                                                                
+                                                                            }
+
+                                                                        ?>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="slider_workinner-percentage percentage">
+
+                                                                <div class="percentage-change"></div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
                                         </div>
 
-                                    </div>
+                                    </div>   
+
+                                    <div id="overlay_backdrop-<?php echo $index; ?>" class="slider_work-overlay-backdrop overlay-backdrop"></div>
 
                                 </div>
 
                             </div>
 
-                        </div>   
+                        <?php
 
-                        <div id="overlay_backdrop-3" class="slider_work-overlay-backdrop overlay-backdrop"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="has-test row justify-content-md-between">
-
-                    <div class="col-48 col-md-16 col-lg-11">
-
-                        <h2 class="mb-3">
-                            
-                            Business
-
-                        </h2>
-
-                        <hr class="mb-5 mb-md-2">
-
-                        <button id="overlay_open-4" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-       
-                        <a class="visit d-inline-block mb-6" target="Business" href="https://business.sunnyhome.site/">Visit</a>
-
-                    </div>
-
-                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                        <img src="./images/business.webp" width="760" height="475" alt="Business" />
-
-                    </div>
-
-                    <div class="overflow-hidden">
-
-                        <div id="overlay_body-4" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
-
-                            <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
-
-                                <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
-
-                                    <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
-
-                                        <button aria-label="prev" class="overlay-prev p-2 mx-3"><i class="fa-solid fa-circle-chevron-left"></i></button>  
-
-                                        <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
-
-                                        <button aria-label="next" class="overlay-next p-2 mx-3"><i class="fa-solid fa-circle-chevron-right"></i></button>  
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
-
-                                    <div class="row justify-content-center w-100">
-
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
-
-                                            <h3 class="text-center m-0"> Business </h3>
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
-
-                                            <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
-
-                                                <li>  Homepage </li>
-
-                                                <li> PWA </li>
-
-                                                <li> HTTP Observatory A+ </li>
-
-                                                <li> SSL A+ </li>
-
-                                            </ul>
-
-                                            <hr class="mx-lg-10 mt-8 w-100">
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
-                                                <source src="./videos/business.mp4" type="video/mp4">
-                                            </video>
-
-                                            <div class="controlls d-flex justify-content-center align-items-center">
-
-                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
-
-                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <div class="slider_workinner-outer workinner-outer">
-
-                                                <div class="slider_workinner-button-next-container button-container">
-
-                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
-
-                                                </div>
-
-                                                <div class="slider_workinner-container slider-container">
-
-                                                    <a href="https://business.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
-                                                    <a href="https://business.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
-                                                    <div class="slider_workinner-inner inner"></div>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
-
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
-
-                                                        <div>
-
-                                                            <a href="https://business.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
-                                                
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
-
-                                                        <div>
-
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count  d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
-
-                                                        <div>
-
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="slider_workinner-percentage percentage">
-
-                                                    <div class="percentage-change"></div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>   
-
-                        <div id="overlay_backdrop-4" class="slider_work-overlay-backdrop overlay-backdrop"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="has-test row justify-content-md-between">
-
-                    <div class="col-48 col-md-16 col-lg-11">
-
-                        <h2 class="mb-3">
-                            
-                            Weather App
-
-                        </h2>
-
-                        <hr class="mb-5 mb-md-2">
-                        
-                        <button id="overlay_open-5" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-
-                        <a class="visit d-inline-block mb-6" target="Weather App" href="https://sticky.sunnyhome.site/">Visit</a>
-
-                    </div>
-
-                    <div class="col-48 col-md-26 col-lg-32 mb-12 mb-md-13">
-
-                        <img src="./images/weather.webp" width="760" height="475" alt="Weather App" />
-
-                    </div>
-
-                    <div class="overflow-hidden">
-
-                        <div id="overlay_body-5" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
-
-                            <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
-
-                                <div class="slider_work-overlay-sidebar order-lg-2 col-48 col-lg-10">
-
-                                    <div class="slider_work-button-container d-flex justify-content-center pt-lg-8">
-
-                                        <button aria-label="prev" class="overlay-prev p-2 mx-3"><i class="fa-solid fa-circle-chevron-left"></i></button>  
-
-                                        <button aria-label="close" class="overlay-close p-2 mx-3"><i class="fa-solid fa-circle-xmark"></i></button>	
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-42 col-sm-30 col-lg-38 d-flex align-items-center py-9 py-lg-12">
-
-                                    <div class="row justify-content-center w-100">
-
-                                        <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
-
-                                            <h3 class="text-center m-0"> Weather App </h3>
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-list-container col-48 col-lg-22 d-flex flex-wrap pt-9 pt-lg-0">
-
-                                            <ul class="flex-fill ps-0 ps-lg-9 my-0 ms-7"> 
-
-                                                <li> XML </li> 
-                                
-                                                <li> PWA </li>
-
-                                                <li> HTTP Observatory A+ </li>
-
-                                                <li> SSL A+ </li>
-                                                
-                                            </ul>
-
-                                            <hr class="mx-lg-10 mt-8 w-100">
-
-                                        </div>
-
-                                        <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline controlls="false">
-                                                <source src="./videos/weather.mp4" type="video/mp4">
-                                            </video>
-
-                                            <div class="controlls d-flex justify-content-center align-items-center">
-
-                                                <img class="play-video" alt="play" width="40" height="40" src="./images/play.webp" />
-
-                                                <img class="pause-video has-pause" alt="pause" width="40" height="40" src="./images/pause.webp" />
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="slider_workinner col-48 col-lg-40 mt-9 mt-lg-12">
-
-                                            <div class="slider_workinner-outer workinner-outer">
-
-                                                <div class="slider_workinner-button-next-container button-container">
-
-                                                    <button aria-label="open-left" class="slider_workinner-button-next open-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                                                    <button aria-label="open-right" class="slider_workinner-button-next open-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
-
-                                                </div>
-
-                                                <div class="slider_workinner-container slider-container">
-
-                                                    <a href="https://sticky.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
-                                                    <a href="https://sticky.sunnyhome.site/" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
-                                                    <div class="slider_workinner-inner inner"></div>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
-                                                    <a href="tel:+61434984983" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
-
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
-
-                                                        <div>
-
-                                                            <a href="https://sticky.sunnyhome.site/" rel="noreferrer" target="_blank">Visit</a>
-                                                
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
-
-                                                        <div>
-
-                                                            <a href="tel:+61434984983" rel="noreferrer" target="_blank">Phone</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="static-count  d-none">
-
-                                                        <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
-
-                                                        <div>
-
-                                                            <a href="mailto:costellodaniel686@gmail.com" rel="noreferrer" target="_blank">Email</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="slider_workinner-percentage percentage">
-
-                                                    <div class="percentage-change"></div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>   
-
-                        <div id="overlay_backdrop-5" class="slider_work-overlay-backdrop overlay-backdrop"></div>
-
-                    </div>
-
-                </div>
+                    }
+                ?>
 
             </section>
 
