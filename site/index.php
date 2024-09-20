@@ -52,6 +52,7 @@
     ];
 
     $count = count($work) - 1;
+    
 ?>
 
 <!DOCTYPE html>
