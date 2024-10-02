@@ -1,3 +1,13 @@
+<?php
+
+    // view variables
+
+    $tel = "+61 434 984 983";
+    $mailto = "costellodaniel686@gmail.com";
+    $linkedin = "https://www.linkedin.com/in/daniel-costello-579b10259/";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,11 +57,23 @@
 
                             </li>
 
-                            <li class="list-inline-item">
+                            <?php
 
-                                <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                if (isset($mailto)) {
 
-                            </li>
+                                    ?>
+
+                                        <li class="list-inline-item">
+                                            
+                                            <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+
+                                        </li>
+
+                                    <?php
+                                    
+                                }
+
+                            ?>
 
                         </ul>
 
@@ -147,13 +169,13 @@
 
                                         <a class="mb-3 d-block" target="GitHub" href="https://github.com/sunnysunny77/"> GitHub <i class="fa-regular fa-heart"></i> </a>
 
-                                        <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress </a>
+                                        <a class="mb-3 d-block" target="Template" href="https://github.com/sunnysunny77/template/"> Development Stack </a>
+
+                                        <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress Stack</a>
 
                                         <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/">  Basic Wordpress </a>
 
                                         <a class="mb-3 d-block" target="Sliders" href="https://sliders.sunnyhome.site/"> Sliders </a>
-
-                                        <a class="mb-3 d-block" target="Candid" href="https://candidcleaning.sunnyhome.site/"> Candid </a>
 
                                         <a class="mb-3 d-block" target="Login" href="https://login.sunnyhome.site/"> Login App </a>
 
@@ -171,9 +193,33 @@
 
                                         <h2 class="mb-3"> Contact </h2>
 
-                                        <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
+                                        <?php
 
-                                        <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                            if (isset($tel)) {
+
+                                                ?>
+
+                                                    <a class="d-block mb-2" href="tel:<?php echo str_replace(' ', '', $tel); ?>"> <?php echo $tel; ?> </a>
+
+                                                <?php
+                                                
+                                            }
+
+                                        ?>   
+
+                                        <?php
+
+                                            if (isset($mailto)) {
+
+                                                ?>
+
+                                                     <button class="copy-tooltip p-0"> <?php echo $mailto; ?> <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+
+                                                <?php
+                                                
+                                            }
+
+                                        ?>
 
                                     </div>
 
@@ -205,17 +251,41 @@
 
                         <li class="me-md-8 order-2 order-md-3"> <a class="active navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
 
-                        <li class="order-3 order-md-4">
-                
-                            <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                        <?php
 
-                        </li>
+                            if (isset($mailto)) {
+
+                                ?>
+
+                                    <li class="order-3 order-md-4">
+                            
+                                        <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+
+                                    </li>
+
+                                <?php
+                                
+                            }
+
+                        ?>
 
                     </ul>
 
                     <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
 
-                        <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+                        <?php
+
+                            if (isset($linkedin)) {
+
+                                ?>
+
+                                    <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="<?php echo $linkedin; ?>"> LinkedIn </a>
+
+                                <?php
+                                
+                            }
+
+                        ?>
 
                     </div>
 

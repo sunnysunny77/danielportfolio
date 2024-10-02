@@ -1,9 +1,10 @@
 <?php
 
-    // work item view
+    // view variables
 
-    $tel = "+61434984983";
+    $tel = "+61 434 984 983";
     $mailto = "costellodaniel686@gmail.com";
+    $linkedin = "https://www.linkedin.com/in/daniel-costello-579b10259/";
 
     $work =[
         [ 
@@ -48,6 +49,13 @@
             "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],
             "list-item" => [ "XML", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/weather.mp4",
+        ],
+        [ 
+            "title" => "Candid Cleaning",
+            "link" => "https://candidcleaning.sunnyhome.site/",
+            "image" => [ "src" => "./images/candid.webp", "alt" => "Candid Cleaning" ],
+            "list-item" => [ "React/JSX - NodeJS - Mongo", "Material UI", "Googleapis OAUTH email", "Google drive used as CMS", "Mapbox GL", "HTTP Observatory A+", "SSL A+" ],
+            "mp4" => "./videos/candid.mp4",
         ],
     ];
 
@@ -104,11 +112,23 @@
 
                             </li>
 
-                            <li class="list-inline-item">
+                            <?php
 
-                                <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                if (isset($mailto)) {
 
-                            </li>
+                                    ?>
+
+                                        <li class="list-inline-item">
+                                            
+                                            <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+
+                                        </li>
+
+                                    <?php
+                                    
+                                }
+
+                            ?>
 
                         </ul>
 
@@ -141,9 +161,33 @@
 
                         <div class="d-none d-lg-block">
 
-                            <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
+                            <?php
 
-                            <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                                if (isset($tel)) {
+
+                                    ?>
+
+                                        <a class="d-block mb-2" href="tel:<?php echo str_replace(' ', '', $tel); ?>"> <?php echo $tel; ?> </a>
+
+                                    <?php
+                                    
+                                }
+
+                            ?>   
+
+                            <?php
+
+                                if (isset($mailto)) {
+
+                                    ?>
+
+                                        <button class="copy-tooltip p-0"> <?php echo $mailto; ?>  <span class="d-none"> <?php echo $mailto; ?>  </span> </button>
+
+                                        <?php
+                                    
+                                }
+
+                            ?>
 
                         </div>
 
@@ -477,9 +521,9 @@
 
                                                                             <div class="slider_workinner-inner inner"></div>
 
-                                                                            <a href="tel:<?php echo $tel; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                                            <a href="tel:<?php echo str_replace(' ', '', $tel); ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
 
-                                                                            <a href="tel:<?php echo $tel; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+                                                                            <a href="tel:<?php echo str_replace(' ', '', $tel); ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
 
 
                                                                         <?php
@@ -524,7 +568,7 @@
 
                                                                                 ?>
 
-                                                                                    <a href="tel:<?php echo $tel; ?>" rel="noreferrer" target="_blank">Phone</a>
+                                                                                    <a href="tel:<?php echo str_replace(' ', '', $tel); ?>" rel="noreferrer" target="_blank">Phone</a>
                                                                                 
                                                                                 <?php
 
@@ -609,17 +653,41 @@
 
                         <li class="me-md-8 order-2 order-md-3"> <a class="navigation-anchor px-0 py-3" href="./about.php"> About </a> </li>
 
-                        <li class="order-3 order-md-4">
-                
-                            <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                        <?php
 
-                        </li>
+                            if (isset($mailto)) {
+
+                                ?>
+
+                                    <li class="order-3 order-md-4">
+                            
+                                        <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+
+                                    </li>
+
+                                <?php
+                                
+                            }
+
+                        ?>
 
                     </ul>
 
                     <div class="col-48 col-md-16 d-flex justify-content-center justify-content-md-end">
 
-                        <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="https://www.linkedin.com/in/daniel-costello-579b10259/"> LinkedIn </a>
+                        <?php
+
+                            if (isset($linkedin)) {
+
+                                ?>
+
+                                    <a class="navigation-anchor px-0 py-3" target="LinkedIn" href="<?php echo $linkedin; ?>"> LinkedIn </a>
+
+                                <?php
+                                
+                            }
+
+                        ?>
 
                     </div>
 
