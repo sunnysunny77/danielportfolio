@@ -27,7 +27,10 @@
 }
 
 .slider_workinner-a {
-    padding: 8.5%;
+    padding: 30.375px;
+    @include min_sm {
+        padding: 9.5%
+    }
     background-size: contain;
     clip-path: circle(40%);
 }
@@ -48,8 +51,11 @@
     &.has-right {
         transition: 0.75s left cubic-bezier(0.215, 0.61, 0.355, 1);
         will-change: left;
-        left: 83%;
+        left: calc(100% - 60.75px);
         z-index: 1;
+        @include min_sm {
+            left: 81%;
+        }
     }
 }
 
@@ -59,8 +65,11 @@
     &.has-left {
         transition: 0.75s right cubic-bezier(0.215, 0.61, 0.355, 1);
         will-change: right;
-        right: 83%;
+        right: calc(100% - 60.75px);
         z-index: 1;
+        @include min_sm {
+            right: 81%;
+        }
     }
 }
 
