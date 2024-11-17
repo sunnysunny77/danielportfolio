@@ -11,6 +11,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TBDFZ1ZRW5');
+    </script>
     <script src="./js/preload.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="D.Costello Portfolio" />
