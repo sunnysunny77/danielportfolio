@@ -67,8 +67,8 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5"></script>
-    <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="8IBTHwOdqNKAWeKl7plt8g=="></script>
+    <script nonce="8IBTHwOdqNKAWeKl7plt8g==">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
