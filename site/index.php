@@ -31,7 +31,7 @@
         [ 
             "title" => "Daves Blog",
             "link" => "https://davesblog.sunnyhome.site/",
-            "credentials" => [ "title" => "Admin:", "username" => "demo", "password" => "demo" ],
+            "credentials" => [ ["title" => "Admin:", "username" => "demo", "password" => "demo" ], ],
             "image" => [ "src" => "./images/daves.webp", "alt" => "Daves Blog" ],
             "list-item" => [ "Design Copy", "PWA", "MVC - OOP - SQL - CMS", "PHP API Template", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/daves.mp4",
@@ -56,6 +56,14 @@
             "image" => [ "src" => "./images/candid.webp", "alt" => "Candid Cleaning" ],
             "list-item" => [ "React/JSX - NodeJS - Mongo", "Material UI", "Googleapis OAUTH email", "Google drive used as CMS", "Mapbox GL", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/candid.mp4",
+        ],
+        [ 
+            "title" => "Login App",
+            "link" => "https://login.sunnyhome.site/",
+            "credentials" => [ [ "title" => "PayPal:", "username" => "sb-iyl4x21604127@personal.example.com", "password" => "*]T0%Ae8" ], [ "title" => "Login:", "username" => "daniel@gmail.com", "password" => "passwordA1" ], ],
+            "image" => [ "src" => "./images/login.webp", "alt" => "Login App" ],
+            "list-item" => [ "React/JSX - NodeJS - PHP - API", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
+            "mp4" => "./videos/login.mp4",
         ],
     ];
 
@@ -278,59 +286,62 @@
 
                                         if (isset($row["credentials"])) {
 
-                                            ?>
+                                            foreach ($row["credentials"] as $credential) {                   
 
-                                                <p class="mb-1">
+                                                ?>
 
-                                                    <?php
+                                                    <p class="mb-1">
 
-                                                        if (isset($row["credentials"]["title"])) {
+                                                        <?php
 
-                                                            ?>
-                                    
-                                                                <span> <?php echo $row["credentials"]["title"] ?> </span>
+                                                            if (isset($credential["title"])) {
 
-                                                            <?php
-
-                                                        }
-
-                                                    ?>
-
-                                                    <br>
-
-                                                    <?php
-
-                                                        if (isset($row["credentials"]["username"])) {
-
-                                                            ?>
-
-                                                                <button class="copy-tooltip"> Username <span class="d-none"> <?php echo $row["credentials"]["username"] ?> </span> </button>
-
-                                                            <?php
-
-                                                        }
-
-                                                    ?>
-
-                                                    <br>
-
-                                                    <?php
-
-                                                        if (isset($row["credentials"]["password"])) {
-
-                                                            ?>
-
-                                                                <button class="copy-tooltip"> Password <span class="d-none"> <?php echo $row["credentials"]["password"] ?> </span> </button>
-
-                                                            <?php
-
-                                                        }
-
-                                                    ?>
+                                                                ?>
                                         
-                                                </p>
+                                                                    <span> <?php echo $credential["title"] ?> </span>
 
-                                            <?php
+                                                                <?php
+
+                                                            }
+
+                                                        ?>
+
+                                                        <br>
+
+                                                        <?php
+
+                                                            if (isset($credential["username"])) {
+
+                                                                ?>
+
+                                                                    <button class="copy-tooltip"> Username <span class="d-none"> <?php echo $credential["username"] ?> </span> </button>
+
+                                                                <?php
+
+                                                            }
+
+                                                        ?>
+
+                                                        <br>
+
+                                                        <?php
+
+                                                            if (isset($credential["password"])) {
+
+                                                                ?>
+
+                                                                    <button class="copy-tooltip"> Password <span class="d-none"> <?php echo $credential["password"] ?> </span> </button>
+
+                                                                <?php
+
+                                                            }
+
+                                                        ?>
+                                            
+                                                    </p>
+
+                                                <?php
+                                            }
                                         }
 
                                     ?>
