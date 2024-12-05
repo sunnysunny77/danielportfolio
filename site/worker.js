@@ -1,4 +1,4 @@
-const version = 1.0001;
+const version = 1.1;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
@@ -135,5 +135,18 @@ self.addEventListener("fetch", (event) => {
   } else {
 
     event.respondWith(first(event.request));
+  }
+});
+
+self.addEventListener("activate", async () => {
+
+  const keys = await caches.keys();
+
+  for (const key of keys) {
+
+    if (!key.includes(cacheName)) {
+      
+      caches.delete(key);
+    } 
   }
 });
