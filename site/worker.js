@@ -1,4 +1,4 @@
-const version = 1;
+const version = 2;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
@@ -144,9 +144,6 @@ self.addEventListener("activate", async () => {
 
   for (const key of keys) {
 
-    if (!key.includes(cacheName)) {
-      
-      caches.delete(key);
-    } 
+    if (cacheName != key) caches.delete(key);
   }
 });
