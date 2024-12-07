@@ -51,13 +51,6 @@
             "mp4" => "./videos/weather.mp4",
         ],
         [ 
-            "title" => "Candid Cleaning",
-            "link" => "https://candidcleaning.sunnyhome.site/",
-            "image" => [ "src" => "./images/candid.webp", "alt" => "Candid Cleaning" ],
-            "list-item" => [ "React/JSX - NodeJS - Mongo", "Material UI", "Googleapis OAUTH email", "Google drive used as CMS", "Mapbox GL", "HTTP Observatory A+", "SSL A+" ],
-            "mp4" => "./videos/candid.mp4",
-        ],
-        [ 
             "title" => "Login App",
             "link" => "https://login.sunnyhome.site/",
             "credentials" => [ [ "title" => "PayPal:", "username" => "sb-iyl4x21604127@personal.example.com", "password" => "*]T0%Ae8" ], [ "title" => "Login:", "username" => "daniel@gmail.com", "password" => "passwordA1" ], ],

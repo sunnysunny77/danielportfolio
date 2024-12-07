@@ -1,4 +1,4 @@
-const version = 3;
+const version = 1;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
@@ -20,6 +20,7 @@ const resources = [
   "./images/business.webp", 
   "./images/weather.webp", 
   "./images/daniel.webp",
+  "./images/login.webp",
   "./images/pwa-logo-small.webp",
   "./images/pwa-logo.webp",
   "./images/play.webp",
