@@ -14,6 +14,7 @@
             "image" => [ "src" => "./images/login.webp", "alt" => "Login App" ],
             "list-item" => [ "React/JSX - NodeJS - PHP - API", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/login.mp4",
+            "git" => "https://github.com/sunnysunny77/reactlogin",
         ],
         [ 
             "title" => "Fasera",
@@ -36,6 +37,7 @@
             "image" => [ "src" => "./images/daves.webp", "alt" => "Daves Blog" ],
             "list-item" => [ "Design Copy", "PWA", "MVC - OOP - SQL - CMS", "PHP API Template", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/daves.mp4",
+            "git" => "https://github.com/sunnysunny77/davesblog",
         ],
         [ 
             "title" => "Business",
@@ -43,6 +45,7 @@
             "image" => [ "src" => "./images/business.webp", "alt" => "Business" ],
             "list-item" => [ "Homepage", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/business.mp4",
+            "git" => "https://github.com/sunnysunny77/business",
         ],
         [ 
             "title" => "Weather App",
@@ -50,6 +53,7 @@
             "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],
             "list-item" => [ "XML", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/weather.mp4",
+            "git" => "https://github.com/sunnysunny77/weatherxml",
         ],
         [ 
             "title" => "Furniture Warehouse",
@@ -57,6 +61,7 @@
             "image" => [ "src" => "./images/furniture.webp", "alt" => "Furniture" ],
             "list-item" => [ "Design Copy", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/furniture.mp4",
+            "git" => "https://github.com/sunnysunny77/furniture",
         ],
     ];
 
@@ -522,22 +527,34 @@
 
                                                             <div class="slider_workinner-container slider-container">
 
+
+                                                                <a href="" class="slider_workinner-a image-1"></a>
+
+                                                                <a href="" class="slider_workinner-a image-fill-right"></a>
+
+                                                                <div class="slider_workinner-inner inner"></div>
+
+                                                                <a href="" class="slider_workinner-a image-2"></a>
+
+                                                                <a href="" class="slider_workinner-a image-fill-left"></a>
+
                                                                 <?php
 
-                                                                    if (isset($row["link"]) && isset($tel)) {
+                                                                    if (isset($row["link"])) {
 
                                                                         ?>
 
-                                                                            <a href="<?php echo $row["link"]; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-1"></a>
+                                                                            <div class="static-count d-none">
 
-                                                                            <a href="<?php echo $row["link"]; ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-right"></a>
+                                                                                <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="visit" />
 
-                                                                            <div class="slider_workinner-inner inner"></div>
+                                                                                <div>
 
-                                                                            <a href="tel:<?php echo str_replace(' ', '', $tel); ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-2"></a>
+                                                                                    <a rel="noreferrer" target="_blank" href="<?php echo $row["link"]; ?>">Visit</a>
 
-                                                                            <a href="tel:<?php echo str_replace(' ', '', $tel); ?>" rel="noreferrer" target="_blank" class="slider_workinner-a image-fill-left"></a>
+                                                                                </div>
 
+                                                                            </div>
 
                                                                         <?php
 
@@ -545,77 +562,77 @@
 
                                                                 ?>
 
-                                                                <div class="static-count d-none">
+                                                                <?php
 
-                                                                    <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="mail" />
-
-                                                                    <div>
-
-                                                                        <?php
-
-                                                                            if (isset($row["link"])) {
-
-                                                                                ?>
-
-                                                                                    <a href="<?php echo $row["link"]; ?>" rel="noreferrer" target="_blank">Visit</a>
-
-                                                                                <?php
-
-                                                                            }
-
-                                                                        ?>
-                                                            
-                                                                    </div>
-
-                                                                </div>
-
-                                                                <div class="static-count d-none">
-
-                                                                    <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
-
-                                                                    <div>
-
-                                                                        <?php
-
-                                                                            if (isset($tel)) {
-
-                                                                                ?>
-
-                                                                                    <a href="tel:<?php echo str_replace(' ', '', $tel); ?>" rel="noreferrer" target="_blank">Phone</a>
-                                                                                
-                                                                                <?php
-
-                                                                            }
+                                                                    if (isset($row["git"])) {
 
                                                                         ?>
 
-                                                                    </div>
+                                                                            <div class="static-count d-none">
 
-                                                                </div>
+                                                                                <img class="slider_workinner-img" src="./images/git.webp" width="150" height="150" alt="visit" />
 
-                                                                <div class="static-count  d-none">
+                                                                                <div>
 
-                                                                    <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="LinkedIn" />
+                                                                                    <a rel="noreferrer" target="_blank" href="<?php echo $row["git"]; ?>">GitHub</a>
 
-                                                                    <div>
+                                                                                </div>
+
+                                                                            </div>
 
                                                                         <?php
 
-                                                                            if (isset($mailto)) {
+                                                                    }
 
-                                                                                ?>
+                                                                ?>
 
-                                                                                    <a href="mailto:<?php echo $mailto; ?>" rel="noreferrer" target="_blank">Email</a>
+                                                                <?php
 
-                                                                                <?php
-                                                                                
-                                                                            }
+                                                                    if (isset($tel)) {
 
                                                                         ?>
 
-                                                                    </div>
+                                                                            <div class="static-count d-none">
 
-                                                                </div>
+                                                                                <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
+
+                                                                                <div>
+
+                                                                                    <a rel="noreferrer" target="_blank" href="tel:<?php echo str_replace(' ', '', $tel); ?>">Phone</a>
+                                                                                            
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                        <?php
+
+                                                                    }
+
+                                                                ?>
+
+                                                                <?php
+
+                                                                    if (isset($mailto)) {
+
+                                                                        ?>
+
+                                                                            <div class="static-count d-none">
+
+                                                                                <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="Mail" />
+
+                                                                                <div>
+     
+                                                                                    <a rel="noreferrer" target="_blank" href="mailto:<?php echo $mailto; ?>">Email</a>
+                                                                                    
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                        <?php
+                                                                        
+                                                                    }
+
+                                                                ?>
 
                                                             </div>
 

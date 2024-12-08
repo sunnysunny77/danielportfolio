@@ -26,6 +26,7 @@ const resources = [
   "./images/play.webp",
   "./images/pause.webp",
   "./images/visit.webp",
+  "./images/git.webp",
   "./images/phone.webp",
   "./images/mail.webp",
   "./fallback.php"
