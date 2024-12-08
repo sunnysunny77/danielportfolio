@@ -186,6 +186,9 @@
 
                                         <a class="mb-3 d-block" target="Sliders" href="https://sliders.sunnyhome.site/"> Sliders </a>
 
+                                        <a class="mb-3 d-block" target="Candid" href="https://candidcleaning.sunnyhome.site/"> Candid </a>
+
+
                                     </div>
 
                                     <div class="col-24 col-md-48 order-1 order-md-2">
