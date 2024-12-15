@@ -1,4 +1,4 @@
-const version = 105;
+const version = 106;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
@@ -103,7 +103,8 @@ const video = async (req) => {
  
   try {
 
-    const match = await caches.match(req);
+    const cache = await caches.open(cacheName);
+    const match = await cache.match(req);
 
     if (match) {
 
