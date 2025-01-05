@@ -34,7 +34,7 @@ if(path.includes("about")) {
   }
   for (const index of href_about) {
 
-    preload(index, "font");
+    preload(index, "image");
   }
 } else {
 
@@ -44,6 +44,6 @@ if(path.includes("about")) {
   }
   for (const index of href_work) {
 
-    preload(index, "font");
+    preload(index, "image");
   }
 }
