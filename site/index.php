@@ -135,7 +135,7 @@
 
                                         <li class="list-inline-item">
                                             
-                                            <button class="copy-tooltip navigation-anchor px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+                                            <button class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
 
                                         </li>
 

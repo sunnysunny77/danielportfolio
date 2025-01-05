@@ -10,38 +10,10 @@ nav {
     font-weight: 600;
     letter-spacing: 0.067em;
     padding: 60px 0;
-    &.has-fixed {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        padding: 15px 0 5px 0;
-        z-index: 999;
-        transition: top 0.375s, background-color 0.5s, min-height 1s;
-        will-change: top, min-height;
-        min-height: 55.5px;
-        background-color: transparentize($color_3, 0.15);
-        button::before {
-            background-color: $color_5;
-            color: $color_2;
-            z-index: 999;
-            top: 0;
-            right: -12px;
-            bottom: 8px;
-            left: -12px;
-            padding: 2px 12px;
-        }
-    }
-    &.has-top {
-        position: fixed;
-        padding: 15px 0 5px 0;
-        background-color: $color_2;
-        top: -55.5px;
-        right: 0;
-        left: 0;
-        min-height: 0;
-        height: 0;
-    }
+    right: 0;
+    left: 0;
+    z-index: 999;
+    will-change: top, max-height, background-color;
     a {
         color: $color_6;
     }
@@ -57,6 +29,16 @@ nav {
         }
         &:disabled {
             color: $color_6;
+        }
+        &.has-fixed::before {
+            background-color: $color_5;
+            color: $color_2;
+            z-index: 999;
+            top: 0;
+            right: -12px;
+            bottom: 8px;
+            left: -12px;
+            padding: 2px 12px;
         }
     }
     a,
