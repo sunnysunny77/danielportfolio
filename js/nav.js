@@ -20,9 +20,7 @@ export const nav = () => {
 
       if (window.innerWidth > 992) {
 
-        button.classList.remove("has-fixed");
         Object.assign(nav.style,{ position: "static", transition: "none", maxHeight: "", backgroundColor: "rgb(23, 34, 43)", padding: "60px 0"});
-        outer.style.paddingTop = 0;
         return;
       }
 
@@ -36,7 +34,7 @@ export const nav = () => {
 
       scrollY = window.scrollY;
 
-      let height = 55.5;
+      const height = 55.5;
 
       if (scrollY < main.offsetTop + nav.offsetHeight && scrollY > main.offsetTop && !positive) {
 
@@ -48,12 +46,12 @@ export const nav = () => {
       } else if (scrollY > main.offsetTop && positive) {
 
         Object.assign(nav.style,{ position: "fixed", top: `-${height}px`, transition: "top 0.375s, max-height 1s", maxHeight: 0, backgroundColor: "rgb(23, 34, 43)", padding: "15px 0 5px 0" });
-        outer.style.paddingTop = "155.5px";
+        outer.classList.add("has-fixed");
       } else {
 
         button.classList.remove("has-fixed");
         Object.assign(nav.style,{ position: "static", transition: "none", maxHeight: "", backgroundColor: "rgb(23, 34, 43)", padding: "60px 0"});
-        outer.style.paddingTop = 0;
+        outer.classList.remove("has-fixed");
       }
     };
 

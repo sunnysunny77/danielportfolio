@@ -91,6 +91,12 @@ main {
         will-change: background-color;
         z-index: -1;
     }
+    &.has-fixed {
+        padding-top: 155.5px;
+        @include min_lg {
+            padding-top: initial;
+        }
+    }
 }
 
 @keyframes intro {

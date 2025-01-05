@@ -39,6 +39,13 @@ nav {
             bottom: 8px;
             left: -12px;
             padding: 2px 12px;
+            @include min_lg {
+                right: 0;
+                top: initial;
+                bottom: calc(-100% + 8px);
+                left: initial;
+                z-index: 1000;
+            }
         }
     }
     a,
