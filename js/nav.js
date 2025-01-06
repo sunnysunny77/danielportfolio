@@ -45,12 +45,12 @@ export const nav = () => {
       } else if (scrollY > main.offsetTop && !positive) {
 
         outer.style.paddingTop = "155.5px";
-        button.classList.add("has-fixed");
         Object.assign(nav.style,{ position: "fixed", top: 0, transition: "top 0.375s, max-height 1s, background-color 0.5s", maxHeight: `${height}px`, backgroundColor: "rgba(23,34,43,.85)", padding: "15px 0 5px 0"});
       } else if (scrollY > main.offsetTop && positive) {
 
         outer.style.paddingTop = "155.5px";
-        Object.assign(nav.style,{ position: "fixed", top: `-${height}px`, transition: "top 0.375s, max-height 1s", maxHeight: 0, backgroundColor: "rgb(23, 34, 43)", padding: "15px 0 5px 0" });
+        button.classList.add("has-fixed");
+        Object.assign(nav.style,{ position: "fixed", top: `-${height}px`, transition: "top 0.375s, max-height 1s, background-color 0.5s", maxHeight: 0, backgroundColor: "rgb(23, 34, 43)", padding: "15px 0 5px 0" });
       } else {
 
         outer.style.paddingTop = "";
