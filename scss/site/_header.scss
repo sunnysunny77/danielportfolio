@@ -27,25 +27,14 @@ nav {
             z-index: 1000;
             padding: 2px 12px;
         }
-        &:disabled {
-            color: $color_6;
-        }
         &.has-fixed::before {
-            background-color: $color_5;
-            color: $color_2;
-            z-index: 999;
             top: 0;
             right: -12px;
             bottom: 8px;
             left: -12px;
-            padding: 2px 12px;
-            @include min_lg {
-                right: 0;
-                top: initial;
-                bottom: calc(-100% + 8px);
-                left: initial;
-                z-index: 1000;
-            }
+        }
+        &:disabled {
+            color: $color_6;
         }
     }
     a,

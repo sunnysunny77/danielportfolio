@@ -23,10 +23,7 @@ body {
         border-radius: 3px;
         opacity: 0;
         transition: opacity 0.5s;
-        width: 0;
-        height: 0;
-        overflow: hidden;
-        cursor: pointer;
+        clip-path: inset(100%);
     }
     &.has-opacity {
         &::before {
@@ -35,8 +32,7 @@ body {
     }
     &.has-display {
         &::before {
-            width: initial;
-            height: initial;
+            clip-path: initial;
         }
     }
 }
@@ -90,12 +86,6 @@ main {
         animation: intro 0.5s ease-out;
         will-change: background-color;
         z-index: -1;
-    }
-    &.has-fixed {
-        padding-top: 155.5px;
-        @include min_lg {
-            padding-top: initial;
-        }
     }
 }
 
