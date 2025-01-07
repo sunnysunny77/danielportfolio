@@ -15,82 +15,83 @@ export const nav = () => {
     let scrollY = 0;
 
     const height = 55.5;
+
     const padding = 155.5;
+
+    let obj = {};
 
     const handle_nav = () => {
 
       let positive = false;
 
-      let obj = {};
+      const main_top = main.offsetTop;
+
+      const nav_top = nav.scrollHeight;
+
+      let scroll_pos = window.scrollY;
 
       if (window.innerWidth > 992) {
 
-        outer.style.paddingTop = "";
-        button.classList.remove("has-fixed");
-        button.classList.remove("has-display");
         obj.position = "static";
         obj.top = "inital";
         obj.transition = "none";
         obj.maxHeight = "";
         obj.backgroundColor = "rgb(23, 34, 43)";
         obj.padding = "60px 0";
+        button.classList.remove("has-fixed");
+        button.classList.remove("has-display");
+        outer.style.paddingTop = "";
         Object.assign(nav.style, obj);
         return;
       }
 
-      if (window.scrollY > scrollY) {
+      if (scroll_pos > scrollY) {
 
         positive = true;
-      } else if (window.scrollY < scrollY)  {
+      } else if (scroll_pos < scrollY)  {
 
         positive = false;
       }
 
-      scrollY = window.scrollY;
+      if (scroll_pos < main_top) {
 
-      if (scrollY < main.offsetTop + nav.offsetHeight && scrollY > main.offsetTop && !positive) {
-
-        obj.position = "fixed";
-        obj.top = `-${height}px`;
-        obj.transition = "top 0.375s, max-height 1s";
-        obj.maxHeight = "0px";
-        obj.backgroundColor = "rgb(23, 34, 43)";
-        obj.padding = "15px 0 5px 0";
-        Object.assign(nav.style, obj);
-      } else if (scrollY > main.offsetTop && !positive) {
-
-        outer.style.paddingTop = `${padding}px`;
-        obj.position = "fixed";
-        obj.top = "0px";
-        obj.transition = "top 0.375s, max-height 1s, background-color 1s";
-        obj.maxHeight = `${height}px`;
-        obj.backgroundColor = "rgba(23, 34, 43, 0.85)";
-        obj.padding = "15px 0 5px 0";
-        Object.assign(nav.style, obj);
-      } else if (scrollY > main.offsetTop && positive) {
-
-        outer.style.paddingTop = `${padding}px`;
-        button.classList.add("has-fixed");
-        obj.position = "fixed";
-        obj.top = `-${height}px`;
-        obj.transition = "top 0.375s, max-height 1s, background-color 1s";
-        obj.maxHeight = "0px";
-        obj.backgroundColor = "rgb(23, 34, 43)";
-        obj.padding = "15px 0 5px 0";
-        Object.assign(nav.style, obj);
-      } else {
-
-        outer.style.paddingTop = "";
-        button.classList.remove("has-fixed");
-        button.classList.remove("has-display");
         obj.position = "static";
         obj.top = "initial";
         obj.transition = "none";
         obj.maxHeight = "";
         obj.backgroundColor = "rgb(23, 34, 43)";
         obj.padding = "60px 0";
-        Object.assign(nav.style, obj);
+        button.classList.remove("has-fixed");
+        button.classList.remove("has-display");
+        outer.style.paddingTop = "";
       }
+
+      if ((scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive) || (scroll_pos > main_top + nav_top && positive)) {
+
+        obj.position = "fixed";
+        obj.top = `-${height}px`;
+        obj.transition = "top 0.375s, max-height 1s, background-color 1s";
+        obj.maxHeight = "0px";
+        obj.backgroundColor = "rgb(23, 34, 43)";
+        obj.padding = "15px 0 5px 0";
+        outer.style.paddingTop = `${padding}px`;
+      }
+      
+      if (scroll_pos > main_top + nav_top && !positive) {
+
+        obj.position = "fixed";
+        obj.top = "0px";
+        obj.transition = "top 0.375s, max-height 1s, background-color 1s";
+        obj.maxHeight = `${height}px`;
+        obj.backgroundColor = "rgba(23, 34, 43, 0.85)";
+        obj.padding = "15px 0 5px 0";
+        button.classList.add("has-fixed");
+        outer.style.paddingTop = `${padding}px`;
+      }
+      
+      Object.assign(nav.style, obj);
+      
+      scrollY = window.scrollY;
     };
 
     events(window, "scroll", handle_nav);
