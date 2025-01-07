@@ -10,7 +10,7 @@ const has_move_init = (index) => {
     index.classList.add("has-bottom");
   } else if (get_position(index) >  window.innerHeight) {
 
-    index.classList.replace("has-bottom", "has-move"); index.classList.add("has-move");
+    index.classList.replace("has-bottom", "has-move") || index.classList.add("has-move");
 
   }
 };
