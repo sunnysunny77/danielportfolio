@@ -2,16 +2,16 @@ import { events, get_position } from "./utillites.js";
 
 const has_move_init = (index) => {
 
-  if (get_position(index) >  window.innerHeight) {
 
-    index.classList.add("has-move");
+  let scrollY = window.scrollY + window.innerHeight;
 
-    let scrollY = window.scrollY + window.innerHeight;
+  if (scrollY > get_position(index)) {
+  
+    index.classList.add("has-bottom");
+  } else if (get_position(index) >  window.innerHeight) {
 
-    if (scrollY > get_position(index)) {
+    index.classList.replace("has-bottom", "has-move"); index.classList.add("has-move");
 
-      index.classList.add("has-bottom");
-    }
   }
 };
 
@@ -24,11 +24,12 @@ export const has_move = () => {
       return;
     }
 
-    for (const index of obj) {
+    events(window, "scroll", () => {
 
-        events(window, "scroll", () => {
+      for (const index of obj) {
 
           has_move_init(index);
-        });
-    }
+      }
+  
+    });
 };
