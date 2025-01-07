@@ -2,7 +2,6 @@ import { events, get_position } from "./utillites.js";
 
 const has_move_init = (index) => {
 
-
   let scrollY = window.scrollY + window.innerHeight;
 
   if (scrollY > get_position(index)) {
