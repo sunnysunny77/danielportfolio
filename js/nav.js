@@ -66,7 +66,7 @@ export const nav = () => {
         outer.style.paddingTop = "";
       }
 
-      if ((scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive) || (scroll_pos > main_top + nav_top && positive)) {
+      if ((scroll_pos > main_top + nav_top && positive) || (scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive)) {
 
         obj.position = "fixed";
         obj.top = `-${height}px`;
