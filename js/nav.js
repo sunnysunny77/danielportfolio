@@ -26,7 +26,7 @@ export const nav = () => {
 
       const main_top = main.offsetTop;
 
-      const nav_top = nav.scrollHeight;
+      const nav_top = nav.getBoundingClientRect().height;
 
       let scroll_pos = window.scrollY;
 
@@ -64,9 +64,7 @@ export const nav = () => {
         button.classList.remove("has-fixed");
         button.classList.remove("has-display");
         outer.style.paddingTop = "";
-      }
-
-      if ((scroll_pos > main_top + nav_top && positive) || (scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive)) {
+      } else if ((scroll_pos > main_top + nav_top && positive) || (scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive)) {
 
         obj.position = "fixed";
         obj.top = `-${height}px`;
@@ -75,9 +73,7 @@ export const nav = () => {
         obj.backgroundColor = "rgb(23, 34, 43)";
         obj.padding = "15px 0 5px 0";
         outer.style.paddingTop = `${padding}px`;
-      }
-      
-      if (scroll_pos > main_top + nav_top && !positive) {
+      } else if (scroll_pos > main_top + nav_top && !positive) {
 
         obj.position = "fixed";
         obj.top = "0px";
