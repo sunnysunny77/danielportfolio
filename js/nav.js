@@ -90,6 +90,7 @@ export const nav = () => {
       scrollY = window.scrollY;
     };
 
-    events(window, "scroll", handle_nav);
-    events(window, "resize", handle_nav);
+    events(window, "wheel", handle_nav, { passive: true });
+    events(window, "scroll", handle_nav, { passive: true });
+    events(window, "resize", handle_nav, { passive: true });
   };
