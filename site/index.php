@@ -350,7 +350,7 @@
 
                                             ?>
       
-                                                <a class="visit d-inline-block mb-6" target="Furniture" href="<?php echo $row["link"]; ?>">Visit</a>
+                                                <a class="visit d-inline-block mb-6" target="_blank" href="<?php echo $row["link"]; ?>">Visit</a>
 
                                             <?php
                                         }
