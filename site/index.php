@@ -520,15 +520,19 @@
                                                             <div class="slider_workinner-container slider-container">
 
 
-                                                                <a href="" class="slider_workinner-a image-1"></a>
+                                                                <div class="slider_workinner-a image-1"></div>
 
-                                                                <a href="" class="slider_workinner-a image-fill-right"></a>
+                                                                <div class="slider_workinner-a link-open image-fill-right"></div>
 
-                                                                <div class="slider_workinner-inner inner"></div>
+                                                                <div class="slider_workinner-inner inner">
 
-                                                                <a href="" class="slider_workinner-a image-2"></a>
+                                                                    <div></div>
 
-                                                                <a href="" class="slider_workinner-a image-fill-left"></a>
+                                                                </div>
+
+                                                                <div class="slider_workinner-a image-2"></div>
+
+                                                                <div class="slider_workinner-a link-open image-fill-left"></div>
 
                                                                 <?php
 
@@ -540,10 +544,10 @@
 
                                                                                 <img class="slider_workinner-img" src="./images/visit.webp" width="150" height="150" alt="visit" />
 
-                                                                                <div>
-
-                                                                                    <a rel="noreferrer" target="_blank" href="<?php echo $row["link"]; ?>">Visit</a>
-
+                                                                                <div class="slider_workinner-innertext link-open" data-href="<?php echo $row["link"]; ?>">
+     
+                                                                                    Visit
+                                                                                    
                                                                                 </div>
 
                                                                             </div>
@@ -564,10 +568,10 @@
 
                                                                                 <img class="slider_workinner-img" src="./images/git.webp" width="150" height="150" alt="visit" />
 
-                                                                                <div>
-
-                                                                                    <a rel="noreferrer" target="_blank" href="<?php echo $row["git"]; ?>">GitHub</a>
-
+                                                                                <div class="slider_workinner-innertext link-open" data-href="<?php echo $row["git"]; ?>">
+     
+                                                                                    GitHub
+                                                                                    
                                                                                 </div>
 
                                                                             </div>
@@ -588,10 +592,10 @@
 
                                                                                 <img class="slider_workinner-img" src="./images/phone.webp" width="150" height="150" alt="telephone" />
 
-                                                                                <div>
-
-                                                                                    <a rel="noreferrer" target="_blank" href="tel:<?php echo str_replace(' ', '', $tel); ?>">Phone</a>
-                                                                                            
+                                                                                <div class="slider_workinner-innertext link-open" data-href="tel:<?php echo str_replace(' ', '', $tel); ?>">
+     
+                                                                                    Phone
+                                                                                    
                                                                                 </div>
 
                                                                             </div>
@@ -612,11 +616,7 @@
 
                                                                                 <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="Mail" />
 
-                                                                                <div>
-     
-                                                                                    <a rel="noreferrer" target="_blank" href="mailto:<?php echo $mailto; ?>">Email</a>
-                                                                                    
-                                                                                </div>
+                                                                                <div data-href="<?php echo $mailto; ?>" class="slider_workinner-innertext copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </div>
 
                                                                             </div>
 

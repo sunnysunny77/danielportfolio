@@ -3,8 +3,12 @@ import { events } from "./utillites.js";
 export const slider_workinner = () => {
 
   const workinner_outer = document.querySelectorAll(".workinner-outer");
+  const link_open = document.querySelectorAll(".link-open");
 
-  if ( workinner_outer.length === 0) {
+  if ( 
+    workinner_outer.length === 0 ||
+    link_open.length === 0
+  ) {
     return;
   }
 
@@ -45,9 +49,9 @@ export const slider_workinner = () => {
 
     for (const item of static_count) {
       array_src.push(item.children[0].src);
-      array_href.push(item.children[1].children[0].href);
-      array_text.push(item.children[1].children[0].innerHTML);
-      array_anchor.push(item.children[1].innerHTML);
+      array_href.push(item.children[1].getAttribute("data-href"));
+      array_text.push(item.children[1].innerHTML.trim());
+      array_anchor.push(item.children[1]);
     }
 
     const percent_clac = (counter) => {
@@ -73,8 +77,8 @@ export const slider_workinner = () => {
       image_fill_left.classList.remove("has-left");
       image_fill_right.style.backgroundImage = `url(${array_src[counter]}`;
       image_fill_left.style.backgroundImage = `url(${array_src[next]}`;
-      image_fill_right.href = array_href[counter];
-      image_fill_left.href = array_href[next];
+      image_fill_right.setAttribute("data-href", array_href[counter]);
+      image_fill_left.setAttribute("data-href", array_href[next]);
       image_fill_right.setAttribute("aria-label", array_text[counter]);
       image_fill_left.setAttribute("aria-label", array_text[next]);
     };
@@ -86,11 +90,11 @@ export const slider_workinner = () => {
       inner.classList.remove("has-opacity-inner");
       image1.style.backgroundImage = `url(${array_src[counter]}`;
       image2.style.backgroundImage = `url(${array_src[next]}`;
-      image1.href = array_href[counter];
-      image2.href = array_href[next];
+      image1.setAttribute("data-href", array_href[counter]);
+      image2.setAttribute("data-href", array_href[next]);
       image1.setAttribute("aria-label", array_text[counter]);
       image2.setAttribute("aria-label", array_text[next]);
-      inner.innerHTML = array_anchor[counter];
+      inner.replaceChild(array_anchor[counter], inner.children[0]);
     };
 
     events(
@@ -139,19 +143,46 @@ export const slider_workinner = () => {
       null
     );
 
+    for ( const index of link_open) {
+
+      events(
+        index,
+        "click",
+        () => {
+
+          window.open(index.getAttribute("data-href"));
+        }
+      );
+    }
+
+    const inner_child = inner.children[0];
+
+    events(
+      inner_child,
+      "click",
+      () => {
+
+
+        if (inner_child.classList.contains("link-open")) {
+
+          window.open(inner_child.getAttribute("data-href"));
+        }
+      }
+    );
+
     image1.style.backgroundImage = `url(${array_src[0]}`;
     image2.style.backgroundImage = `url(${array_src[1]}`;
     image_fill_right.style.backgroundImage = `url(${array_src[0]}`;
     image_fill_left.style.backgroundImage = `url(${array_src[1]}`;
-    image1.href = array_href[0];
-    image2.href = array_href[1];
-    image_fill_right.href = array_href[0];
-    image_fill_left.href = array_href[1];
+    image1.setAttribute("data-href", array_href[0]);
+    image2.setAttribute("data-href", array_href[1]);
+    image_fill_right.setAttribute("data-href", array_href[0]);
+    image_fill_left.setAttribute("data-href", array_href[1]);
     image1.setAttribute("aria-label", array_text[0]);
     image2.setAttribute("aria-label", array_text[1]);
     image_fill_right.setAttribute("aria-label", array_text[0]);
     image_fill_left.setAttribute("aria-label", array_text[1]);
-    inner.innerHTML = array_anchor[0];
+    inner.replaceChild(array_anchor[0], inner.children[0]);
     width = percent;
     percentage.style.width = `${width}%`;
   }

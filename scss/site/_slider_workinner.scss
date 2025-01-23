@@ -28,6 +28,7 @@
 
 .slider_workinner-a {
     padding: 30.375px;
+    cursor: pointer;
     @include min_sm {
         padding: 9.5%
     }
@@ -104,14 +105,24 @@
     &.has-opacity-inner {
         opacity: 0;
     }
-    a {
+    .slider_workinner-innertext {
         transition: color 0.2s ease;
         will-change: color;
         color: $color_5;
         text-decoration: none;
+        cursor: pointer;
         &:hover,
         &:focus {
             color: $color_4;
+        }
+        &::before {
+            padding: 0;
+            top: 2px;
+            right: -8px;
+            bottom: 2px;
+            left: -8px;
+            background-color: $color_5;
+            color: $color_2;
         }
     }
 }
