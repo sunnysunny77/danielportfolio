@@ -17,7 +17,7 @@ nav {
     a {
         color: $color_6;
     }
-    button {
+    .copy-tooltip {
         color: $color_6;
         &::before {
             right: 0;
@@ -33,12 +33,9 @@ nav {
             bottom: 8px;
             left: -12px;
         }
-        &:disabled {
-            color: $color_6;
-        }
     }
     a,
-    button {
+    .copy-tooltip {
         &::after {
             background-color: $color_6;
         }

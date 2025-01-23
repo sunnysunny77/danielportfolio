@@ -19,18 +19,18 @@
         color: $color_6;
     }
     a,
-    button {
-        text-decoration-line: none;
-        transition: text-decoration-line 0.25s;
+    .copy-tooltip {
+        text-decoration-line: underline;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.25s;
         color: $color_6;
         font-size: 14px;
         &:hover {
             text-decoration-color: $color_6;
-            text-decoration-line: underline;
         }
 
     }
-    button {
+    .copy-tooltip {
         color: $color_6;
         &::before {
             padding: 4.5px 12px;

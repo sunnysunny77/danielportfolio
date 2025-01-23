@@ -14,7 +14,6 @@ export const copy_tooltip = () => {
     events(index, "click", async (event) => {
 
       const obj = event.currentTarget;
-      obj.disabled = true;
   
       try {
   
@@ -32,7 +31,6 @@ export const copy_tooltip = () => {
         setTimeout(() => {
   
           obj.classList.remove("has-display");
-          obj.disabled = "";
         }, 500);
       }, 1000);
     });

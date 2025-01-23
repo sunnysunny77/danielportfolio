@@ -8,16 +8,16 @@
         }
     }
     a,
-    button {
-        text-decoration-line: none;
-        transition: text-decoration-line 0.25s;
+    .copy-tooltip {
+        text-decoration-line: underline;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.25s;
         color: $color_5;
         &:hover {
             text-decoration-color: $color_5;
-            text-decoration-line: underline;
         }
     }
-    button::before {
+    .copy-tooltip::before {
         bottom: calc(-100% - 12px);
         left: 0;
         background-color: $color_5;
@@ -63,7 +63,7 @@
         text-decoration-line: underline;
         padding: 0;
         text-decoration-color: $color_6;
-        transition:   text-decoration-line 0.25s;
+        transition: text-decoration-color 0.25s;
         color: $color_6;
         font-size: 14px;
         width: fit-content;
@@ -71,7 +71,7 @@
             font-size: initial;
         }
         &:hover {
-            text-decoration-line: none;
+            text-decoration-color: transparent;
         }
         &::before {
             padding: 0;
@@ -87,10 +87,10 @@
         text-decoration-color: $color_6;
         color: $color_6;
         text-decoration-line: underline;
-        transition: text-decoration-line 0.25s;
+        transition: text-decoration-color 0.25s;
         width: fit-content;
         &:hover {
-            text-decoration-line: none;
+            text-decoration-color: transparent;
         }
     }
 }

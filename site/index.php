@@ -135,7 +135,7 @@
 
                                         <li class="list-inline-item">
                                             
-                                            <button class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+                                            <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
 
                                         </li>
 
@@ -196,7 +196,7 @@
 
                                     ?>
 
-                                        <button class="copy-tooltip p-0"> <?php echo $mailto; ?>  <span class="d-none"> <?php echo $mailto; ?>  </span> </button>
+                                        <div class="copy-tooltip p-0"> <?php echo $mailto; ?>  <span class="d-none"> <?php echo $mailto; ?>  </span> </div>
 
                                         <?php
                                     
@@ -218,7 +218,7 @@
 
                         <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
-                        <button class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </button>
+                        <div class="copy-tooltip p-0"> costellodaniel686@gmail.com <span class="d-none"> costellodaniel686@gmail.com </span> </div>
 
                     </div>
 
@@ -288,56 +288,48 @@
 
                                                 ?>
 
-                                                    <p class="mb-1">
+                                                    <?php
 
-                                                        <?php
+                                                        if (isset($credential["title"])) {
 
-                                                            if (isset($credential["title"])) {
+                                                            ?>
+                                    
+                                                                <p class="mb-0"> <?php echo $credential["title"] ?> </p>
 
-                                                                ?>
-                                        
-                                                                    <span> <?php echo $credential["title"] ?> </span>
+                                                            <?php
 
-                                                                <?php
+                                                        }
 
-                                                            }
+                                                    ?>
 
-                                                        ?>
+                                                    <?php
 
-                                                        <br>
+                                                        if (isset($credential["username"])) {
 
-                                                        <?php
+                                                            ?>
 
-                                                            if (isset($credential["username"])) {
+                                                                <div class="copy-tooltip"> Username <span class="d-none"> <?php echo $credential["username"] ?> </span> </div>
 
-                                                                ?>
+                                                            <?php
 
-                                                                    <button class="copy-tooltip"> Username <span class="d-none"> <?php echo $credential["username"] ?> </span> </button>
+                                                        }
 
-                                                                <?php
+                                                    ?>
 
-                                                            }
+                                                    <?php
 
-                                                        ?>
+                                                        if (isset($credential["password"])) {
 
-                                                        <br>
+                                                            ?>
 
-                                                        <?php
+                                                                <div class="copy-tooltip"> Password <span class="d-none"> <?php echo $credential["password"] ?> </span> </div>
 
-                                                            if (isset($credential["password"])) {
+                                                            <?php
 
-                                                                ?>
+                                                        }
 
-                                                                    <button class="copy-tooltip"> Password <span class="d-none"> <?php echo $credential["password"] ?> </span> </button>
-
-                                                                <?php
-
-                                                            }
-
-                                                        ?>
-                                            
-                                                    </p>
-
+                                                    ?>                                      
+                                              
                                                 <?php
                                             }
                                         }
@@ -691,7 +683,7 @@
 
                                     <li class="order-3 order-md-4">
                             
-                                        <button class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </button>
+                                        <div class="copy-tooltip navigation-anchor px-0 py-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
 
                                     </li>
 

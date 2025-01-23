@@ -4,7 +4,7 @@ footer {
     a {
         color: inherit;
     }
-    button {
+    .copy-tooltip {
         color: inherit;
         &::before {
             left: calc(100% + 20px);
@@ -12,12 +12,9 @@ footer {
             color: $color_5;
             padding: 2px 12px;
         }
-        &:disabled {
-            color: $color_2;
-        }
     }
     a,
-    button {
+    .copy-tooltip {
         &::after {
             background-color: $color_2;
         }
