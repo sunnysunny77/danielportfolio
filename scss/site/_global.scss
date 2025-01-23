@@ -32,13 +32,8 @@ body {
         }
     }
     &.has-display {
-        pointer-events: none;
         &::before {
             clip-path: initial;
-        }
-        &::after {
-            left: 0;
-            width: 100%;
         }
     }
 }

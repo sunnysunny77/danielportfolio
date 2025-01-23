@@ -9,12 +9,18 @@ export const copy_tooltip = () => {
     return;
   }
 
-  for (const index of obj) {
+  let bool = [];
+
+  for (const [i, index] of obj.entries()) {
+
+    bool[i] = true;
 
     events(index, "click", async (event) => {
 
       const obj = event.currentTarget;
-  
+
+      if (!bool[i]) return;
+
       try {
   
         await navigator.clipboard.writeText(obj.children[0].innerHTML.trim());
@@ -31,8 +37,11 @@ export const copy_tooltip = () => {
         setTimeout(() => {
   
           obj.classList.remove("has-display");
+          bool[i] = true;
         }, 500);
       }, 1000);
+
+      bool[i] = false;
     });
   }
 };
