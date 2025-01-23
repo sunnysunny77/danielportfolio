@@ -111,6 +111,7 @@
         color: $color_5;
         text-decoration: none;
         cursor: pointer;
+        width: fit-content;
         &:hover,
         &:focus {
             color: $color_4;

@@ -257,7 +257,7 @@
 
                             <div class="has-test row justify-content-md-between">
 
-                                <div class="col-48 col-md-16 col-lg-11 d-flex flex-column">
+                                <div class="work-details col-48 col-md-16 col-lg-11 d-flex flex-column">
 
                                     <?php
 
