@@ -616,7 +616,7 @@
 
                                                                                 <img class="slider_workinner-img" src="./images/mail.webp"  width="150" height="150" alt="Mail" />
 
-                                                                                <div data-href="<?php echo $mailto; ?>" class="slider_workinner-innertext copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </div>
+                                                                                <div data-href="mailto:<?php echo $mailto; ?>" class="slider_workinner-innertext copy-tooltip"> Email <span class="d-none"> costellodaniel686@gmail.com </span> </div>
 
                                                                             </div>
 

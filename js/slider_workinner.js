@@ -155,21 +155,6 @@ export const slider_workinner = () => {
       );
     }
 
-    const inner_child = inner.children[0];
-
-    events(
-      inner_child,
-      "click",
-      () => {
-
-
-        if (inner_child.classList.contains("link-open")) {
-
-          window.open(inner_child.getAttribute("data-href"));
-        }
-      }
-    );
-
     image1.style.backgroundImage = `url(${array_src[0]}`;
     image2.style.backgroundImage = `url(${array_src[1]}`;
     image_fill_right.style.backgroundImage = `url(${array_src[0]}`;
