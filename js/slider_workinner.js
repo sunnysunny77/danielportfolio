@@ -3,11 +3,9 @@ import { events } from "./utillites.js";
 export const slider_workinner = () => {
 
   const workinner_outer = document.querySelectorAll(".workinner-outer");
-  const link_open = document.querySelectorAll(".link-open");
 
   if ( 
-    workinner_outer.length === 0 ||
-    link_open.length === 0
+    workinner_outer.length === 0
   ) {
     return;
   }
@@ -23,9 +21,11 @@ export const slider_workinner = () => {
     const open_left = item.querySelector(".open-left");
     const percentage = item.querySelector(".percentage-change");
     const static_count = item.querySelectorAll(".static-count");
+    const link_open = item.querySelectorAll(".link-open");
 
     if (
       static_count.length === 0 ||
+      link_open.length === 0 ||
       !inner ||
       !image1 ||
       !image2 ||
@@ -143,18 +143,6 @@ export const slider_workinner = () => {
       null
     );
 
-    for ( const index of link_open) {
-
-      events(
-        index,
-        "click",
-        () => {
-
-          window.open(index.getAttribute("data-href"));
-        }
-      );
-    }
-
     image1.style.backgroundImage = `url(${array_src[0]}`;
     image2.style.backgroundImage = `url(${array_src[1]}`;
     image_fill_right.style.backgroundImage = `url(${array_src[0]}`;
@@ -170,5 +158,17 @@ export const slider_workinner = () => {
     inner.replaceChild(array_anchor[0], inner.children[0]);
     width = percent;
     percentage.style.width = `${width}%`;
+
+    for ( const index of link_open) {
+
+      events(
+        index,
+        "click",
+        () => {
+
+          window.open(index.getAttribute("data-href"));
+        }
+      );
+    }
   }
 };
