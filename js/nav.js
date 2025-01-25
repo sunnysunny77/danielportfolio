@@ -18,13 +18,15 @@ export const nav = () => {
 
     const padding = 155.5;
 
+    let positive = false;
+
     let obj = {};
 
     const handle_nav = () => {
 
-      let positive = false;
-
       const main_top = main.offsetTop;
+
+      const main_bottom = main.offsetTop + main.scrollHeight - height;
 
       const nav_top = nav.getBoundingClientRect().height;
 
@@ -45,14 +47,6 @@ export const nav = () => {
         return;
       }
 
-      if (scroll_pos > scrollY) {
-
-        positive = true;
-      } else if (scroll_pos < scrollY)  {
-
-        positive = false;
-      }
-
       if (scroll_pos < main_top) {
 
         obj.position = "static";
@@ -64,7 +58,7 @@ export const nav = () => {
         button.classList.remove("has-fixed");
         button.classList.remove("has-display");
         outer.style.paddingTop = "";
-      } else if ((scroll_pos > main_top + nav_top && positive) || (scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive)) {
+      } else if ((scroll_pos > main_top + nav_top && positive) || (scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive) || (scroll_pos > main_bottom)) {
 
         obj.position = "fixed";
         obj.top = `-${height}px`;
@@ -86,6 +80,14 @@ export const nav = () => {
       }
       
       Object.assign(nav.style, obj);
+
+      if (scroll_pos > scrollY) {
+
+        positive = true;
+      } else if (scroll_pos < scrollY)  {
+
+        positive = false;
+      }
       
       scrollY = window.scrollY;
     };
