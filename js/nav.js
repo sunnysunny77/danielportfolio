@@ -20,7 +20,7 @@ export const nav = () => {
 
     let positive = false;
 
-    let obj = {};
+    let style = {};
 
     const handle_nav = () => {
 
@@ -31,6 +31,8 @@ export const nav = () => {
       const nav_top = nav.getBoundingClientRect().height;
 
       let scroll_pos = window.scrollY;
+
+      let obj = {};
 
       if (window.innerWidth > 992) {
 
@@ -79,7 +81,7 @@ export const nav = () => {
         outer.style.paddingTop = `${padding}px`;
       }
       
-      Object.assign(nav.style, obj);
+      if (obj !== style) Object.assign(nav.style, obj);
 
       if (scroll_pos > scrollY) {
 
@@ -88,6 +90,8 @@ export const nav = () => {
 
         positive = false;
       }
+
+      style = obj;
       
       scrollY = window.scrollY;
     };
