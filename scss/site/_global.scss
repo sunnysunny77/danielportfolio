@@ -118,17 +118,8 @@ main {
         &::after {
             animation: intro_work 2.5s ease-out;
         }
-        svg {
-            stroke: $color_5;
-            stroke-width: 5px;
-            fill: none;
-            vertical-align: bottom;
-            overflow: visible;
-            width: 350px;
-            height: 350px;
-            animation: intro_work 1.67s ease-out;
-            will-change: opacity;
-            opacity: 0;
+        #vivus path {
+            animation: intro_work_svg 2.5s ease-out;
         }
     }
     &.cookie-true {
@@ -136,6 +127,21 @@ main {
         &::after {
             animation: intro 0.5s ease-out;
         }
+    }
+}
+
+@keyframes intro_work_svg {
+    0% {
+        stroke-opacity: 0;
+    }
+    33.33% {
+        stroke-opacity: 1;
+    }
+    66.67% {
+        stroke-opacity: 0;
+    }
+    100% {
+        stroke-opacity: 0;
     }
 }
 
