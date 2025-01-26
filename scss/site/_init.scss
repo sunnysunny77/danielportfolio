@@ -8,29 +8,14 @@
     will-change: opacity;
     opacity: 1;
     z-index: 1001;
-    background-color: $color_3;
-    &::after {
-        content: " ";
-        position: fixed;
-        z-index: 1002;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: url(../images/dark-fish-skin.webp);
-        background-blend-mode: lighten;
-        will-change: opacity;
-        opacity: 1;
-    }
+    background-color: $color_2;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: lighten;
 }
 
 #intro-about {
     animation: intro 0.5s ease-out;
     animation-fill-mode: forwards;
-    &::after {
-        animation: intro 0.5s ease-out;
-        animation-fill-mode: forwards;
-    }
 }
 
 #intro-work {
@@ -40,10 +25,6 @@
     &.cookie-false.live {
         animation: intro_work 2.5s ease-out;
         animation-fill-mode: forwards;
-        &::after {
-            animation: intro_work 2.5s ease-out;
-            animation-fill-mode: forwards;
-        }
         #vivus path {
             animation: intro_work_svg 2.5s ease-out;
             animation-fill-mode: forwards;
@@ -52,10 +33,6 @@
     &.cookie-true {
         animation: intro 0.5s ease-out;
         animation-fill-mode: forwards;
-        &::after {
-            animation: intro 0.5s ease-out;
-            animation-fill-mode: forwards;
-        }
     }
 }
 
