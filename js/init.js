@@ -23,7 +23,7 @@ export const init = () => {
         AOS.init({once: true});
       }, 1667);
 
-     //fetch("/cookie.php", { method: "GET" });
+     fetch("/cookie.php", { method: "GET" });
 
     } else {
 
