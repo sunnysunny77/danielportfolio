@@ -12,14 +12,18 @@ export const init = () => {
 
     if (!svg_obj.classList.contains("d-none")) {
       
-      new vivus(svg_obj, {duration: 67}).play();
+      const Vivius = new vivus(svg_obj, { duration: 67 });
+
+      Vivius.play();
+
+      work.classList.add("live");
 
       setTimeout(()=> {
 
         AOS.init({once: true});
-      }, 1670);
+      }, 1667);
 
-     fetch("/cookie.php", { method: "GET" });
+     //fetch("/cookie.php", { method: "GET" });
 
     } else {
 
