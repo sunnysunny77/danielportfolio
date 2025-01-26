@@ -2,8 +2,10 @@ header {
     position: relative;
     z-index: 998;
     background-color: $color_3;
-    background-image: url(../images/dark-fish-skin.webp);
+    background-image: url(../images/cubes.webp);
     padding: 155.5px 0 0 0;
+    background-blend-mode: overlay;
+    background-position: top right;
 }
 
 nav {

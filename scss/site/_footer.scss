@@ -1,7 +1,8 @@
 footer {
     background-color: $color_4;
     color: $color_2;
-    background-image: url(../images/ag-square.webp);
+    background-image: url(../images/cubes.webp);
+    background-blend-mode: overlay;
     a {
         color: inherit;
     }

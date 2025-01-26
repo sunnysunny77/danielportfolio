@@ -69,11 +69,12 @@ body {
 }
 
 main {
-    background-color: $color_2;
+    background-color: $color_3;
     min-height: calc(100vh - 155.5px);
     display: flex;
     align-items: center;
-    background-image: url(../images/checkered-pattern.webp);
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: lighten;
 }
 
 #outer {
