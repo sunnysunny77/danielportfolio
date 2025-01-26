@@ -36,6 +36,8 @@
 
     <div id="outer">
 
+        <div id="intro-about"></div>
+
         <nav class="container-fuild d-flex align-items-center">
 
             <div class="container">
@@ -93,6 +95,8 @@
             </div>
 
         </nav>
+
+        <header role="image" class="container-fluid"> </header>
 
         <main class="about-main pt-10 pb-12 py-lg-14">
 

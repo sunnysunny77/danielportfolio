@@ -59,6 +59,7 @@
     "rollup-plugin-sourcemaps": "latest",
     "run-script-os": "latest",
     "sass": "latest",
-    "vhost": "latest"
+    "vhost": "latest",
+    "vivus": "^0.4.6"
   }
 }

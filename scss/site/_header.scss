@@ -1,17 +1,21 @@
 header {
     position: relative;
-    z-index: 1000;
+    z-index: 998;
     background-color: $color_3;
+    background-image: url(../images/dark-fish-skin.webp);
+    padding: 155.5px 0 0 0;
 }
 
 nav {
     color: $color_5;
+    position: absolute;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.067em;
     padding: 60px 0;
     right: 0;
     left: 0;
+    top: 0;
     z-index: 999;
     will-change: top, max-height, background-color;
     a {
