@@ -627,7 +627,7 @@
 
                                         </div>
 
-                                        <hr class="m-0">
+                                        <hr class="my-2">
 
                                         <button id="overlay_open-<?php echo $index; ?>" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 mt-2 mb-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
 
