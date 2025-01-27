@@ -2,8 +2,8 @@
     "name": "Portfolio",
     "short_name": "Portfolio",
     "start_url": "/",
-    "background_color": "#1f2d39",
-    "theme_color": "#1f2d39",
+    "background_color": "#263746",
+    "theme_color": "#263746",
     "display": "standalone",
     "icons": [       
         {
