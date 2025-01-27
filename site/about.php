@@ -94,7 +94,7 @@
 
     </nav>
 
-    <header role="img" class="container-fluid"> </header>
+    <div id="about-header" role="img" class="container-fluid"> </div>
 
     <main class="about-main pt-10 pb-12 py-lg-14">
 
