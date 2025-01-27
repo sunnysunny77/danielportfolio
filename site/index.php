@@ -329,11 +329,11 @@
 
                                                 ?>
 
-                                                    <h3 class="text-center m-0">      
+                                                    <h2 class="text-center m-0">      
                                                         
                                                         <?php echo $row["title"]; ?>
 
-                                                    </h3>
+                                                    </h2>
 
                                                 <?php
                                             }
@@ -421,19 +421,19 @@
                                             <div class="slider_workinner-container slider-container">
 
 
-                                                <div class="slider_workinner-a image-1"></div>
+                                                <div role="link" class="slider_workinner-a image-1"></div>
 
-                                                <div class="slider_workinner-a link-open image-fill-right"></div>
+                                                <div role="link" class="slider_workinner-a link-open image-fill-right"></div>
 
                                                 <div class="slider_workinner-inner inner">
 
-                                                    <div></div>
+                                                    <div role="link"></div>
 
                                                 </div>
 
-                                                <div class="slider_workinner-a image-2"></div>
+                                                <div role="link" class="slider_workinner-a image-2"></div>
 
-                                                <div class="slider_workinner-a link-open image-fill-left"></div>
+                                                <div role="link" class="slider_workinner-a link-open image-fill-left"></div>
 
                                                 <?php
 
@@ -617,7 +617,7 @@
 
                                                     ?>
 
-                                                        <a class="visit d-inline-block mb-1 me-6" target="_blank" href="<?php echo $row["link"]; ?>"> <i class="fa-solid fa-link"></i> </a> 
+                                                        <a aria-label="visit" class="visit d-inline-block mb-1 me-6" target="_blank" href="<?php echo $row["link"]; ?>"> <i class="fa-solid fa-link"></i> </a> 
 
                                                     <?php
 
