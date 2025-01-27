@@ -10,29 +10,25 @@
     z-index: 1001;
     background-color: $color_2;
     background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: lighten;
+    &.z-index-end {
+        z-index: -1;
+    }
 }
 
 #intro-about {
-    animation: intro 0.5s ease-out;
-    animation-fill-mode: forwards;
+    animation: intro 0.5s ease;
 }
 
 #intro-work {
-    #vivus path {
-        will-change: stroke-opacity;
-    }
     &.cookie-false.live {
-        animation: intro_work 2.5s ease-out;
-        animation-fill-mode: forwards;
+        animation: intro_work 3s ease;
         #vivus path {
-            animation: intro_work_svg 2.5s ease-out;
-            animation-fill-mode: forwards;
+            animation: intro_work_svg 1.7s ease;
+            will-change: stroke-opacity;
         }
     }
     &.cookie-true {
-        animation: intro 0.5s ease-out;
-        animation-fill-mode: forwards;
+        animation: intro 0.5s ease;
     }
 }
 
@@ -40,11 +36,8 @@
     0% {
         stroke-opacity: 0;
     }
-    33.33% {
+    70% {
         stroke-opacity: 1;
-    }
-    66.67% {
-        stroke-opacity: 0;
     }
     100% {
         stroke-opacity: 0;
@@ -54,33 +47,20 @@
 @keyframes intro_work {
     0% {
         opacity: 1;
-        z-index: 1001;
     }
-    66.67% {
+    70% {
         opacity: 1;
-        z-index: 1001;
-    }
-    99.99% {
-        opacity: 0;
-        z-index: 1001;
     }
     100% {
         opacity: 0;
-        z-index: -1;
     }
 }
 
 @keyframes intro {
     0% {
         opacity: 1;
-        z-index: 1001;
-    }
-    99.99% {
-        opacity: 0;
-        z-index: 1001;
     }
     100% {
         opacity: 0;
-        z-index: -1;
     }
 }

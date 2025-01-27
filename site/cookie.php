@@ -1,9 +1,9 @@
 <?php
 
     $cookie = setcookie("cookie", true, [
-        'expires' => time() + (120*60),
+        'expires' => time() + (60 * 10),
         'path' => '/',
-        'domain' => "portfolio.localhost",
+        'domain' => "portfolio.sunnyhome.site",
         'secure' => true,
         'httponly' => false,
         'samesite' => 'strict',
