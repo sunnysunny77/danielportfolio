@@ -44,9 +44,7 @@
 
                 <li class="list-inline-item col-12 col-lg-16 m-0">
 
-                    <span class="d-none d-sm-block pb-3 me-2"> <span class="blink"></span> D.Costello </span>
-
-                    <span class="d-sm-none pb-3 me-2"> <span class="blink"></span> D.C </span>
+                    <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
 
                 </li>
 
