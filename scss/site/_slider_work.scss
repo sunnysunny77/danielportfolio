@@ -73,6 +73,10 @@
         color: $color_4;
         font-size: clamp(16px, 1.5vw, 20px);
     }
+    hr {
+        border-color: $color_5;
+        opacity: 1;
+    }
 }
 
 .slider_work-overlay-preview-container {

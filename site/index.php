@@ -321,7 +321,7 @@
 
                                 <div class="row justify-content-center w-100">
 
-                                    <div class="slider_work-overlay-heading-container col-48 col-lg-18 py-lg-8 px-lg-5">
+                                    <div class="slider_work-overlay-heading-container col-48 col-lg-18 d-flex justify-content-center align-items-center py-lg-8 px-lg-5">
                     
                                         <?php
 
@@ -365,19 +365,19 @@
                                                             }
 
                                                         ?>
-                                    
+                                                
                                                     </ul>
-
+                                                    
                                                 <?php
 
                                             }
 
                                         ?>
 
-                                        <hr class="mx-lg-10 mt-8 w-100">
+                                        <hr class="mx-lg-10 mt-8  w-100">
 
                                     </div>
-
+                                        
                                     <div class="slider_work-overlay-preview-container col-48 col-lg-40 mt-9 mt-lg-12">
 
                                         <?php
@@ -567,146 +567,171 @@
 
     ?>
 
-    <main class="work-main py-12 py-lg-14">
+    <main class="work-main pb-12 pt-11 py-lg-14">
 
-        <section data-aos="fade-up" class="container">
+        <section data-aos="fade-up" class="w-100 container-lg">
 
-            <?php
+            <div class="row justify-content-center">
 
-                foreach ($work as $index=>$row) {
-
-                    $margin_bottom = "mb-12 mb-md-13";
-      
-                    if($index === $count) {
-
-                        $margin_bottom = "mb-0 mb-md-0";
-                    } 
-
-                    ?>
-
-                        <div class="has-test row justify-content-md-between">
-
-                            <div class="work-details col-48 col-md-16 col-lg-11 d-flex flex-column">
-
-                                <?php
-
-                                    if (isset($row["title"])) {
-
-                                        ?>
-
-                                            <h2 class="mb-3">
-                                                
-                                                <?php echo $row["title"]; ?>
-
-                                            </h2>
-
-                                        <?php
-                                    }
-
-                                ?>
-
-                                <hr class="mb-5 mb-md-2">
-
-                                <button id="overlay_open-<?php echo $index; ?>" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 my-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
-
-                                <?php
-
-                                    if (isset($row["credentials"])) {
-
-                                        foreach ($row["credentials"] as $credential) {                   
-
-                                            ?>
-
-                                                <?php
-
-                                                    if (isset($credential["title"])) {
-
-                                                        ?>
-                                
-                                                            <p class="mb-0"> <?php echo $credential["title"] ?> </p>
-
-                                                        <?php
-
-                                                    }
-
-                                                ?>
-
-                                                <?php
-
-                                                    if (isset($credential["username"])) {
-
-                                                        ?>
-
-                                                            <div class="copy-tooltip"> Username <span class="d-none"> <?php echo $credential["username"] ?> </span> </div>
-
-                                                        <?php
-
-                                                    }
-
-                                                ?>
-
-                                                <?php
-
-                                                    if (isset($credential["password"])) {
-
-                                                        ?>
-
-                                                            <div class="copy-tooltip"> Password <span class="d-none"> <?php echo $credential["password"] ?> </span> </div>
-
-                                                        <?php
-
-                                                    }
-
-                                                ?>                                      
-                                            
-                                            <?php
-                                        }
-                                    }
-
-                                ?>
-
-                                <?php
-
-                                    if (isset($row["link"])) {
-
-                                        ?>
-    
-                                            <a class="visit d-inline-block mb-6" target="_blank" href="<?php echo $row["link"]; ?>">Visit</a>
-
-                                        <?php
-                                    }
-
-                                ?>
-
-                            </div>
-
-                            <div class="col-48 col-md-26 col-lg-32 <?php echo $margin_bottom; ?>">
-
-                                <?php
-
-                                    if (isset($row["image"]["src"]) && isset($row["image"]["alt"])) {
-
-                                        ?>
-
-                                            <h2 class="mb-3">
-                                                
-                                                <img src="<?php echo $row["image"]["src"]; ?>" width="760" height="475" alt="<?php echo $row["image"]["alt"]; ?>" />
-
-                                            </h2>
-
-                                        <?php
-                                    }
-
-                                ?>
-
-                            </div>
-
-                        </div>
+                <div class="col-42 col-md-45 col-lg-48">
 
                     <?php
 
-                }
-            ?>
+                        foreach ($work as $index=>$row) {
+
+                            $margin_bottom = "mb-12 mb-lg-13";          
+            
+                            if($index === $count) {
+
+                                $margin_bottom = "mb-0 mb-md-0";
+                            }
+
+                            ?>
+
+                                <div class="has-test row justify-content-md-between <?php echo $margin_bottom; ?>">
+
+                                    <div class="work-details col-48 col-md-16 d-flex flex-column ps-5 pt-6 pb-5 ps-md-4 pt-md-3 pb-md-4">
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <?php
+
+                                                if (isset($row["title"])) {
+
+                                                    ?>
+
+                                                        <h2 class="mb-2">
+                                                            
+                                                            <?php echo $row["title"]; ?>
+
+                                                        </h2>
+
+                                                    <?php
+                                                }
+
+                                            ?>
+
+                                            <?php
+
+                                                if (isset($row["link"])) {
+
+                                                    ?>
+
+                                                        <a class="visit d-inline-block mb-1 me-6" target="_blank" href="<?php echo $row["link"]; ?>"> <i class="fa-solid fa-link"></i> </a> 
+
+                                                    <?php
+
+                                                }
+
+                                            ?>
+
+                                        </div>
+
+                                        <hr class="m-0">
+
+                                        <button id="overlay_open-<?php echo $index; ?>" aria-label="open" class="overlay-open preview d-flex align-items-center p-0 mt-2 mb-3"> Preview Site <i class="fa-solid fa-circle-right ps-3"></i> </button>
+
+                                        <?php
+
+                                            if (isset($row["credentials"])) {
+
+                                                ?>
+
+                                                    <ul class="list-unstyled row ps-0 my-0">
+                                                    
+                                                        <?php
+
+                                                            foreach ($row["credentials"] as $credential) { 
+
+                                                                ?>
+                                                                
+                                                                    <li class="col-auto col-lg-48 me-4 me-lg-0">
+
+                                                                        <ul  class="list-unstyled p-0 m-0">
+
+                                                                            <?php
+
+                                                                                if (isset($credential["title"])) {
+
+                                                                                    ?>
+
+                                                                                        <li class="mt-1 title">  <?php echo $credential["title"] ?>  </li>
+
+                                                                                    <?php
+
+                                                                                }
+
+                                                                                if (isset($credential["username"])) {
+
+                                                                                    ?>
+
+                                                                                        <li> <div class="copy-tooltip"> username <span class="d-none"> <?php echo $credential["username"] ?> </span> </div> </li>
+
+                                                                                    <?php
+
+                                                                                }
+
+                                                                                if (isset($credential["password"])) {
+
+                                                                                    ?>
+
+                                                                                        <li> <div class="copy-tooltip"> password <span class="d-none"> <?php echo $credential["password"] ?> </span> </div> </li>
+
+                                                                                    <?php
+
+                                                                                }
+
+                                                                            ?>
+
+                                                                        </ul>
+
+                                                                    </li>
+
+                                                                <?php
+
+                                                            }
+
+                                                        ?>
+
+                                                    </ul>
+
+                                                <?php
+
+                                            }
+
+                                        ?>
+
+                                    </div>
+
+                                    <div class="col-48 col-md-32 position-relative">
+
+                                        <?php
+
+                                            if (isset($row["image"]["src"]) && isset($row["image"]["alt"])) {
+
+                                                ?>
+
+                                                    <div class="work-image-overlay position-absolute"></div>
+
+                                                    <img src="<?php echo $row["image"]["src"]; ?>" width="760" height="475" alt="<?php echo $row["image"]["alt"]; ?>" />                           
+
+                                                <?php
+                                            }
+
+                                        ?>
+
+                                    </div>
+            
+                                </div>
+
+                            <?php
+
+                        }
+                    ?>
+
+                </div>
+
+            </div>
 
         </section>
 

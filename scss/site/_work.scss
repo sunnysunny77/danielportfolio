@@ -12,6 +12,7 @@
         text-decoration-line: underline;
         text-decoration-color: transparent;
         transition: text-decoration-color 0.25s;
+        will-change: text-decoration-color;
         color: $color_5;
         &:hover {
             text-decoration-color: $color_5;
@@ -27,9 +28,10 @@
 }
 
 .work-main {
+    font-size: 16px;
     h2 {
         color: $color_5;
-        font-size: 22px;
+        font-size: 20px;
     }
     hr {
         color: $color_6;
@@ -43,13 +45,13 @@
         height: fit-content;
     }
     .preview {
-        font-size: 18px;
+        font-size: 17.5px;
         color: $color_4;
         width: fit-content;
         background-color: transparent;
         border: none;
         i {
-            font-size: 16px;
+            font-size: 15px;
             transform: translateX(0%);
             transition: transform 0.25s ease-in-out;
         }
@@ -59,47 +61,69 @@
             }
         }
     }
-    .work-details .copy-tooltip {
-        text-decoration-line: underline;
-        padding: 0;
-        text-decoration-color: $color_6;
-        transition: text-decoration-color 0.25s;
-        color: $color_6;
-        font-size: 14px;
-        width: fit-content;
-        @include min_md {
-            font-size: initial;
+    .work-details {
+        background-color: $color_2;
+        background-blend-mode: overlay;
+        background-position: top right;
+        background-image: url(../images/cubes.webp);
+        .visit {
+            color: $color_4;
+            transition: color 0.25s;
+            will-change: color;
+            &:hover i {
+                color: $color_6;
+            }
         }
-        &:hover {
-            text-decoration-color: transparent;
+        hr {
+            border-color: $color_5;
+            opacity: 1;
         }
-        &::before {
+        li {
+            color: $color_6;
+            &.title {
+                font-size: 14px;
+            }
+        }
+        .copy-tooltip {
+            text-decoration-line: underline;
             padding: 0;
-            top: 2px;
-            right: -80px;
-            bottom: 2px;
-            left: calc(100% + 12px);
-            background-color: $color_5;
-            color: $color_2;
+            text-decoration-color: $color_6;
+            transition: text-decoration-color 0.25s;
+            will-change: text-decoration-color;
+            width: fit-content;
+            text-underline-offset: 3px;
+            &:hover {
+                text-decoration-color: transparent;
+            }
+            &::before {
+                top: 2px;
+                right: 0;
+                bottom: 2px;
+                left: 0;
+                background-color: $color_5;
+                color: $color_2;
+                z-index: 1000;
+                padding: 0;
+            }
         }
     }
-    .work-details .visit {
-        text-decoration-color: $color_6;
-        color: $color_6;
-        text-decoration-line: underline;
-        transition: text-decoration-color 0.25s;
-        width: fit-content;
-        &:hover {
-            text-decoration-color: transparent;
-        }
+    .work-image-overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color_7;
     }
 }
 
 .has-move {
     position: relative;
-    bottom: -88px;
+    bottom: -104px;
     transition: bottom 1s;
     will-change: bottom;
+    @include min_lg {
+        bottom: -140px;
+    }
     &.has-bottom {
         bottom: 0;
     }

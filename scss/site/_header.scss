@@ -2,10 +2,10 @@ header {
     position: relative;
     z-index: 998;
     background-color: $color_2;
-    background-image: url(../images/cubes.webp);
     padding: 155.5px 0 0 0;
     background-blend-mode: overlay;
     background-position: top right;
+    background-image: url(../images/cubes.webp);
 }
 
 nav {

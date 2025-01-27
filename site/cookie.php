@@ -3,7 +3,7 @@
     $cookie = setcookie("cookie", true, [
         'expires' => time() + (60 * 10),
         'path' => '/',
-        'domain' => "portfolio.sunnyhome.site",
+        'domain' => "portfolio.localhost",
         'secure' => true,
         'httponly' => false,
         'samesite' => 'strict',
