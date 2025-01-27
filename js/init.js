@@ -14,7 +14,8 @@ export const init = () => {
 
       AOS.init({
         once: true,
-        delay:  1700,
+        delay:  2500,
+        easing: "ease-out-quad",
       });
 
       const Vivius = new vivus(svg_obj, { duration: 70 });
@@ -27,14 +28,20 @@ export const init = () => {
 
     } else {
 
-      AOS.init({ once: true });
+      AOS.init({ 
+        once: true,
+        easing: "ease-out-quad", 
+      });
     }
   }
   
   if (intro_obj.id === "intro-about") AOS.init({ once: true });
 
-  events(intro_obj, "animationend", () => {
+  events(intro_obj, "animationend", (event) => {
 
-    intro_obj.classList.add("z-index-end");
-  })
+    if (event.animationName === "intro_work" || event.animationName === "intro") {
+
+      intro_obj.classList.add("z-index-end");
+    };
+  });
 };
