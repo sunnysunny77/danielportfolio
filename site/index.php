@@ -374,7 +374,7 @@
 
                                         ?>
 
-                                        <hr class="mx-lg-10 mt-8  w-100">
+                                        <hr class="mx-4 mt-6 mt-lg-8 mx-lg-10 w-100">
 
                                     </div>
                                         

@@ -53,6 +53,8 @@
 
 .slider_work-overlay-body {
     background-color: $color_3;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: lighten;
 }
 
 .overflow-hidden {
@@ -130,6 +132,8 @@
     top: 0;
     background-color: $color_5;
     z-index: 1002;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: lighten;
     @include min_lg {
         position: static;
         top: initial;
