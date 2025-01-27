@@ -24,7 +24,7 @@
     &.cookie-false.live {
         animation: intro_work 3s ease-out;
         #vivus path {
-            animation: intro_work_svg 3s ease-out;
+            animation: intro_work_svg 2.4s ease-out;
             will-change: stroke-opacity;
         }
     }
@@ -37,7 +37,7 @@
     0% {
         stroke-opacity: 1;
     }
-    70% {
+    24% {
         stroke-opacity: 1;
     }
     100% {
