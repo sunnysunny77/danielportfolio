@@ -14,13 +14,13 @@
 }
 
 #intro-about {
-    animation: intro 0.3s ease-out;
+    animation: intro 0.7s linear;
     background-color: $color_3;
 }
 
 #intro-work {
     &.cookie-false.has-js {
-        animation: intro_work 375s linear;
+        animation: intro_work 3s ease-out;
         background-image: url(../images/cubes.webp);
         background-color: $color_2;
         background-blend-mode: overlay;
@@ -30,7 +30,7 @@
         }
     }
     &.cookie-true {
-        animation: intro 0.375s linear;
+        animation: intro 0.7s linear;
         background-color: $color_3;
     }
 }
