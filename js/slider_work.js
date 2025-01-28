@@ -40,6 +40,8 @@ const close = (event) => {
     scrollbars: {
       theme: "os-theme-body",
   }});
+  const overlay = document.querySelectorAll(".os-theme-body")[1];
+  overlay.classList.add("has-opacity");
 };
 
 const next = (event) => {
