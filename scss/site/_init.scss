@@ -21,7 +21,7 @@
 }
 
 #intro-work {
-    &.cookie-false {
+    &.cookie-false.has-js {
         animation: intro_work 3s ease-out;
         #vivus path {
             animation: intro_work_svg 2.4s ease-out;

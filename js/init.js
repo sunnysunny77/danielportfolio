@@ -3,6 +3,7 @@ import vivus from "../node_modules/vivus/dist/vivus.js";
 import { events } from "./utillites.js";
 import { OverlayScrollbars } from "overlayscrollbars";
 
+
 export const init = () => {
 
   const intro_obj = document.querySelector(".intro");
@@ -22,7 +23,11 @@ export const init = () => {
     }});
   } else {
 
-    const inst = new vivus(svg_obj, { duration: 70 });
+    const inst = new vivus(svg_obj, { duration: 70, onReady: () => {
+
+      intro_obj.classList.add("has-js");
+    } });
+    
     inst.play();
   }
 
