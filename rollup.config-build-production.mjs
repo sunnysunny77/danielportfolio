@@ -15,9 +15,6 @@ export default {
   plugins: [
     commonjs({
       include: /node_modules/,
-      "overlayscrollbars": ["OverlayScrollbars"],
-      "aos": ["AOS"],
-      "vivus": ["vivus"],
     }),
     nodeResolve(),
     babel({ babelHelpers: "bundled" })
