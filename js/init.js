@@ -33,22 +33,39 @@ export const init = () => {
         once: true,
         easing: "ease-out-quad", 
       });
-    }
-  }
-  
-  if (intro_obj.id === "intro-about") AOS.init({ once: true });
-
-  events(intro_obj, "animationend", (event) => {
-
-    if (event.animationName === "intro_work" || event.animationName === "intro") {
-
-      intro_obj.classList.add("z-index-end");
 
       window.inst = OverlayScrollbars(document.body, {
 
         scrollbars: {
           theme: "os-theme-body",
       }});
+    }
+  }
+  
+  if (intro_obj.id === "intro-about")  {
+    
+    AOS.init({ once: true });
+
+    window.inst = OverlayScrollbars(document.body, {
+
+      scrollbars: {
+        theme: "os-theme-body",
+    }});
+  }
+
+  events(intro_obj, "animationend", (event) => {
+
+    if (event.animationName === "intro_work" || event.animationName === "intro") {
+
+      intro_obj.classList.add("z-index-end");
     };
+    if (event.animationName === "intro_work") {
+
+      window.inst = OverlayScrollbars(document.body, {
+
+        scrollbars: {
+          theme: "os-theme-body",
+      }});
+    }
   });
 };
