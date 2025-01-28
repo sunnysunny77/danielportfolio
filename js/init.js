@@ -20,14 +20,17 @@ export const init = () => {
       scrollbars: {
         theme: "os-theme-body",
     }});
-  };
+  } else {
+
+    const inst = new vivus(svg_obj, { duration: 70 });
+    inst.play();
+  }
 
   events(intro_obj, "animationend", (event) => {
 
     if (event.animationName === "intro_work" || event.animationName === "intro") {
 
       intro_obj.classList.add("z-index-end");
-
     };
 
     if (event.animationName === "intro_work") {
@@ -47,10 +50,7 @@ export const init = () => {
 
   events(intro_obj, "animationstart", (event) => {
 
-    if (event.animationName === "intro_work") {
-
-      new vivus(svg_obj, { duration: 70 }).play();
-    } else if (event.animationName === "intro") {
+    if (event.animationName === "intro") {
       
       AOS.init({
         once: true,
