@@ -23,11 +23,11 @@ export const init = () => {
     }});
   } else {
 
-    const inst = new vivus(svg_obj, { duration: 70, onReady: () => {
+    const inst = new vivus(svg_obj, { duration: 60, onReady: () => {
 
       intro_obj.classList.add("has-js");
     } });
-    
+
     inst.play();
   }
 
@@ -38,18 +38,21 @@ export const init = () => {
       intro_obj.classList.add("z-index-end");
     };
 
-    if (event.animationName === "intro_work") {
-
-      window.inst = OverlayScrollbars(document.body, {
-
-        scrollbars: {
-          theme: "os-theme-body",
-      }});
+    if (event.animationName === "intro_work_svg") {
 
       AOS.init({
         once: true,
         easing: "ease-out-quad",
       });
+    };
+
+    if (event.animationName === "intro_work") {
+       
+      window.inst = OverlayScrollbars(document.body, {
+
+        scrollbars: {
+          theme: "os-theme-body",
+      }});
     };
   });
 
