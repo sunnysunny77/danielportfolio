@@ -20,13 +20,15 @@
 
 #intro-work {
     background-color: $color_2;
-    &.cookie-false.has-js {
-        animation: intro_work 3s ease-out;
+    &.cookie-false {
         background-image: url(../images/cubes.webp);
         background-blend-mode: overlay;
-        #vivus path {
-            animation: intro_work_svg 2.3s ease-out;
-            will-change: stroke-opacity;
+        &.has-js {
+            animation: intro_work 3s ease-out;
+            #vivus path {
+                animation: intro_work_svg 2.3s ease-out;
+                will-change: stroke-opacity;
+            }
         }
     }
     &.cookie-true {
