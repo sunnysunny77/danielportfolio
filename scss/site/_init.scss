@@ -19,10 +19,10 @@
 }
 
 #intro-work {
-    background-color: $color_2;
     &.cookie-false {
         background-image: url(../images/cubes.webp);
         background-blend-mode: overlay;
+        background-color: $color_2;
         &.has-js {
             animation: intro_work 3s ease-out;
             #vivus path {
