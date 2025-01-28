@@ -14,7 +14,7 @@ export const init = () => {
     fetch("/cookie.php", { method: "GET" });
   }
 
-  window.inst = OverlayScrollbars(document.body, {
+  OverlayScrollbars(document.body, {
 
     scrollbars: {
       theme: "os-theme-body",

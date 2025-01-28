@@ -17,7 +17,8 @@ const open = (event) => {
   obj.classList.add("overlay-fixed");
   event.currentTarget.setAttribute("aria-expanded", true);
   obj.setAttribute("aria-expanded", true);
-  window.inst.destroy();
+  const overlay = document.querySelectorAll(".os-theme-body")[1];
+  overlay.classList.add("has-right");
 };
 
 const close = (event) => {
@@ -35,13 +36,8 @@ const close = (event) => {
   for (const item of document.querySelectorAll(".overlay-backdrop")) {
     item.classList.remove("overlay-transition");
   }
-  window.inst = OverlayScrollbars(document.body, {
-
-    scrollbars: {
-      theme: "os-theme-body",
-  }});
   const overlay = document.querySelectorAll(".os-theme-body")[1];
-  overlay.classList.add("has-opacity");
+  overlay.classList.remove("has-right");
 };
 
 const next = (event) => {
