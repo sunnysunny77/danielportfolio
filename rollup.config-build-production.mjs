@@ -1,5 +1,6 @@
 import { babel } from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 
 export default {
@@ -12,7 +13,11 @@ export default {
     }
   ],
   plugins: [
-    commonjs(),
+    commonjs({
+      include: /node_modules/,
+      "overlayscrollbars": ["OverlayScrollbars"],
+    }),
+    nodeResolve(),
     babel({ babelHelpers: "bundled" })
   ]
 };

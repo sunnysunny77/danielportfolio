@@ -1,8 +1,7 @@
 import { events } from "./utillites.js";
+import { OverlayScrollbars } from "overlayscrollbars";
 
 const open = (event) => {
-  const nav = document.querySelector("nav");
-  const paddingRight =  window.innerWidth - document.body.offsetWidth;
   const target = event.currentTarget.getAttribute("aria-controls");
   const obj = document.querySelector(`#${target}`);
   const backdrop = obj.getAttribute("backdrop");
@@ -18,15 +17,10 @@ const open = (event) => {
   obj.classList.add("overlay-fixed");
   event.currentTarget.setAttribute("aria-expanded", true);
   obj.setAttribute("aria-expanded", true);
-  if (nav.classList.contains("has-fixed")) {
-    nav.style.paddingRight = `${paddingRight}px`;
-  }
-  document.body.style.paddingRight = `${paddingRight}px`;
-  document.body.classList.add("overflow-hidden");
+  window.inst.destroy();
 };
 
 const close = (event) => {
-  const nav = document.querySelector("nav");
   const target = event.currentTarget.getAttribute("target");
   const controlls = event.currentTarget.getAttribute("controlls");
   const obj = document.querySelector(`#${controlls}`);
@@ -35,22 +29,20 @@ const close = (event) => {
   setTimeout(() => {
     video.load();
   }, 500);
-  if (nav.classList.contains("has-fixed")) {
-    nav.style.paddingRight = 0;
-  }
-  document.body.style.paddingRight = 0;
   obj.classList.remove("overlay-fixed");
-  document.body.classList.remove("overflow-hidden");
   obj.setAttribute("aria-expanded", false);
   document.querySelector(`#${target}`).setAttribute("aria-expanded", false);
   for (const item of document.querySelectorAll(".overlay-backdrop")) {
     item.classList.remove("overlay-transition");
   }
+  window.inst = OverlayScrollbars(document.body, {
+
+    scrollbars: {
+      theme: "os-theme-body",
+  }});
 };
 
 const next = (event) => {
-  const nav = document.querySelector("nav");
-  const paddingRight =  window.innerWidth - document.body.offsetWidth;
   const targetPrevious = event.currentTarget.getAttribute("target_previous");
   const controllsPrevious = event.currentTarget.getAttribute("controlls_previous");
   const targetCurrent = event.currentTarget.getAttribute("target_current");
@@ -58,7 +50,6 @@ const next = (event) => {
   const objPrevious = document.querySelector(`#${controllsPrevious}`);
   const objCurrent = document.querySelector(`#${controllsCurrent}`);
   objPrevious.classList.remove("overlay-fixed");
-  document.body.classList.remove("overflow-hidden");
   objPrevious.setAttribute("aria-expanded", false);
   objPrevious.style.transition = "transform 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84)";
   objCurrent.style.transition = "transform 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84) 0.5s";
@@ -67,11 +58,6 @@ const next = (event) => {
     videoPrevious.load();
   }, 500);
   document.querySelector(`#${targetPrevious}`).setAttribute("aria-expanded", false);
-  if (nav.classList.contains("has-fixed")) {
-    nav.style.paddingRight = `${paddingRight}px`;
-  }
-  document.body.style.paddingRight = `${paddingRight}px`;
-  document.body.classList.add("overflow-hidden");
   objCurrent.classList.add("overlay-fixed");
   objCurrent.setAttribute("aria-expanded", true);
   const videoCurrent = objCurrent.querySelector(".play");
@@ -95,9 +81,8 @@ export const slider_work = () => {
   const pause_video = document.querySelectorAll(".pause-video");
   const play_video = document.querySelectorAll(".play-video");
   const controlls = document.querySelectorAll(".controlls");
-  const nav = document.querySelector("nav");
 
-  if (play.length === 0 || overlay_body.length === 0 || overlay_open.length === 0 || overlay_close.length === 0 || overlay_next.length === 0 || overlay_prev.length === 0 || overlay_backdrop.length === 0 || pause_video.length === 0 || play_video.length === 0 ||  controlls.length === 0 || !nav) {
+  if (play.length === 0 || overlay_body.length === 0 || overlay_open.length === 0 || overlay_close.length === 0 || overlay_next.length === 0 || overlay_prev.length === 0 || overlay_backdrop.length === 0 || pause_video.length === 0 || play_video.length === 0 ||  controlls.length === 0 ) {
     return;
   }
 
@@ -149,4 +134,13 @@ export const slider_work = () => {
     events(overlay_prev[i], "click", next);
     events(controlls[i], "click", video_state);
   }
+
+  for (const index of overlay_body) {
+
+    OverlayScrollbars(index, {
+
+      scrollbars: {
+      theme: "os-theme-overlay",
+    }});
+  };
 };

@@ -19,6 +19,7 @@ import { fallback } from "./fallback.js";
 import { slider_work } from "./slider_work.js";
 import { slider_workinner } from "./slider_workinner.js";
 import { init } from "./init.js";
+import { OverlayScrollbars } from "overlayscrollbars";
 
 events(window, "load", () => {
 
@@ -30,4 +31,9 @@ events(window, "load", () => {
   copy_tooltip();
   service_worker();
   init();
+  window.inst = OverlayScrollbars(document.body, {
+
+    scrollbars: {
+      theme: "os-theme-body",
+  }});
 });

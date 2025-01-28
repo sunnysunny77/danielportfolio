@@ -42,6 +42,7 @@
     "@fortawesome/fontawesome-free": "latest",
     "@rollup/plugin-babel": "latest",
     "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-terser": "latest",
     "aos": "latest",
     "bootstrap": "^5.3.3",
@@ -54,12 +55,13 @@
     "hostile": "latest",
     "http": "latest",
     "https": "latest",
+    "overlayscrollbars": "^2.10.1",
     "rollup": "latest",
     "rollup-plugin-livereload": "latest",
     "rollup-plugin-sourcemaps": "latest",
     "run-script-os": "latest",
     "sass": "latest",
     "vhost": "latest",
-    "vivus": "^0.4.6"
+    "vivus": "latest"
   }
 }

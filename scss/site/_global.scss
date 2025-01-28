@@ -5,8 +5,7 @@ html {
 body {
     margin: 0;
     font-family: $font;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .copy-tooltip {
@@ -74,4 +73,17 @@ main {
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: lighten;
     background-color: $color_3;
+}
+
+.os-theme-body .os-scrollbar-handle {
+    background: $color_4;
+    border-radius: 5px;
+}
+
+.os-theme-body .os-scrollbar-track {
+    background: $color_3;
+}
+
+.os-theme-body {
+    --os-size: 10px;
 }
