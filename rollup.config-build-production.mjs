@@ -2,18 +2,7 @@ import { babel } from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
-//alert"
-//button"
-//carousel"
-//collapse"
-//dropdown"
-//modal"
-//offcanvas"
-//popover"
-//scrollspy"
-//tab"
-//toast"
-//tooltip"
+
 export default {
   input: "./js/index.js",
   output: [
