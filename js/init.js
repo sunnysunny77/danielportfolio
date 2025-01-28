@@ -14,14 +14,15 @@ export const init = () => {
     fetch("/cookie.php", { method: "GET" });
   }
 
-  if (!svg_obj) {
-  
-    window.inst = OverlayScrollbars(document.body, {
+  window.inst = OverlayScrollbars(document.body, {
 
-      scrollbars: {
-        theme: "os-theme-body",
-    }});
-  } else {
+    scrollbars: {
+      theme: "os-theme-body",
+  }});
+
+  const overlay = document.querySelectorAll(".os-theme-body")[1];
+  
+  if (svg_obj) {
 
     const inst = new vivus(svg_obj, { duration: 60, onReady: () => {
 
@@ -40,6 +41,8 @@ export const init = () => {
 
     if (event.animationName === "intro_work_svg") {
 
+      overlay.classList.add("has-opacity");
+      
       AOS.init({
         once: true,
         easing: "ease-out-quad",
@@ -60,6 +63,8 @@ export const init = () => {
 
     if (event.animationName === "intro") {
       
+      overlay.classList.add("has-opacity");
+
       AOS.init({
         once: true,
         easing: "ease-out-quad",
