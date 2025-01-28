@@ -149,6 +149,9 @@
     background: $color_4;
     border-radius: 5px;
     margin-top: 38px;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: lighten;
+    height: 133px;
     @include min_lg {
         background: $color_3;
         margin-top: initial;
@@ -157,11 +160,13 @@
 
 .os-theme-overlay.os-scrollbar-track {
     background: $color_3;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: lighten;
     @include min_lg {
         background: $color_4;
     }
 }
 
 .os-theme-overlay {
-    --os-size: 10px;
+    --os-size: 7px;
 }
