@@ -4,7 +4,18 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import livereload from "rollup-plugin-livereload";
 import fs from "fs";
-
+//alert"
+//button"
+//carousel"
+//collapse"
+//dropdown"
+//modal"
+//offcanvas"
+//popover"
+//scrollspy"
+//tab"
+//toast"
+//tooltip"
 export default {
   input: "./js/index.js",
   output: [
@@ -18,6 +29,8 @@ export default {
     commonjs({
       include: /node_modules/,
       "overlayscrollbars": ["OverlayScrollbars"],
+      "aos": ["AOS"],
+      "vivus": ["vivus"],
     }),
     nodeResolve(),
     babel({ babelHelpers: "bundled" }),

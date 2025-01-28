@@ -1,8 +1,7 @@
-import AOS from "../node_modules/aos/dist/aos.js";
-import vivus from "../node_modules/vivus/dist/vivus.js";
+import AOS from "aos";
+import vivus from "vivus";
 import { events } from "./utillites.js";
 import { OverlayScrollbars } from "overlayscrollbars";
-
 
 export const init = () => {
 
@@ -51,7 +50,7 @@ export const init = () => {
 
     if (event.animationName === "intro_work") {
        
-      window.inst = OverlayScrollbars(document.body, {
+      OverlayScrollbars(document.body, {
 
         scrollbars: {
           theme: "os-theme-body",
