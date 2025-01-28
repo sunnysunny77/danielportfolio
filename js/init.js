@@ -13,52 +13,37 @@ export const init = () => {
 
     if (svg_obj) {
 
-      AOS.init({
-        once: true,
-        delay:  2500,
-        easing: "ease-out-quad",
-      });
-
       const Vivius = new vivus(svg_obj, { duration: 70 });
 
       Vivius.play();
 
-      intro_obj.classList.add("live");
-
       fetch("/cookie.php", { method: "GET" });
 
     } else {
-
-      AOS.init({ 
-        once: true,
-        easing: "ease-out-quad", 
-      });
 
       window.inst = OverlayScrollbars(document.body, {
 
         scrollbars: {
           theme: "os-theme-body",
       }});
-    }
-  }
+    };
+  } else if (intro_obj.id === "intro-about") {
   
-  if (intro_obj.id === "intro-about")  {
-    
-    AOS.init({ once: true });
-
     window.inst = OverlayScrollbars(document.body, {
 
       scrollbars: {
         theme: "os-theme-body",
     }});
-  }
+  };
 
   events(intro_obj, "animationend", (event) => {
 
     if (event.animationName === "intro_work" || event.animationName === "intro") {
 
       intro_obj.classList.add("z-index-end");
+
     };
+
     if (event.animationName === "intro_work") {
 
       window.inst = OverlayScrollbars(document.body, {
@@ -66,6 +51,22 @@ export const init = () => {
         scrollbars: {
           theme: "os-theme-body",
       }});
-    }
+
+      AOS.init({
+        once: true,
+        easing: "ease-out-quad",
+      });
+    };
+  });
+
+  events(intro_obj, "animationstart", (event) => {
+
+    if (event.animationName === "intro") {
+      
+      AOS.init({
+        once: true,
+        easing: "ease-out-quad",
+      });
+    };
   });
 };
