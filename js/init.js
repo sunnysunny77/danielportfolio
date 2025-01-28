@@ -6,28 +6,14 @@ import { OverlayScrollbars } from "overlayscrollbars";
 export const init = () => {
 
   const intro_obj = document.querySelector(".intro");
+  const svg_obj = document.querySelector("#vivus");
 
   if (intro_obj.id === "intro-work") {
 
-    const svg_obj = document.querySelector("#vivus");
+    fetch("/cookie.php", { method: "GET" });
+  }
 
-    if (svg_obj) {
-
-      const Vivius = new vivus(svg_obj, { duration: 70 });
-
-      Vivius.play();
-
-      fetch("/cookie.php", { method: "GET" });
-
-    } else {
-
-      window.inst = OverlayScrollbars(document.body, {
-
-        scrollbars: {
-          theme: "os-theme-body",
-      }});
-    };
-  } else if (intro_obj.id === "intro-about") {
+  if (!svg_obj) {
   
     window.inst = OverlayScrollbars(document.body, {
 
@@ -61,7 +47,10 @@ export const init = () => {
 
   events(intro_obj, "animationstart", (event) => {
 
-    if (event.animationName === "intro") {
+    if (event.animationName === "intro_work") {
+
+      new vivus(svg_obj, { duration: 70 }).play();
+    } else if (event.animationName === "intro") {
       
       AOS.init({
         once: true,
