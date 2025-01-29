@@ -159,9 +159,7 @@
 }
 
 .os-theme-overlay.os-scrollbar-track {
-    background: $color_3;
-    background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: lighten;
+    background: transparent;
     @include min_lg {
         background: $color_4;
     }

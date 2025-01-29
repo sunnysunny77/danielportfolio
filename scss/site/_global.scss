@@ -76,7 +76,7 @@ main {
 }
 
 .os-theme-body .os-scrollbar-handle {
-    background: $color_4;
+    background: $color_8;
     border-radius: 5px;
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: lighten;
@@ -84,10 +84,9 @@ main {
 }
 
 .os-theme-body .os-scrollbar-track {
-    background: $color_3;
-    background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: lighten;
+    background: transparent;
 }
+
 
 .os-theme-body {
     --os-size: 7px;
