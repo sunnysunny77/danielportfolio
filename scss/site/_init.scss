@@ -8,14 +8,17 @@
     will-change: opacity;
     opacity: 1;
     z-index: 1001;
+
     &.z-index-end {
         z-index: -1;
     }
 }
 
 #intro-about {
-    animation: intro 0.7s linear;
     background-color: $color_3;
+    &.has-js {
+        animation: intro 0.7s linear;
+    }
 }
 
 #intro-work {
@@ -32,9 +35,12 @@
         }
     }
     &.cookie-true {
-        animation: intro 0.7s linear;
         background-color: $color_3;
+        &.has-js {
+            animation: intro 0.7s linear;
+        }
     }
+    
 }
 
 @keyframes intro_work_svg {

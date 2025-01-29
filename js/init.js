@@ -29,7 +29,10 @@ export const init = () => {
     } });
 
     inst.play();
-  }
+  } else {
+
+    intro_obj.classList.add("has-js");
+  };
 
   events(intro_obj, "animationend", (event) => {
 
