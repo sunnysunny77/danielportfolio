@@ -90,8 +90,8 @@ main {
 .os-theme-body {
     --os-size: 7px;
     opacity: 0;
-    transition: opacity 0.7s, right 0.25s;
-    will-change: opacity, right;    
+    transition: opacity 0.7s;
+    will-change: opacity;
     right: 0;
     &.has-opacity {
         opacity: 1;
@@ -100,4 +100,8 @@ main {
         right: -8px;
         opacity: 1;
     }
+}
+
+.os-theme-touch {
+    --os-size: 0;
 }

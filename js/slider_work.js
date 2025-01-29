@@ -37,7 +37,9 @@ const close = (event) => {
     item.classList.remove("overlay-transition");
   }
   const overlay = document.querySelectorAll(".os-theme-body")[1];
-  overlay.classList.remove("has-right");
+  setTimeout(()=>{
+    overlay.classList.remove("has-right");
+  }, 500)
 };
 
 const next = (event) => {
@@ -135,10 +137,12 @@ export const slider_work = () => {
 
   for (const index of overlay_body) {
 
+    const theme = navigator.maxTouchPoints > 0 ? "os-theme-touch" : "os-theme-overlay";
+
     OverlayScrollbars(index, {
 
       scrollbars: {
-      theme: "os-theme-overlay",
+      theme: theme,
     }});
   };
 };

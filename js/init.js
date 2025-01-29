@@ -13,10 +13,14 @@ export const init = () => {
     fetch("/cookie.php", { method: "GET" });
   }
 
+  const touch = navigator.maxTouchPoints > 0;
+
+  const theme = touch ? "os-theme-touch" : "os-theme-body";
+
   OverlayScrollbars(document.body, {
 
     scrollbars: {
-      theme: "os-theme-body",
+      theme: theme,
   }});
 
   const overlay = document.querySelectorAll(".os-theme-body")[1];
@@ -43,7 +47,7 @@ export const init = () => {
 
     if (event.animationName === "intro_work_svg") {
 
-      overlay.classList.add("has-opacity");
+      if (!touch) overlay.classList.add("has-opacity");
       
       AOS.init({
         once: true,
@@ -57,7 +61,7 @@ export const init = () => {
       OverlayScrollbars(document.body, {
 
         scrollbars: {
-          theme: "os-theme-body",
+          theme: theme,
       }});
     };
   });
@@ -66,7 +70,7 @@ export const init = () => {
 
     if (event.animationName === "intro") {
       
-      overlay.classList.add("has-opacity");
+      if (!touch) overlay.classList.add("has-opacity");
 
       AOS.init({
         once: true,
