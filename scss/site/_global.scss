@@ -92,12 +92,14 @@ main {
 .os-theme-body {
     --os-size: 7px;
     opacity: 0;
-    transition: opacity 0.7s;
-    will-change: opacity;
+    transition: opacity 0.7s, right 0.25s;
+    will-change: opacity, right;    
+    right: 0;
     &.has-opacity {
         opacity: 1;
     }
     &.has-right {
-        right: -7px
+        right: -8px;
+        opacity: 1;
     }
 }
