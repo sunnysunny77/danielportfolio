@@ -28,6 +28,7 @@
         background-color: $color_2;
         &.has-js {
             animation: intro_work 3s ease-out;
+            animation-fill-mode: forwards;
             #vivus path {
                 animation: intro_work_svg 2.3s ease-out;
                 will-change: stroke-opacity;
