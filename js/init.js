@@ -71,7 +71,7 @@ export const init = () => {
       AOS.init({
         once: true,
         easing: "ease-out-quad",
-        offset: intro_obj.id  === "intro-work" ? -800 : 200,
+        offset: intro_obj.id  === "intro-work" ? -800 : 100,
       });
     };
   });
