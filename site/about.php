@@ -13,7 +13,7 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="8IBTHwOdqNKAWeKl7plt8g=="></script>
-    <script nonce="8IBTHwOdqNKAWeKl7plt8g==">
+    <script integrity="sha256-6co41UqDF1XX2xQqBXBBy86x3xVsfHTr+1apL9qAAxk=">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
