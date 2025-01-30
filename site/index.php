@@ -74,7 +74,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-overlayscrollbars-initialize>
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="8IBTHwOdqNKAWeKl7plt8g=="></script>
@@ -97,7 +97,7 @@
     <link rel="apple-touch-icon" href="images/pwa-logo-small.webp" />
 </head>
 
-<body>
+<body data-overlayscrollbars-initialize>
 
     <div id="intro-work" class="intro d-flex align-items-center justify-content-center <?php echo $cookie_class; ?>">
 
@@ -445,7 +445,7 @@
 
                 <div class="overflow-hidden">
 
-                    <div id="overlay_body-<?php echo $index; ?>" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1">
+                    <div id="overlay_body-<?php echo $index; ?>" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1" data-overlayscrollbars-initialize>
 
                         <div class="w-100 row d-flex justify-content-center align-items-start align-items-lg-stretch justify-content-lg-between">
 

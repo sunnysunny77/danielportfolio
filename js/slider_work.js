@@ -17,8 +17,7 @@ const open = (event) => {
   obj.classList.add("overlay-fixed");
   event.currentTarget.setAttribute("aria-expanded", true);
   obj.setAttribute("aria-expanded", true);
-  const overlay = document.querySelectorAll(".os-theme-body")[1];
-  overlay.classList.add("has-right");
+  if (window.inst) window.inst.classList.add("has-right");
 };
 
 const close = (event) => {
@@ -36,10 +35,9 @@ const close = (event) => {
   for (const item of document.querySelectorAll(".overlay-backdrop")) {
     item.classList.remove("overlay-transition");
   }
-  const overlay = document.querySelectorAll(".os-theme-body")[1];
-  setTimeout(()=>{
-    overlay.classList.remove("has-right");
-  }, 500)
+  if (window.inst) setTimeout(()=>{
+    window.inst.classList.remove("has-right");
+  }, 500);
 };
 
 const next = (event) => {
@@ -137,12 +135,13 @@ export const slider_work = () => {
 
   for (const index of overlay_body) {
 
-    const theme = navigator.maxTouchPoints > 0 ? "os-theme-touch" : "os-theme-overlay";
-
     OverlayScrollbars(index, {
 
+      overflow: {
+        x: "hidden",
+      },
       scrollbars: {
-      theme: theme,
+      theme: "os-theme-overlay",
     }});
   };
 };

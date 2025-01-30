@@ -5,7 +5,6 @@ html {
 body {
     margin: 0;
     font-family: $font;
-    overflow: hidden;
 }
 
 .copy-tooltip {
@@ -102,6 +101,6 @@ main {
     }
 }
 
-.os-theme-touch {
-    --os-size: 0;
+.overflow-hidden [data-overlayscrollbars-viewport] {
+    overscroll-behavior: none;
 }

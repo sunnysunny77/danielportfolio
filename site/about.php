@@ -9,7 +9,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-overlayscrollbars-initialize>
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="8IBTHwOdqNKAWeKl7plt8g=="></script>
@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" href="images/pwa-logo-small.webp" />
 </head>
 
-<body>
+<body data-overlayscrollbars-initialize>
 
     <div id="intro-about" class="intro"></div>
 
