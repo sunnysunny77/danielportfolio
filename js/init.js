@@ -5,7 +5,8 @@ import { OverlayScrollbars } from "overlayscrollbars";
 
 export const init = () => {
 
-  const touch = "ontouchstart" in document.documentElement ? "os-theme-dark" : "os-theme-body";
+  window.touch = "ontouchstart" in document.documentElement ? true : false;
+  const theme = window.touch ? "os-theme-dark" : "os-theme-body";
   const intro_obj = document.querySelector(".intro");
   const svg_obj = document.querySelector("#vivus");
 
@@ -20,7 +21,9 @@ export const init = () => {
       x: "hidden",
     },
     scrollbars: {
-      theme: touch,
+      theme: theme,
+      dragScroll: window.touch ? false : true,
+      clickScroll: window.touch ? true : false,
   }});
 
   window.inst = document.querySelector(".os-theme-body.os-scrollbar-vertical") || document.querySelector(".os-theme-dark.os-scrollbar-vertical");
@@ -64,7 +67,9 @@ export const init = () => {
           x: "hidden",
         },
         scrollbars: {
-          theme: touch,
+          theme: theme,
+          dragScroll: window.touch ? false : true,
+          clickScroll: window.touch ? true : false,
       }});
     };
   });

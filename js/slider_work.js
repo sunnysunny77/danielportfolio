@@ -141,7 +141,9 @@ export const slider_work = () => {
         x: "hidden",
       },
       scrollbars: {
-      theme: "os-theme-overlay",
+        theme: "os-theme-overlay",
+        dragScroll: window.touch ? false : true,
+        clickScroll: window.touch ? true : false,
     }});
   };
 };

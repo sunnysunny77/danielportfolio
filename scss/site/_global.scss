@@ -105,8 +105,9 @@ main {
 }
 
 .os-theme-dark {
+    --os-size: 7px;
     &.has-right {
-        right: -10px;
+        right: -7px;
         opacity: 1;
     }
 }
