@@ -74,6 +74,24 @@ main {
     background-color: $color_3;
 }
 
+.os-theme-body,
+.os-theme-dark {
+    opacity: 0;
+    transition: opacity 0.7s;
+    will-change: opacity;
+    &.has-opacity {
+        opacity: 1;
+    }
+}
+
+.os-theme-body {
+    --os-size: 7px;
+    &.has-right {
+        right: -7px;
+        opacity: 1;
+    }
+}
+
 .os-theme-body .os-scrollbar-handle {
     background: $color_8;
     border-radius: 5px;
@@ -86,21 +104,13 @@ main {
     background: transparent;
 }
 
-.os-theme-body {
-    --os-size: 7px;
-    opacity: 0;
-    transition: opacity 0.7s;
-    will-change: opacity;
-    right: 0;
-    &.has-opacity {
-        opacity: 1;
-    }
+.os-theme-dark {
     &.has-right {
-        right: -8px;
+        right: -10px;
         opacity: 1;
     }
 }
 
-.overflow-hidden [data-overlayscrollbars-viewport] {
-    overscroll-behavior: none;
+.os-theme-dark .os-scrollbar-handle {
+    height: 70px;
 }

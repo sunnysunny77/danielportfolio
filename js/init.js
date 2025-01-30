@@ -5,7 +5,7 @@ import { OverlayScrollbars } from "overlayscrollbars";
 
 export const init = () => {
 
-  const touch = "ontouchstart" in document.documentElement ? false : true;
+  const touch = "ontouchstart" in document.documentElement ? "os-theme-dark" : "os-theme-body";
   const intro_obj = document.querySelector(".intro");
   const svg_obj = document.querySelector("#vivus");
 
@@ -14,16 +14,16 @@ export const init = () => {
     fetch("/cookie.php", { method: "GET" });
   }
 
-  if (touch) OverlayScrollbars(document.body, {
+  OverlayScrollbars(document.body, {
 
     overflow: {
       x: "hidden",
     },
     scrollbars: {
-      theme: "os-theme-body",
+      theme: touch,
   }});
 
-  window.inst = document.querySelector(".os-theme-body.os-scrollbar-vertical");
+  window.inst = document.querySelector(".os-theme-body.os-scrollbar-vertical") || document.querySelector(".os-theme-dark.os-scrollbar-vertical");
   
   if (svg_obj) {
 
@@ -47,7 +47,7 @@ export const init = () => {
 
     if (event.animationName === "intro_work_svg") {
 
-      if (window.inst) window.inst.classList.add("has-opacity");
+      window.inst.classList.add("has-opacity");
       
       AOS.init({
         once: true,
@@ -58,13 +58,13 @@ export const init = () => {
 
     if (event.animationName === "intro_work") {
        
-      if (touch) OverlayScrollbars(document.body, {
+      OverlayScrollbars(document.body, {
 
         overflow: {
           x: "hidden",
         },
         scrollbars: {
-          theme: "os-theme-body",
+          theme: touch,
       }});
     };
   });
@@ -73,7 +73,7 @@ export const init = () => {
 
     if (event.animationName === "intro") {
       
-      if (window.inst) window.inst.classList.add("has-opacity");
+      window.inst.classList.add("has-opacity");
 
       AOS.init({
         once: true,

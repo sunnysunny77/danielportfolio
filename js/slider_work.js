@@ -17,7 +17,7 @@ const open = (event) => {
   obj.classList.add("overlay-fixed");
   event.currentTarget.setAttribute("aria-expanded", true);
   obj.setAttribute("aria-expanded", true);
-  if (window.inst) window.inst.classList.add("has-right");
+  window.inst.classList.add("has-right");
 };
 
 const close = (event) => {
@@ -35,7 +35,7 @@ const close = (event) => {
   for (const item of document.querySelectorAll(".overlay-backdrop")) {
     item.classList.remove("overlay-transition");
   }
-  if (window.inst) setTimeout(()=>{
+  setTimeout(()=>{
     window.inst.classList.remove("has-right");
   }, 500);
 };

@@ -443,7 +443,7 @@
 
             ?>
 
-                <div class="overflow-hidden">
+                <div class="slider_work-overla-overflow overflow-hidden">
 
                     <div id="overlay_body-<?php echo $index; ?>" class="slider_work-overlay-body overlay_body d-flex" tabindex="-1" data-overlayscrollbars-initialize>
 
