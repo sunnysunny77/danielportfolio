@@ -187,16 +187,7 @@
 
                 <div data-aos="fade-right" class="col-48 col-lg-16 pe-lg-5">
 
-                    <div class="mb-11 mb-lg-5">
-
-                        <?php
-
-                            date_default_timezone_set("Australia/Perth");
-                            echo  date("g:i a") . " &mdash; Perth";
-                            
-                        ?>
-
-                    </div>
+                    <div id="date" class="mb-11 mb-lg-5"></div>
 
                     <div class="d-none d-lg-block">
 
