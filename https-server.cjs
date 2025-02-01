@@ -28,7 +28,7 @@ app.use((req, res) => {
         "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload",
         "Referrer-Policy": "no-referrer",
         "Cache-Control": "no-cache",
-        "Content-Security-Policy": `default-src 'none'; script-src 'self' 'sha256-6co41UqDF1XX2xQqBXBBy86x3xVsfHTr+1apL9qAAxk=' 'sha256-tpZlJP7IA7rKYHpRQsjXhjkX86cvYt33lgnciF3Snpk=' 'nonce-8IBTHwOdqNKAWeKl7plt8g==' https://${process.env.CN}:2999/; connect-src 'self' www.googletagmanager.com https://www.google-analytics.com/ https://${process.env.CN}:2999/livereload.js wss://${process.env.CN}:2999/livereload; style-src 'self' 'sha256-qGGsB/QprN05ZQ2phcOyUL0AHJIhdCmMjFRzU/ejcik='; img-src 'self' www.googletagmanager.com; media-src 'self'; font-src 'self'; manifest-src 'self';`,
+        "Content-Security-Policy": `default-src 'none'; script-src 'self' 'sha256-tpZlJP7IA7rKYHpRQsjXhjkX86cvYt33lgnciF3Snpk=' 'nonce-ePYgXpr5wufRyzPg' 'nonce-o8vuX9lzA2hbG8mJ' https://${process.env.CN}:2999/; connect-src 'self' www.googletagmanager.com https://www.google-analytics.com/ https://${process.env.CN}:2999/livereload.js wss://${process.env.CN}:2999/livereload; style-src 'self' 'sha256-qGGsB/QprN05ZQ2phcOyUL0AHJIhdCmMjFRzU/ejcik='; img-src 'self' www.googletagmanager.com; media-src 'self'; font-src 'self'; manifest-src 'self';`,
     });
 });
 

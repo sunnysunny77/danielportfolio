@@ -77,8 +77,8 @@
 <html lang="en" data-overlayscrollbars-initialize>
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="8IBTHwOdqNKAWeKl7plt8g=="></script>
-    <script integrity="sha256-6co41UqDF1XX2xQqBXBBy86x3xVsfHTr+1apL9qAAxk=">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="o8vuX9lzA2hbG8mJ"></script>
+    <script nonce="ePYgXpr5wufRyzPg">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
