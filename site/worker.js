@@ -1,4 +1,4 @@
-const version = 10024;
+const version = 10025;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
