@@ -234,7 +234,7 @@
 
                 <h1 class="col-48 col-lg-32 slogan pe-5 pe-lg-9 mb-11 mb-lg-0">
 
-                    <span data-aos="fade-left" class="heading-top d-block mb-5"> Hi i'm Dan! You're </span>
+                    <span data-aos="fade-left" class="heading-top d-block mb-5"> Hi i'm Dan! Your </span>
 
                     <span data-aos="fade-up" class="heading-bottom d-block"> Web development partner for digital experiences and solutions. </span>
 
