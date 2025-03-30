@@ -17,17 +17,25 @@
             "git" => "https://github.com/sunnysunny77/reactlogin",
         ],
         [ 
+            "title" => "My Life Story",
+            "link" => "https://holder.sunnyhome.site/",
+            "image" => [ "src" => "./images/mylifestory.webp", "alt" => "My Life Story" ],
+            "list-item" => [ "Under construction", "PWA", "Brochure site", "SSL A+" ],
+            "mp4" => "./videos/mylifestory.mp4",
+            "git" => "https://github.com/sunnysunny77/mylifestoryonfilm",
+        ],
+        [
             "title" => "Fasera",
             "link" => "https://www.fasera.com/",
             "image" => [ "src" => "./images/fasera.webp", "alt" => "Fasera" ],
-            "list-item" => [ " Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
+            "list-item" => [ "Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
             "mp4" => "./videos/fasera.mp4",
         ],
         [ 
             "title" => "Access Robotics",
             "link" => "https://accessrobotics.com.au/",
             "image" => [ "src" => "./images/access.webp", "alt" => "Access Robotics" ],
-            "list-item" => [ " Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
+            "list-item" => [ "Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
             "mp4" => "./videos/access.mp4",
         ],
         [ 
