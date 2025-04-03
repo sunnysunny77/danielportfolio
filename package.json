@@ -55,7 +55,7 @@
     "hostile": "latest",
     "http": "latest",
     "https": "latest",
-    "overlayscrollbars": "^2.10.1",
+    "overlayscrollbars": "latest",
     "rollup": "latest",
     "rollup-plugin-livereload": "latest",
     "rollup-plugin-sourcemaps": "latest",
