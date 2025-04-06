@@ -1,4 +1,4 @@
-const version = 10039;
+const version = 10040;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
@@ -15,7 +15,8 @@ const resources = [
   "./webfonts/fa-solid-900.woff2",
   "./images/furniture.webp", 
   "./images/fasera.webp", 
-  "./images/access.webp", 
+  "./images/access.webp",
+  "./images/mylifestory.webp",
   "./images/daves.webp", 
   "./images/business.webp", 
   "./images/weather.webp", 
