@@ -8,12 +8,12 @@
 
     $work =[
         [ 
-            "title" => "Login App",
-            "link" => "https://login.sunnyhome.site/",
+            "title" => "Store App",
+            "link" => "https://store.sunnyhome.site/",
             "credentials" => [ [ "title" => "PayPal:", "username" => "sb-iyl4x21604127@personal.example.com", "password" => "*]T0%Ae8" ], [ "title" => "Login:", "username" => "daniel@gmail.com", "password" => "passwordA1" ], ],
-            "image" => [ "src" => "./images/login.webp", "alt" => "Login App" ],
+            "image" => [ "src" => "./images/store.webp", "alt" => "Login App" ],
             "list-item" => [ "React/JSX - NodeJS - PHP - API", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Unique Design", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
-            "mp4" => "./videos/login.mp4",
+            "mp4" => "./videos/store.mp4",
             "git" => "https://github.com/sunnysunny77/reactlogin",
         ],
         [ 
@@ -57,7 +57,7 @@
         ],
         [ 
             "title" => "Weather App",
-            "link" => "https://sticky.sunnyhome.site/",
+            "link" => "https://weather.sunnyhome.site/",
             "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],
             "list-item" => [ "XML", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "mp4" => "./videos/weather.mp4",
