@@ -182,7 +182,7 @@
 
                                     <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress Stack</a>
 
-                                    <a class="mb-3 d-block" target="Bsv3" href="https://bsv3.sunnyhome.site/">  Basic Wordpress </a>
+                                    <a class="mb-3 d-block" target="Bsv3" href="https://wordpress.sunnyhome.site/">  Basic Wordpress </a>
 
                                     <a class="mb-3 d-block" target="Sliders" href="https://sliders.sunnyhome.site/"> Sliders </a>
 
