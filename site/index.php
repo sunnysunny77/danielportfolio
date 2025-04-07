@@ -13,7 +13,7 @@
             "credentials" => [ [ "title" => "PayPal:", "username" => "sb-iyl4x21604127@personal.example.com", "password" => "*]T0%Ae8" ], [ "title" => "Login:", "username" => "daniel@gmail.com", "password" => "passwordA1" ], ],
             "image" => [ "src" => "./images/store.webp", "alt" => "Login App" ],
             "list-item" => [ "React/JSX - NodeJS - PHP - API", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Unique Design", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
-            "vid" => "./videos/store",
+            "vid-src" => "./videos/store",
             "git" => "https://github.com/sunnysunny77/reactlogin",
         ],
         [ 
@@ -21,7 +21,7 @@
             "link" => "https://holder.sunnyhome.site/",
             "image" => [ "src" => "./images/mylifestory.webp", "alt" => "My Life Story" ],
             "list-item" => [ "Under construction", "PWA", "Brochure site", "Unique Design", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
-            "vid" => "./videos/mylifestory",
+            "vid-src" => "./videos/mylifestory",
             "git" => "https://github.com/sunnysunny77/mylifestoryonfilm",
         ],
         [
@@ -29,14 +29,14 @@
             "link" => "https://www.fasera.com/",
             "image" => [ "src" => "./images/fasera.webp", "alt" => "Fasera" ],
             "list-item" => [ "Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
-            "vid" => "./videos/fasera",
+            "vid-src" => "./videos/fasera",
         ],
         [ 
             "title" => "Access Robotics",
             "link" => "https://accessrobotics.com.au/",
             "image" => [ "src" => "./images/access.webp", "alt" => "Access Robotics" ],
             "list-item" => [ "Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
-            "vid" => "./videos/access",
+            "vid-src" => "./videos/access",
         ],
         [ 
             "title" => "Daves Blog",
@@ -44,7 +44,7 @@
             "credentials" => [ ["title" => "Admin:", "username" => "demo", "password" => "demo" ], ],
             "image" => [ "src" => "./images/daves.webp", "alt" => "Daves Blog" ],
             "list-item" => [ "Design Copy", "PWA", "MVC - OOP - SQL - CMS", "PHP API Template", "HTTP Observatory A+", "SSL A+" ],
-            "vid" => "./videos/daves",
+            "vid-src" => "./videos/daves",
             "git" => "https://github.com/sunnysunny77/davesblog",
         ],
         [ 
@@ -52,7 +52,7 @@
             "link" => "https://business.sunnyhome.site/",
             "image" => [ "src" => "./images/business.webp", "alt" => "Business" ],
             "list-item" => [ "Homepage", "PWA", "HTTP Observatory A+", "SSL A+" ],
-            "vid" => "./videos/business",
+            "vid-src" => "./videos/business",
             "git" => "https://github.com/sunnysunny77/business",
         ],
         [ 
@@ -60,7 +60,7 @@
             "link" => "https://weather.sunnyhome.site/",
             "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],
             "list-item" => [ "XML", "PWA", "HTTP Observatory A+", "SSL A+" ],
-            "vid" => "./videos/weather",
+            "vid-src" => "./videos/weather",
             "git" => "https://github.com/sunnysunny77/weatherxml",
         ],
         [ 
@@ -68,7 +68,7 @@
             "link" => "https://furniture.sunnyhome.site/",
             "image" => [ "src" => "./images/furniture.webp", "alt" => "Furniture" ],
             "list-item" => [ "Design Copy", "PWA", "HTTP Observatory A+", "SSL A+" ],
-            "vid" => "./videos/furniture",
+            "vid-src" => "./videos/furniture",
             "git" => "https://github.com/sunnysunny77/furniture",
         ],
     ];
@@ -560,15 +560,15 @@
 
                                         <?php
 
-                                            if (isset($row["vid"])) {
+                                            if (isset($row["vid-src"])) {
 
                                                 ?>
 
                                                     <video poster="./images/pwa-logo.webp" preload="none" class="play" width="1024" height="700" muted loop playsinline>
                                             
-                                                        <source src="<?php echo $row["vid"]; ?>.webm" type="video/webm">
+                                                        <source src="<?php echo $row["vid-src"]; ?>.webm" type="video/webm">
 
-                                                        <source src="<?php echo $row["vid"]; ?>.mp4" type="video/mp4">
+                                                        <source src="<?php echo $row["vid-src"]; ?>.mp4" type="video/mp4">
 
                                                     </video>
 
