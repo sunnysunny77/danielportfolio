@@ -48,14 +48,6 @@
             "git" => "https://github.com/sunnysunny77/davesblog",
         ],
         [ 
-            "title" => "Business",
-            "link" => "https://business.sunnyhome.site/",
-            "image" => [ "src" => "./images/business.webp", "alt" => "Business" ],
-            "list-item" => [ "Homepage", "PWA", "HTTP Observatory A+", "SSL A+" ],
-            "vid-src" => "./videos/business",
-            "git" => "https://github.com/sunnysunny77/business",
-        ],
-        [ 
             "title" => "Weather App",
             "link" => "https://weather.sunnyhome.site/",
             "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],

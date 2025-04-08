@@ -18,8 +18,8 @@ const fonts = [
 ];
 
 const href_work = [
-  "./images/furniture.webp", 
-  "./images/fasera.webp", 
+  "./images/store.webp",
+  "./images/mylifestory.webp",
 ];
 
 const href_about = [
