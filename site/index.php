@@ -12,9 +12,9 @@
             "link" => "https://store.sunnyhome.site/",
             "credentials" => [ [ "title" => "PayPal:", "username" => "sb-iyl4x21604127@personal.example.com", "password" => "*]T0%Ae8" ], [ "title" => "Login:", "username" => "daniel@gmail.com", "password" => "passwordA1" ], ],
             "image" => [ "src" => "./images/store.webp", "alt" => "Login App" ],
-            "list-item" => [ "React/JSX - NodeJS - PHP - API", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Unique Design", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
+            "list-item" => [ "Next Js", "React/JSX", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Unique Design", "SSL A+" ],
             "vid-src" => "./videos/store",
-            "git" => "https://github.com/sunnysunny77/reactlogin",
+            "git" => "https://github.com/sunnysunny77/react-next-js-store",
         ],
         [ 
             "title" => "My Life Story",
