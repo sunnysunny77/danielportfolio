@@ -35,7 +35,12 @@ export const nav = () => {
         return;
       }
 
-      if (scroll_pos > 0 && scroll_pos < (main_top + height) ) {
+      if (scroll_pos < padding_height) {
+
+        nav.classList.remove("has-float");
+        nav.classList.remove("has-positive");
+        nav.classList.remove("has-negative");
+      } else if (scroll_pos > padding_height && scroll_pos < (main_top + height)) {
 
         nav.classList.add("has-float");
         nav.classList.remove("has-positive");
