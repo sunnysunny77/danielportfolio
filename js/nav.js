@@ -15,6 +15,8 @@ export const nav = () => {
 
     const height = 55.5;
 
+    const padding_height = 154.5;
+
     let positive = false;
 
     const handle_nav = () => {
@@ -23,78 +25,45 @@ export const nav = () => {
 
       const main_bottom = main.offsetTop + main.scrollHeight - height;
 
-      const nav_top = nav.getBoundingClientRect().height;
-
       const scroll_pos = window.scrollY;
-
-      const obj = {
-        position: "absolute",
-        zIndex: "999",
-        top: "0px",
-        transition: "none",
-        maxHeight: "",
-        backgroundColor: "transparent",
-        padding: "60px 0",
-      };
 
       if (window.innerWidth > 992) {
 
-        obj.position = "absolute";
-        obj.zIndex = "999";
-        obj.top = "0px";
-        obj.transition = "none";
-        obj.maxHeight = "";
-        obj.backgroundColor = "transparent";
-        obj.padding = "60px 0";
+        nav.classList.remove("has-float");
+        nav.classList.remove("has-positive");
+        nav.classList.remove("has-negative");
         button.classList.remove("has-fixed");
         button.classList.remove("has-display");
-        Object.assign(nav.style, obj);
         return;
       }
 
-      if (scroll_pos < main_top) {
+      if (scroll_pos < padding_height) {
 
-        obj.position = "absolute";
-        obj.zIndex = "999";
-        obj.top = "0px";
-        obj.transition = "none";
-        obj.maxHeight = "";
-        obj.backgroundColor = "transparent";
-        obj.padding = "60px 0";
+        nav.classList.remove("has-float");
+        nav.classList.remove("has-positive");
+        nav.classList.remove("has-negative");
         button.classList.remove("has-fixed");
         button.classList.remove("has-display");
-      } else if (scroll_pos > main_top && scroll_pos < main_top + nav_top && positive) {
+      } else if (scroll_pos > padding_height && scroll_pos < (main_top + height)) {
 
-        obj.position = "fixed";
-        obj.zIndex = "997";
-        obj.top = `-${height}px`;
-        obj.transition = "none";
-        obj.maxHeight = "0px";
-        obj.backgroundColor = "rgb(23, 34, 43)";
-        obj.padding = "15px 0 5px 0";
-      } else if ((scroll_pos > main_top + nav_top && positive) || (scroll_pos > main_top && scroll_pos < main_top + nav_top && !positive) || (scroll_pos > main_bottom)) {
+        nav.classList.add("has-float");
+        nav.classList.remove("has-positive");
+        nav.classList.remove("has-negative");
+        button.classList.remove("has-fixed");
+        button.classList.remove("has-display");
+      } else if ((scroll_pos > (main_top + height) && positive) || (scroll_pos > (main_bottom - height))) {
 
-        obj.position = "fixed";
-        obj.zIndex = "997";
-        obj.top = `-${height}px`;
-        obj.transition = "top 0.375s, max-height 1s, background-color 1s";
-        obj.maxHeight = "0px";
-        obj.backgroundColor = "rgb(23, 34, 43)";
-        obj.padding = "15px 0 5px 0";
-      } else if (scroll_pos > main_top + nav_top && !positive) {
+        nav.classList.remove("has-float");
+        nav.classList.add("has-positive");
+        nav.classList.remove("has-negative");
+      } else if (scroll_pos > (main_top + height) && !positive) {
 
-        obj.position = "fixed";
-        obj.zIndex = "997";
-        obj.top = "0px";
-        obj.transition = "top 0.375s, max-height 1s, background-color 1s";
-        obj.maxHeight = `${height}px`;
-        obj.backgroundColor = "rgba(23, 34, 43, 0.85)";
-        obj.padding = "15px 0 5px 0";
+        nav.classList.remove("has-float");
+        nav.classList.remove("has-positive");
+        nav.classList.add("has-negative");
         button.classList.add("has-fixed");
       }
       
-      Object.assign(nav.style, obj);
-
       if (scroll_pos > scrollY) {
 
         positive = true;
@@ -106,7 +75,5 @@ export const nav = () => {
       scrollY = window.scrollY;
     };
 
-    events(window, "wheel", handle_nav, { passive: true });
     events(window, "scroll", handle_nav, { passive: true });
-    events(window, "resize", handle_nav, { passive: true });
   };

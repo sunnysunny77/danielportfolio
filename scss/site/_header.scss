@@ -20,7 +20,36 @@ nav {
     left: 0;
     top: 0;
     z-index: 999;
+    transition: "none";
+    background-color: transparent;
     will-change: top, max-height, background-color;
+    &.has-float {
+        z-index: 997;
+        position: fixed;
+        top: -55.5px;
+        width: 100%;
+        transition: top 0.375s, max-height 1s, background-color 1s;
+        max-height: 0px;
+        padding: 15px 0 5px 0;
+    }
+    &.has-positive {
+        z-index: 999;
+        position: fixed;
+        top: -55.5px;
+        transition: top 0.375s, max-height 1s, background-color 1s;
+        max-height: 0px;
+        background-color: transparent;
+        padding: 15px 0 5px 0;
+    }
+    &.has-negative {
+        z-index: 999;
+        position: fixed;
+        top: 0px;
+        transition: top 0.375s, max-height 1s, background-color 1s;
+        max-height: 55.5px;
+        background-color: $color_3;
+        padding: 15px 0 5px 0;
+    }
     a {
         color: $color_6;
     }
