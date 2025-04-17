@@ -1,9 +1,8 @@
 header,
-#about-header {
+nav {
     position: relative;
     z-index: 998;
     background-color: $color_2;
-    padding: 155.5px 0 0 0;
     background-blend-mode: overlay;
     background-position: top right;
     background-image: url(../images/cubes.webp);
@@ -11,26 +10,23 @@ header,
 
 nav {
     color: $color_5;
-    position: absolute;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.067em;
     padding: 60px 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    transition: none;
-    max-height: 154.5px;
-    background-color: transparent;
-    will-change: top, max-height, background-color;
     &.nav-fixed {
         z-index: -1;
         position: fixed;
+        width: 100%;
         top: 0px;
         transition: none;
         max-height: 0px;
+        background-color: transparent;
+        will-change: top, max-height, background-color;
         padding: 0;
+        background-blend-mode: initial;
+        background-position: initial;
+        background-image: none;
         &.has-float {
             z-index: 997;
             position: fixed;
@@ -43,7 +39,7 @@ nav {
             padding: 15px 0 5px 0;
         }
         &.has-positive {
-            z-index: -1;
+            z-index: 997;
             position: fixed;
             top: -55.5px;
             transition:
