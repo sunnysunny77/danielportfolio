@@ -2,11 +2,11 @@ import { events } from "./utillites.js";
 
 export const nav = () => {
 
-    const nav = document.querySelector("nav");
-    const button = document.querySelector(".nav-tooltip");
+    const nav = document.querySelector(".nav-fixed");
+
     const main = document.querySelector("main");
 
-    if (!nav || !button || !main ) {
+    if (!nav || !main ) {
 
       return;
     }
@@ -32,25 +32,14 @@ export const nav = () => {
         nav.classList.remove("has-float");
         nav.classList.remove("has-positive");
         nav.classList.remove("has-negative");
-        button.classList.remove("has-fixed");
-        button.classList.remove("has-display");
         return;
       }
 
-      if (scroll_pos < padding_height) {
-
-        nav.classList.remove("has-float");
-        nav.classList.remove("has-positive");
-        nav.classList.remove("has-negative");
-        button.classList.remove("has-fixed");
-        button.classList.remove("has-display");
-      } else if (scroll_pos > padding_height && scroll_pos < (main_top + height)) {
+      if (scroll_pos > 0 && scroll_pos < (main_top + height) ) {
 
         nav.classList.add("has-float");
         nav.classList.remove("has-positive");
         nav.classList.remove("has-negative");
-        button.classList.remove("has-fixed");
-        button.classList.remove("has-display");
       } else if ((scroll_pos > (main_top + height) && positive) || (scroll_pos > (main_bottom - height))) {
 
         nav.classList.remove("has-float");
@@ -61,7 +50,6 @@ export const nav = () => {
         nav.classList.remove("has-float");
         nav.classList.remove("has-positive");
         nav.classList.add("has-negative");
-        button.classList.add("has-fixed");
       }
       
       if (scroll_pos > scrollY) {
