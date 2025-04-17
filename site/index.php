@@ -74,7 +74,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html data-overlayscrollbars-initialize lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBDFZ1ZRW5" nonce="o8vuX9lzA2hbG8mJ"></script>
