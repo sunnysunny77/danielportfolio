@@ -1,7 +1,23 @@
-import AOS from "aos";
 import vivus from "vivus";
 import { events } from "./utillites.js";
 import { OverlayScrollbars } from "overlayscrollbars";
+
+const scrolled = (obj, options) => {
+
+  const observer = new IntersectionObserver((entries, observer)=>{
+
+    entries.filter(index=> index.isIntersecting).forEach(index => {
+
+      index.target.classList.add("scrolled");
+      observer.unobserve(index.target);
+    });
+  },options);
+
+  obj.forEach(index => {
+
+    observer.observe(index);
+  });
+};
 
 export const init = () => {
 
@@ -51,12 +67,8 @@ export const init = () => {
     if (event.animationName === "intro_work_svg") {
 
       window.inst.classList.add("has-opacity");
-      
-      AOS.init({
-        once: true,
-        easing: "ease-out-quad",
-        offset: -800,
-      });
+      scrolled(document.querySelectorAll(".scrolled-init"));
+      scrolled(document.querySelectorAll(".scrolled-init-offset"), {rootMargin: "-800px 0px 0px 0px"});
     };
 
     if (event.animationName === "intro_work") {
@@ -79,12 +91,8 @@ export const init = () => {
     if (event.animationName === "intro") {
       
       window.inst.classList.add("has-opacity");
-
-      AOS.init({
-        once: true,
-        easing: "ease-out-quad",
-        offset: intro_obj.id  === "intro-work" ? -800 : 100,
-      });
+      scrolled(document.querySelectorAll(".scrolled-init"));
+      scrolled(document.querySelectorAll(".scrolled-init-offset"), {rootMargin: "-800px 0px 0px 0px"});
     };
   });
 };

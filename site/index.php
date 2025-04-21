@@ -241,7 +241,7 @@
 
             <div class="row">
 
-                <div data-aos="fade-right" class="col-48 col-lg-16 pe-lg-5">
+                <div class="col-48 col-lg-16 pe-lg-5 scrolled-init right">
 
                     <div id="date" class="mb-11 mb-lg-5">
 
@@ -290,13 +290,13 @@
 
                 <h1 class="col-48 col-lg-32 slogan pe-5 pe-lg-9 mb-11 mb-lg-0">
 
-                    <span data-aos="fade-left" class="heading-top d-block mb-5"> Hi i'm Dan! Your </span>
+                    <span class="heading-top d-block scrolled-init left mb-5"> Hi i'm Dan! Your </span>
 
-                    <span data-aos="fade-up" class="heading-bottom d-block"> Web development partner for digital experiences and solutions. </span>
+                    <span class="heading-bottom d-block scrolled-init up"> Web development partner for digital experiences and solutions. </span>
 
                 </h1>
 
-                <div data-aos="fade-right" class="d-lg-none">
+                <div class="d-lg-none scrolled-init right">
 
                     <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
@@ -312,7 +312,7 @@
 
     <main class="work-main pb-12 pt-11 py-lg-14">
 
-        <section data-aos="fade-left" class="w-100 container-lg">
+        <section class="w-100 container-lg scrolled-init-offset left">
 
             <div class="row justify-content-center">
 

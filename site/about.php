@@ -156,7 +156,7 @@
 
                 <div class="col-xl-12 d-none d-xl-block">
 
-                    <img data-aos="slide-right" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
+                    <img class="scrolled-init slide-right" src="./images/daniel.webp" width="760" height="475" alt="Daniel" />
 
                 </div>
 
@@ -166,7 +166,7 @@
 
                         <div class="col-48 col-md-25 col-xl-20">
 
-                            <div data-aos="fade-right">
+                            <div class="scrolled-init right">
 
                                 <h1 class="mb-3"> G'day </h1>
 
@@ -180,7 +180,7 @@
 
                             </div>
 
-                            <div data-aos="fade-up">
+                            <div class="scrolled-init up">
                                     
                                 <h2 class="mb-3"> Qualifications </h2>
 
@@ -205,7 +205,7 @@
 
                             </div>
 
-                            <div data-aos="fade-left">
+                            <div class="scrolled-init left">
 
                                 <h2 class="mb-3"> Recent partners </h2>
 
@@ -222,7 +222,7 @@
 
                         <hr class="d-md-none mb-9">
 
-                        <div data-aos="fade-up" class="col-48 col-md-16 col-xl-20">
+                        <div class="col-48 col-md-16 col-xl-20 scrolled-init up">
 
                             <div class="row justify-content-between">
 
