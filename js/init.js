@@ -28,7 +28,7 @@ export const init = () => {
 
   if (intro_obj.id === "intro-work") {
 
-    fetch("/cookie.php", { method: "GET" });
+   // fetch("/cookie.php", { method: "GET" });
   }
 
   OverlayScrollbars(document.body, {
@@ -65,10 +65,9 @@ export const init = () => {
     };
 
     if (event.animationName === "intro_work_svg") {
-
-      window.inst.classList.add("has-opacity");
       scrolled(document.querySelectorAll(".scrolled-init"));
       scrolled(document.querySelectorAll(".scrolled-init-offset"), {rootMargin: "-800px 0px 0px 0px"});
+      window.inst.classList.add("has-opacity");
     };
 
     if (event.animationName === "intro_work") {
@@ -90,9 +89,9 @@ export const init = () => {
 
     if (event.animationName === "intro") {
       
-      window.inst.classList.add("has-opacity");
       scrolled(document.querySelectorAll(".scrolled-init"));
       scrolled(document.querySelectorAll(".scrolled-init-offset"), {rootMargin: "-800px 0px 0px 0px"});
+      window.inst.classList.add("has-opacity");
     };
   });
 };
