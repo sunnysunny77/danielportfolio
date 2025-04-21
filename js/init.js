@@ -28,7 +28,7 @@ export const init = () => {
 
   if (intro_obj.id === "intro-work") {
 
-   // fetch("/cookie.php", { method: "GET" });
+    fetch("/cookie.php", { method: "GET" });
   }
 
   OverlayScrollbars(document.body, {
