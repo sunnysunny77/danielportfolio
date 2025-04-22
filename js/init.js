@@ -2,18 +2,23 @@ import vivus from "vivus";
 import { events } from "./utillites.js";
 import { OverlayScrollbars } from "overlayscrollbars";
 
-const scrolled = (obj, options) => {
 
-  const observer = new IntersectionObserver((entries, observer)=>{
-
-    entries.filter(index=> index.isIntersecting).forEach(index => {
-
-      index.target.classList.add("scrolled");
-      observer.unobserve(index.target);
-    });
-  },options);
+const scrolled = (obj, bool) => {
 
   obj.forEach(index => {
+
+    const options = {
+      rootMargin: bool ? `-${index.offsetTop}px` : "0px",
+    };
+
+    const observer = new IntersectionObserver((entries, observer)=>{
+
+      entries.filter(index=> index.isIntersecting).forEach(index => {
+
+        index.target.classList.add("scrolled");
+        observer.unobserve(index.target);
+      });
+    }, options);
 
     observer.observe(index);
   });
@@ -66,7 +71,7 @@ export const init = () => {
 
     if (event.animationName === "intro_work_svg") {
       scrolled(document.querySelectorAll(".scrolled-init"));
-      scrolled(document.querySelectorAll(".scrolled-init-offset"), {rootMargin: "-800px 0px 0px 0px"});
+      scrolled(document.querySelectorAll(".scrolled-init-offset"), true);
       window.inst.classList.add("has-opacity");
     };
 
@@ -90,7 +95,7 @@ export const init = () => {
     if (event.animationName === "intro") {
       
       scrolled(document.querySelectorAll(".scrolled-init"));
-      scrolled(document.querySelectorAll(".scrolled-init-offset"), {rootMargin: "-800px 0px 0px 0px"});
+      scrolled(document.querySelectorAll(".scrolled-init-offset"), true);
       window.inst.classList.add("has-opacity");
     };
   });
