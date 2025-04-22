@@ -8,7 +8,7 @@ const scrolled = (obj, bool) => {
   obj.forEach(index => {
 
     const options = {
-      rootMargin: bool ? `-${index.offsetTop}px` : "0px",
+      rootMargin: bool ? `${index.offsetTop}px` : "0px",
     };
 
     const observer = new IntersectionObserver((entries, observer)=>{

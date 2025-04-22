@@ -312,7 +312,7 @@
 
     <main class="work-main pb-12 pt-11 py-lg-14">
 
-        <section class="w-100 container-lg">
+        <section class="w-100 container-lg scrolled-init-offset left">
 
             <div class="row justify-content-center">
 
@@ -323,22 +323,15 @@
                         foreach ($work as $index=>$row) {
 
                             $margin_bottom = "mb-12 mb-lg-13";
-                            
-                            $intersection = "";
             
                             if($index === $count) {
 
                                 $margin_bottom = "mb-0 mb-md-0";
                             }
 
-                            if ($index === 0) {
-
-                                $intersection =  "scrolled-init-offset left";
-                            }
-
                             ?>
 
-                                <div class="has-test row justify-content-md-between <?php echo $intersection; ?> <?php echo $margin_bottom; ?>">
+                                <div class="has-test row justify-content-md-between <?php echo $margin_bottom; ?>">
 
                                     <div class="work-details col-48 col-md-16 d-flex flex-column ps-5 pt-6 pb-5 ps-md-4 pt-md-3 pb-md-4">
 
