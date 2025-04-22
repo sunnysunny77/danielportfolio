@@ -2,7 +2,7 @@ import vivus from "vivus";
 import { events } from "./utillites.js";
 import { OverlayScrollbars } from "overlayscrollbars";
 
-const obsIsnt = (entries, observer)=>{
+const obsIsnt = (entries, observer) => {
 
   entries.filter(index=> index.isIntersecting).forEach(index => {
 
@@ -13,9 +13,9 @@ const obsIsnt = (entries, observer)=>{
 
 const scrolled = (obj, bool) => {
 
-  obj.forEach(index => {;
+  obj.forEach(index => {
 
-    new IntersectionObserver(obsIsnt , {
+    new IntersectionObserver(obsIsnt, {
       rootMargin: bool ? `${index.offsetTop}px` : "0px",
     }).observe(index);
   });
