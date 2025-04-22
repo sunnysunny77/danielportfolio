@@ -2,25 +2,22 @@ import vivus from "vivus";
 import { events } from "./utillites.js";
 import { OverlayScrollbars } from "overlayscrollbars";
 
+const obsIsnt = (entries, observer)=>{
+
+  entries.filter(index=> index.isIntersecting).forEach(index => {
+
+    index.target.classList.add("scrolled");
+    observer.unobserve(index.target);
+  });
+};
 
 const scrolled = (obj, bool) => {
 
-  obj.forEach(index => {
+  obj.forEach(index => {;
 
-    const options = {
+    new IntersectionObserver(obsIsnt , {
       rootMargin: bool ? `${index.offsetTop}px` : "0px",
-    };
-
-    const observer = new IntersectionObserver((entries, observer)=>{
-
-      entries.filter(index=> index.isIntersecting).forEach(index => {
-
-        index.target.classList.add("scrolled");
-        observer.unobserve(index.target);
-      });
-    }, options);
-
-    observer.observe(index);
+    }).observe(index);
   });
 };
 
