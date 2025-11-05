@@ -242,7 +242,9 @@
 
                                     <a class="mb-3 d-block" target="Sliders" href="https://sliders.sunnyhome.site/"> Sliders </a>
 
-                                    <a class="mb-3 d-block" target="Sliders" href="https://hdr.sunnyhome.site/"> AI Captcha </a>
+                                    <a class="mb-3 d-block" target="captcha" href="https://hdr.sunnyhome.site/"> AI Captcha </a>
+
+                                    <a class="mb-3 d-block" target="credit" href="https://credit.sunnyhome.site/"> AI Credit risk </a>
 
                                 </div>
 
