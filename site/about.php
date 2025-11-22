@@ -236,7 +236,7 @@
 
                                     <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/bootstrapwordpresstemplate/"> Wordpress Stack</a>
 
-                                    <a class="mb-3 d-block" target="Wordpress" href="https://github.com/sunnysunny77/next-js-bs-template"> Next.js Stack</a>
+                                    <a class="mb-3 d-block" target="nextjs" href="https://github.com/sunnysunny77/next-js-bs-template"> Next.js Stack</a>
 
                                     <a class="mb-3 d-block" target="Bsv3" href="https://wordpress.sunnyhome.site/">  Basic Wordpress </a>
 
@@ -245,6 +245,8 @@
                                     <a class="mb-3 d-block" target="captcha" href="https://hdr.sunnyhome.site/"> AI Captcha </a>
 
                                     <a class="mb-3 d-block" target="credit" href="https://credit.sunnyhome.site/"> AI Credit risk </a>
+
+                                    <a class="mb-3 d-block" target="agent" href="https://huggingface.co/spaces/ibyteohdear/agentLLM/"> AI Agent </a>
 
                                 </div>
 
