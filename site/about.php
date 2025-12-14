@@ -200,6 +200,12 @@
                                     <br />
                                     <br />
                                     2022
+                                    <br />
+                                    <br />
+                                    ICTSS00120 - Artificial Intelligence Skill Set
+                                    <br />
+                                    <br />
+                                    2025
 
                                 </p>
 
