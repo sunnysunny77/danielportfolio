@@ -63,6 +63,14 @@
             "vid-src" => "./videos/furniture",
             "git" => "https://github.com/sunnysunny77/furniture",
         ],
+        [
+            "title" => "The Cozy Cup",
+            "link" => "https://thecozycup.sunnyhome.site/",
+            "image" => [ "src" => "./images/tcp.webp", "alt" => "TCP" ],
+            "list-item" => [ "Wordpress", "PWA", "SSL A+", "ACF", "Elementor", "CPTUI"],
+            "vid-src" => "./videos/tcp",
+            "git" => "https://github.com/sunnysunny77/thecozycup",
+        ],
     ];
 
     $count = count($work) - 1;

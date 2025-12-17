@@ -244,8 +244,6 @@
 
                                     <a class="mb-3 d-block" target="nextjs" href="https://github.com/sunnysunny77/next-js-bs-template"> Next.js Stack</a>
 
-                                    <a class="mb-3 d-block" target="Bsv3" href="https://wordpress.sunnyhome.site/">  Basic Wordpress </a>
-
                                     <a class="mb-3 d-block" target="Sliders" href="https://sliders.sunnyhome.site/"> Sliders </a>
 
                                     <a class="mb-3 d-block" target="captcha" href="https://hdr.sunnyhome.site/"> AI Captcha </a>
