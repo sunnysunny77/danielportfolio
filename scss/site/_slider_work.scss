@@ -80,6 +80,7 @@
         width: calc(100% - 0.5rem);
         height: calc(100% - 0.5rem);
         object-fit: contain;
+        clip-path: inset(2px);
         @include min_lg {
             top: 1.5rem;
             left: 1.5rem;
