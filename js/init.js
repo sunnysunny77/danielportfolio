@@ -48,7 +48,7 @@ export const init = () => {
   
   if (svg_obj) {
 
-    const inst = new vivus(svg_obj, { duration: 60, onReady: () => {
+    const inst = new vivus(svg_obj, { duration: 50, onReady: () => {
 
       intro_obj.classList.add("has-js");
     } });
