@@ -66,9 +66,9 @@
         [
             "title" => "The Cozy Cup",
             "link" => "https://thecozycup.sunnyhome.site/",
-            "image" => [ "src" => "./images/tcp.webp", "alt" => "TCP" ],
+            "image" => [ "src" => "./images/thecozycup.webp", "alt" => "TCP" ],
             "list-item" => [ "Wordpress", "PWA", "SSL A+", "ACF", "Elementor", "CPTUI"],
-            "vid-src" => "./videos/tcp",
+            "vid-src" => "./videos/thecozycup",
             "git" => "https://github.com/sunnysunny77/thecozycup",
         ],
     ];
@@ -117,7 +117,7 @@
 
                     <svg id="vivus" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-2 -2 110 72">
 
-                        <circle cx="53" cy="34" r="50"fill="none" stroke="#dae3e4" stroke-width="1" stroke-opacity="0" />
+                        <circle cx="53" cy="34" r="50"fill="none" stroke="#dae3e4" stroke-width="2" stroke-opacity="0" />
 
                         <g transform="translate(22,12) scale(0.60)">
 
