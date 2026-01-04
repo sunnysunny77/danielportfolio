@@ -141,7 +141,7 @@
 
         <ul class="list-inline row d-flex align-items-center m-0">
 
-            <li class="list-inline-item col-12 col-lg-16 m-0 ps-5 ps-md-8 ps-lg-11">
+            <li class="list-inline-item align-self-start col-12 col-lg-16 m-0 ps-5 ps-md-8 ps-lg-11">
 
                 <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
 

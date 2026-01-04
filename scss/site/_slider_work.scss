@@ -135,7 +135,7 @@
             align-items: center;
             i {
                 font-size: 22px;
-                color: $color_3;
+                color: $color_9;
                 transition: color 0.25s;
                 &:hover {
                     color: $color_6;
@@ -160,7 +160,7 @@
     background-blend-mode: lighten;
     height: 133px;
     @include min_lg {
-        background: $color_3;
+        background: $color_9;
     }
 }
 

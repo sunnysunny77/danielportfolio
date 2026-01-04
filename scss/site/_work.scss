@@ -50,12 +50,12 @@
     }
     .preview {
         font-size: clamp(17.5px, 2.25vw, 20px);
-        color: $color_3;
+        color: $color_9;
         width: fit-content;
         background-color: transparent;
         border: none;
         i {
-            color: $color_3;
+            color: $color_9;
             font-size: clamp(15px, 2.125vw, 17.5px);
             transform: translateX(0%);
             transition: transform 0.25s ease-in-out;
@@ -72,11 +72,11 @@
         background-position: top right;
         background-image: url(../images/cubes.webp);
         .visit {
-            color: $color_3;
+            color: $color_9;
             transition: color 0.25s;
             will-change: color;
             &:hover i {
-                color: $color_6;
+                color: $color_3;
             }
         }
         hr {
@@ -84,16 +84,17 @@
             opacity: 1;
         }
         li {
-            color: $color_3;
+            color: $color_9;
             &.title {
                 font-size: 14px;
                 font-size: clamp(14px, 2vw, 16px);
+                color: $color_9;
             }
         }
         .copy-tooltip {
             text-decoration-line: underline;
             padding: 0;
-            text-decoration-color: $color_3;
+            text-decoration-color: $color_9;
             transition: text-decoration-color 0.25s;
             will-change: text-decoration-color;
             width: fit-content;

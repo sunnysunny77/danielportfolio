@@ -36,59 +36,55 @@
 
     <div id="intro-about" class="intro"></div>
 
-    <nav class="container-fuild d-flex align-items-center">
+   <nav class="container-fluid">
 
-        <div class="container">
+        <ul class="list-inline row d-flex align-items-center m-0">
 
-            <ul class="list-inline row d-flex m-0">
+            <li class="list-inline-item align-self-start col-12 col-lg-16 m-0 ps-5 ps-md-8 ps-lg-11">
 
-                <li class="list-inline-item col-12 col-lg-16 m-0">
+                <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
 
-                    <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
+            </li>
 
-                </li>
+            <li class="list-inline-item align-self-end col-36 col-lg-32 pe-md-11">
 
-                <li class="list-inline-item align-self-end col-36 col-lg-32">
+                <ul class="list-inline d-flex align-items-center justify-content-around justify-content-md-between">
 
-                    <ul class="list-inline d-flex justify-content-around justify-content-md-between">
+                    <li class="list-inline-item">
 
-                        <li class="list-inline-item">
+                        <a class="navigation-anchor px-0 pb-3" href="./"> Work </a>
 
-                            <a class="navigation-anchor px-0 pb-3" href="./"> Work </a>
+                    </li>
 
-                        </li>
+                    <li class="list-inline-item">
 
-                        <li class="list-inline-item">
+                        <a class="active navigation-anchor px-0 pb-3" href="./about.php"> About </a>
 
-                            <a class="active navigation-anchor px-0 pb-3" href="./about.php"> About </a>
+                    </li>
 
-                        </li>
+                    <?php
 
-                        <?php
+                        if (isset($mailto)) {
 
-                            if (isset($mailto)) {
+                            ?>
 
-                                ?>
+                                <li class="list-inline-item">
 
-                                    <li class="list-inline-item">
-                                        
-                                        <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
+                                    <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
 
-                                    </li>
+                                </li>
 
-                                <?php
-                                
-                            }
+                            <?php
 
-                        ?>
+                        }
 
-                    </ul>
+                    ?>
 
-                </li>
+                </ul>
 
-            </ul>
+            </li>
 
-        </div>
+        </ul>
 
     </nav>
 
