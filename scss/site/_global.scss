@@ -6,10 +6,6 @@ body {
     margin: 0;
     font-family: $font;
     overflow: hidden;
-    background-color: $color_5;
-    background-blend-mode: exclusion;
-    background-position: top left;
-    background-image: url(../images/cubes.webp);
 }
 
 .copy-tooltip {

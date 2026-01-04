@@ -1,5 +1,9 @@
 footer {
   color: $color_3;
+  background-color: $color_5;
+  background-blend-mode: exclusion;
+  background-position: bottom left;
+  background-image: url(../images/cubes.webp);
   a {
     color: inherit;
   }
