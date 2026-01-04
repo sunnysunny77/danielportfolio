@@ -6,9 +6,10 @@ body {
     margin: 0;
     font-family: $font;
     overflow: hidden;
-    background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: lighten;
-    background-color: $color_3;
+    background-color: $color_5;
+    background-blend-mode: exclusion;
+    background-position: top left;
+    background-image: url(../images/cubes.webp);
 }
 
 .copy-tooltip {
@@ -75,7 +76,7 @@ main {
     align-items: center;
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: lighten;
-    background-color: $color_3;
+    background-color: $color_9;
 }
 
 .os-theme-body,

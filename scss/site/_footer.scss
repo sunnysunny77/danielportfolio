@@ -1,27 +1,24 @@
 footer {
-    background-color: $color_4;
-    color: $color_2;
-    background-image: url(../images/cubes.webp);
-    background-blend-mode: overlay;
-    a {
-        color: inherit;
+  color: $color_3;
+  a {
+    color: inherit;
+  }
+  .copy-tooltip {
+    color: inherit;
+    &::before {
+      left: calc(100% + 20px);
+      background-color: $color_9;
+      color: $color_5;
+      padding: 2px 12px;
     }
-    .copy-tooltip {
-        color: inherit;
-        &::before {
-            left: calc(100% + 20px);
-            background-color: $color_2;
-            color: $color_5;
-            padding: 2px 12px;
-        }
+  }
+  a,
+  .copy-tooltip {
+    &::after {
+      background-color: $color_3;
     }
-    a,
-    .copy-tooltip {
-        &::after {
-            background-color: $color_2;
-        }
-    }
-    .bold {
-        font-weight: 500;
-    }
+  }
+  .bold {
+    font-weight: 500;
+  }
 }

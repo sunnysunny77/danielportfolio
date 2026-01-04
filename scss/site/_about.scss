@@ -5,18 +5,19 @@
         height: fit-content;
         object-fit: cover;
         aspect-ratio: 4/3;
+        filter: grayscale(100%);
         @include min_lg {
             height: 100%;
         }
     }
     h1,
     h2 {
-        color: $color_5;
+        color: $color_10;
         font-size: 18px;
     }
     p {
         font-size: 16px;
-        color: $color_6;
+        color: $color_5;
     }
     a,
     .copy-tooltip {
@@ -24,20 +25,23 @@
         text-decoration-color: transparent;
         transition: text-decoration-color 0.25s;
         will-change: text-decoration-color;
-        color: $color_6;
+        color: $color_5;
         font-size: 14px;
         &:hover {
-            text-decoration-color: $color_6;
+            text-decoration-color: $color_5;
         }
     }
     .copy-tooltip {
-        color: $color_6;
+        color: $color_5;
         &::before {
             padding: 4.5px 12px;
             bottom: calc(-100% - 24px);
             left: 0;
             background-color: $color_5;
-            color: $color_2;
+            color: $color_3;
         }
+    }
+    hr {
+        border-color: $color_5;
     }
 }

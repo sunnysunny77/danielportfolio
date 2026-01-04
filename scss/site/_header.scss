@@ -2,14 +2,10 @@ header,
 nav {
     position: relative;
     z-index: 998;
-    background-color: $color_2;
-    background-blend-mode: overlay;
-    background-position: top right;
-    background-image: url(../images/cubes.webp);
 }
 
 nav {
-    color: $color_5;
+    color: $color_3;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.067em;
@@ -60,20 +56,20 @@ nav {
                 max-height 1s,
                 background-color 1s;
             max-height: 55.5px;
-            background-color: $color_3;
+            background-color: $color_5;
             padding: 15px 0 5px 0;
         }
     }
     a {
-        color: $color_6;
+        color: $color_3;
     }
     .copy-tooltip {
-        color: $color_6;
+        color: $color_3;
         &::before {
             right: 0;
             bottom: calc(-100% + 8px);
-            background-color: $color_5;
-            color: $color_2;
+            background-color: $color_9;
+            color: $color_5;
             z-index: 1000;
             padding: 2px 12px;
         }
@@ -87,7 +83,7 @@ nav {
     a,
     .copy-tooltip {
         &::after {
-            background-color: $color_6;
+            background-color: $color_3;
         }
     }
     .blink {
@@ -101,7 +97,7 @@ nav {
 
 @keyframes blink {
     0% {
-        background-color: $color_5;
+        background-color: $color_3;
     }
     100% {
         background-color: transparent;

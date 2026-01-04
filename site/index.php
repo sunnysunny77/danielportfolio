@@ -117,13 +117,13 @@
 
                     <svg id="vivus" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-2 -2 110 72">
 
-                        <circle cx="53" cy="34" r="50"fill="none" stroke="#dae3e4" stroke-width="2" stroke-opacity="0" />
+                        <circle cx="53" cy="34" r="50"fill="none" stroke="#4e4f4c" stroke-width="1.5" stroke-opacity="0" />
 
                         <g transform="translate(22,12) scale(0.60)">
 
-                            <path fill="none" stroke="#dae3e4" stroke-opacity="0" stroke-width="2" d="M73.217 66.79c-6.677-1.111-12.67-4.095-17.464-8.692l-3.746-3.593-3.254 3.148c-6.752 6.535-11.257 7.709-31.003 8.08L0 66.065V21.904h12v32h10.04c10.537 0 15.316-1.416 19.172-5.68 4.908-5.429 6.29-17.415 2.875-24.936-3.624-7.98-11.401-11.384-26.008-11.384h-6.647L5.966 6.323.5.743 18 1.1c19.644.402 24.11 1.6 31.004 8.316l3.505 3.414 3.495-3.611C61.5 3.54 69.027.512 78.727.073c9.486-.43 14.724.98 21.847 5.882l4.648 3.197-3.915 3.915-3.915 3.915-4.539-2.537c-13.407-7.493-29.455-1.598-33.497 12.306-3.39 11.663 1.625 23.322 11.875 27.605 2.038.851 4.62 1.548 5.737 1.548 1.817 0 2.032.635 2.032 6 0 3.3-.113 5.947-.25 5.883-.138-.064-2.627-.513-5.533-.997" />
+                            <path fill="none" stroke="#4e4f4c" stroke-opacity="0" stroke-width="2.5" d="M73.217 66.79c-6.677-1.111-12.67-4.095-17.464-8.692l-3.746-3.593-3.254 3.148c-6.752 6.535-11.257 7.709-31.003 8.08L0 66.065V21.904h12v32h10.04c10.537 0 15.316-1.416 19.172-5.68 4.908-5.429 6.29-17.415 2.875-24.936-3.624-7.98-11.401-11.384-26.008-11.384h-6.647L5.966 6.323.5.743 18 1.1c19.644.402 24.11 1.6 31.004 8.316l3.505 3.414 3.495-3.611C61.5 3.54 69.027.512 78.727.073c9.486-.43 14.724.98 21.847 5.882l4.648 3.197-3.915 3.915-3.915 3.915-4.539-2.537c-13.407-7.493-29.455-1.598-33.497 12.306-3.39 11.663 1.625 23.322 11.875 27.605 2.038.851 4.62 1.548 5.737 1.548 1.817 0 2.032.635 2.032 6 0 3.3-.113 5.947-.25 5.883-.138-.064-2.627-.513-5.533-.997" />
 
-                            <path fill="none" stroke="#dae3e4" stroke-opacity="0" stroke-width="2" d="m 87.441,64.455 c -1.423,-2.173 -1.49,-3.021 -0.433,-5.57 2.087,-5.04 8.433,-5.262 11.043,-0.386 2.097,3.918 -0.397,7.803 -5.272,8.212 -3.005,0.252 -3.958,-0.151 -5.338,-2.256" />
+                            <path fill="none" stroke="#4e4f4c" stroke-opacity="0" stroke-width="2.5" d="m 87.441,64.455 c -1.423,-2.173 -1.49,-3.021 -0.433,-5.57 2.087,-5.04 8.433,-5.262 11.043,-0.386 2.097,3.918 -0.397,7.803 -5.272,8.212 -3.005,0.252 -3.958,-0.151 -5.338,-2.256" />
 
                         </g>
 
@@ -137,59 +137,55 @@
 
     </div>
 
-    <nav class="container-fuild d-flex align-items-center">
+    <nav class="container-fluid">
 
-        <div class="container">
+        <ul class="list-inline row d-flex align-items-center m-0">
 
-            <ul class="list-inline row d-flex m-0">
+            <li class="list-inline-item col-12 col-lg-16 m-0 ps-5 ps-md-8 ps-lg-11">
 
-                <li class="list-inline-item col-12 col-lg-16 m-0">
+                <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
 
-                    <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
+            </li>
 
-                </li>
+            <li class="list-inline-item align-self-end col-36 col-lg-32 pe-md-11">
 
-                <li class="list-inline-item align-self-end col-36 col-lg-32">
+                <ul class="list-inline d-flex align-items-center justify-content-around justify-content-md-between">
 
-                    <ul class="list-inline d-flex justify-content-around justify-content-md-between">
+                    <li class="list-inline-item">
 
-                        <li class="list-inline-item">
+                        <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
 
-                            <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
+                    </li>
 
-                        </li>
+                    <li class="list-inline-item">
 
-                        <li class="list-inline-item">
+                        <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
 
-                            <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
+                    </li>
 
-                        </li>
+                    <?php
 
-                        <?php
+                        if (isset($mailto)) {
 
-                            if (isset($mailto)) {
+                            ?>
 
-                                ?>
+                                <li class="list-inline-item">
 
-                                    <li class="list-inline-item">
-                                        
-                                        <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
+                                    <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
 
-                                    </li>
+                                </li>
 
-                                <?php
-                                
-                            }
+                            <?php
 
-                        ?>
+                        }
 
-                    </ul>
+                    ?>
 
-                </li>
+                </ul>
 
-            </ul>
+            </li>
 
-        </div>
+        </ul>
 
     </nav>
 
@@ -251,11 +247,11 @@
 
     <header class="container-fluid">
 
-        <section class="container work-header pb-12 pb-lg-13 pt-7 pt-lg-12">
+        <section class="work-header pb-12 pb-lg-14 pt-7 pt-lg-12">
 
             <div class="row">
 
-                <div class="col-48 col-lg-16 pe-lg-5 scrolled-init right">
+                <div class="col-48 col-lg-16 scrolled-init right ps-5 ps-md-8 ps-lg-11">
 
                     <div id="date" class="mb-11 mb-lg-5">
 
@@ -302,7 +298,7 @@
 
                 </div>
 
-                <h1 class="col-48 col-lg-32 slogan pe-5 pe-lg-9 mb-11 mb-lg-0">
+                <h1 class="col-48 col-sm-36 col-md-28 col-lg-22 col-xl-21 col-xxl-19 slogan px-5 px-md-8 ps-lg-0  mb-11 mb-lg-0">
 
                     <span class="heading-top d-block scrolled-init left mb-5"> Hi i'm Dan! Your </span>
 
@@ -310,7 +306,7 @@
 
                 </h1>
 
-                <div class="d-lg-none scrolled-init right">
+                <div class="d-lg-none scrolled-init right ps-5 ps-md-8">
 
                     <a class="d-block mb-2" href="tel:+61434984983"> +61 434 984 983 </a>
 
@@ -324,30 +320,30 @@
 
     </header>
 
-    <main class="work-main pb-12 pt-11 py-lg-14">
+    <main class="work-main py-10 py-md-11 py-xl-13">
 
-        <section class="w-100 container-lg scrolled-init-offset left">
+        <section class="w-100 container-fluid scrolled-init-offset left">
 
             <div class="row justify-content-center">
 
-                <div class="col-42 col-md-45 col-lg-48">
+                <div class="col-48 px-8 ps-md-9 pe-md-0 ps-xl-13">
 
                     <?php
 
                         foreach ($work as $index=>$row) {
 
-                            $margin_bottom = "mb-12 mb-lg-13";
+                            $padding_bottom = "pb-10 pb-xl-13";
             
                             if($index === $count) {
 
-                                $margin_bottom = "mb-0 mb-md-0";
+                                $padding_bottom = "pb-0 pb-xl-0";
                             }
 
                             ?>
 
-                                <div class="has-test row justify-content-md-between <?php echo $margin_bottom; ?>">
+                                <div class="has-test row justify-content-md-end <?php echo $padding_bottom; ?>">
 
-                                    <div class="work-details col-48 col-md-16 d-flex flex-column ps-5 pt-6 pb-5 ps-md-4 pt-md-3 pb-md-4">
+                                    <div class="work-details col-48 col-md-18 col-lg-16  d-flex flex-column ps-5 pt-5 pb-7 ps-md-8">
 
                                         <div class="d-flex justify-content-between">
 
@@ -460,7 +456,7 @@
 
                                     </div>
 
-                                    <div class="col-48 col-md-32 position-relative">
+                                    <div class="col-48 col-md-30 col-lg-32 position-relative">
 
                                         <?php
 

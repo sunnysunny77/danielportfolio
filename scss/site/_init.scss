@@ -1,5 +1,5 @@
 #intro-about {
-    background-color: $color_3;
+    background-color: $color_5;
     &.has-js {
         animation: intro 0.7s linear;
     }
@@ -8,8 +8,9 @@
 #intro-work {
     &.cookie-false {
         background-image: url(../images/cubes.webp);
-        background-blend-mode: overlay;
-        background-color: $color_2;
+        background-blend-mode: exclusion;
+        background-color: $color_5;
+        background-position: top left;
         &.has-js {
             animation: intro_work 3s ease-out;
             #vivus path {
@@ -19,11 +20,11 @@
         }
     }
     &.cookie-true {
-        background-color: $color_3;
+        background-color: $color_5;
         &.has-js {
             animation: intro 0.7s linear;
         }
-    }    
+    }
 }
 
 #intro-work,

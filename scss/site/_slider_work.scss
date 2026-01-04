@@ -41,7 +41,7 @@
 }
 
 .slider_work-overlay-body {
-    background-color: $color_3;
+    background-color: $color_9;
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: lighten;
 }
@@ -57,7 +57,7 @@
 
 .slider_work-overlay-list-container {
     ul {
-        color: $color_4;
+        color: $color_5;
         font-size: clamp(16px, 1.5vw, 20px);
     }
     hr {
