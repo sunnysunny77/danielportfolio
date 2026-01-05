@@ -139,7 +139,7 @@
 
 .has-move {
     position: relative;
-    bottom: -48px;
+    bottom: -28px;
     transition: bottom 1s;
     will-change: bottom;
     @include min_xl {
