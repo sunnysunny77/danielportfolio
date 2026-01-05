@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: $font;
     overflow: hidden;
-    background-color: $color_5;
+    background-color: $color_10;
 }
 
 .copy-tooltip {
@@ -71,9 +71,6 @@ main {
     min-height: calc(100vh - 155.5px);
     display: flex;
     align-items: center;
-    background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: color;
-    background-color: $color_9;
 }
 
 .os-theme-body,

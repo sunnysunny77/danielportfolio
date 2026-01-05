@@ -4,6 +4,8 @@ footer {
     background-blend-mode: exclusion;
     background-position: bottom left;
     background-image: url(../images/cubes.webp);
+    position: relative;
+    z-index: 1;
     a {
         color: inherit;
     }

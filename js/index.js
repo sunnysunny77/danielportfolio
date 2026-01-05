@@ -20,6 +20,7 @@ import { slider_work } from "./slider_work.js";
 import { has_move } from "./has_move.js";
 import { copy_tooltip } from "./copy_tooltip.js";
 import { date } from "./date.js";
+import { scroll } from "./scroll.js";
 
 events(window, "load", () => {
 
@@ -32,4 +33,5 @@ events(window, "load", () => {
   has_move();
   copy_tooltip();
   date();
+  scroll();
 });
