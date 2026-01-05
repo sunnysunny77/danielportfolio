@@ -21,6 +21,7 @@ main {
             animation-duration: 1s;
             animation-timing-function: ease-out;
             will-change: opacity;
+            opacity: 0;
       }
     }
     &.before-odd::before  {
