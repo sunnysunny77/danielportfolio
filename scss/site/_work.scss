@@ -2,15 +2,29 @@
     color: $color_3;
     .slogan {
         font-weight: 500;
+        font-size: 30px;
+        @include min_sm {
+            max-width: 515px;
+            font-size: 35px;
+        }
         @include min_md {
             font-weight: 600;
+            max-width: 615px;
+            font-size: 40px;
+        }
+        @include min_lg {
+            max-width: 650px;
+            font-size: 45px;
+        }
+        @include min_xl {
+            max-width: 715px;
+            font-size: 50px;
         }
         .heading-top {
-            font-size: clamp(22px, 2vw, 30px);
+            font-size: clamp(22px, 2.5vw, 32px);
             color: $color_9;
         }
         .heading-bottom {
-            font-size: clamp(30px, 3vw, 50px);
             color: $color_9;
         }
     }
@@ -67,7 +81,7 @@
         }
     }
     .work-details {
-        background-color: $color_5;
+        background-color: $color_10;
         background-blend-mode: exclusion;
         background-position: top right;
         background-image: url(../images/cubes.webp);

@@ -7,7 +7,6 @@ body {
     font-family: $font;
     overflow: hidden;
     background-color: $color_5;
-    background-blend-mode: exclusion;
 }
 
 .copy-tooltip {
@@ -73,7 +72,7 @@ main {
     display: flex;
     align-items: center;
     background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: lighten;
+    background-blend-mode: color;
     background-color: $color_9;
 }
 
@@ -99,7 +98,7 @@ main {
     background: $color_8;
     border-radius: 5px;
     background-image: url(../images/dark-fish-skin.webp);
-    background-blend-mode: lighten;
+    background-blend-mode: color;
     height: 90px;
 }
 

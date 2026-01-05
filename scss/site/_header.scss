@@ -1,8 +1,8 @@
 header,
-nav {
+.nav-about {
     position: relative;
     z-index: 998;
-    background-color: $color_5;
+    background-color: $color_10;
     background-blend-mode: exclusion;
     background-position: top left;
     background-image: url(../images/cubes.webp);
@@ -13,7 +13,7 @@ nav {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.067em;
-    padding: 57px 0;
+    padding: 60px 0;
     &.nav-fixed {
         z-index: -1;
         position: fixed;
@@ -60,7 +60,7 @@ nav {
                 max-height 1s,
                 background-color 1s;
             max-height: 55.5px;
-            background-color: $color_5;
+            background-color: $color_10;
             padding: 15px 0 5px 0;
         }
     }

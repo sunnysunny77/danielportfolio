@@ -36,7 +36,7 @@
 
     <div id="intro-about" class="intro"></div>
 
-   <nav class="container-fluid">
+   <nav class="container-fluid nav-about">
 
         <ul class="list-inline row d-flex align-items-center m-0">
 

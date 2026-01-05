@@ -1,5 +1,5 @@
 #intro-about {
-    background-color: $color_5;
+    background-color: $color_10;
     &.has-js {
         animation: intro 0.7s linear;
     }
@@ -8,8 +8,8 @@
 #intro-work {
     &.cookie-false {
         background-image: url(../images/cubes.webp);
+        background-color: $color_10;
         background-blend-mode: exclusion;
-        background-color: $color_5;
         background-position: top left;
         &.has-js {
             animation: intro_work 3s ease-out;
@@ -20,7 +20,7 @@
         }
     }
     &.cookie-true {
-        background-color: $color_5;
+        background-color: $color_10;
         &.has-js {
             animation: intro 0.7s linear;
         }

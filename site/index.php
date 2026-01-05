@@ -137,58 +137,6 @@
 
     </div>
 
-    <nav class="container-fluid">
-
-        <ul class="list-inline row d-flex align-items-center m-0">
-
-            <li class="list-inline-item align-self-start col-12 col-lg-16 m-0 ps-5 ps-md-8 ps-lg-11">
-
-                <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
-
-            </li>
-
-            <li class="list-inline-item align-self-end col-36 col-lg-32 pe-md-11">
-
-                <ul class="list-inline d-flex align-items-center justify-content-around justify-content-md-between">
-
-                    <li class="list-inline-item">
-
-                        <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
-
-                    </li>
-
-                    <li class="list-inline-item">
-
-                        <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
-
-                    </li>
-
-                    <?php
-
-                        if (isset($mailto)) {
-
-                            ?>
-
-                                <li class="list-inline-item">
-
-                                    <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
-
-                                </li>
-
-                            <?php
-
-                        }
-
-                    ?>
-
-                </ul>
-
-            </li>
-
-        </ul>
-
-    </nav>
-
     <nav class="container-fuild d-flex align-items-center nav-fixed">
 
         <div class="container">
@@ -247,6 +195,58 @@
 
     <header class="container-fluid">
 
+        <nav class="container-fluid">
+
+            <ul class="list-inline row d-flex align-items-center m-0">
+
+                <li class="list-inline-item align-self-start col-12 col-lg-16 m-0 ps-5 ps-md-8 ps-lg-11">
+
+                    <span class="pb-3 me-2"> <span class="blink"></span> D.C </span>
+
+                </li>
+
+                <li class="list-inline-item align-self-end col-36 col-lg-32 pe-md-11">
+
+                    <ul class="list-inline d-flex align-items-center justify-content-around justify-content-md-between">
+
+                        <li class="list-inline-item">
+
+                            <a class="active navigation-anchor px-0 pb-3" href="./"> Work </a>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                            <a class="navigation-anchor px-0 pb-3" href="./about.php"> About </a>
+
+                        </li>
+
+                        <?php
+
+                            if (isset($mailto)) {
+
+                                ?>
+
+                                    <li class="list-inline-item">
+
+                                        <div class="copy-tooltip navigation-anchor nav-tooltip px-0 pb-3"> Email <span class="d-none"> <?php echo $mailto; ?> </span> </div>
+
+                                    </li>
+
+                                <?php
+
+                            }
+
+                        ?>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
         <section class="work-header pb-12 pb-lg-14 pt-7 pt-lg-12">
 
             <div class="row">
@@ -298,7 +298,7 @@
 
                 </div>
 
-                <h1 class="col-48 col-sm-36 col-md-28 col-lg-22 col-xl-21 col-xxl-19 slogan px-5 px-md-8 ps-lg-0  mb-11 mb-lg-0">
+                <h1 class="col-48 col-sm-46 co-lg-32 slogan px-5 px-md-8 ps-lg-0  mb-11 mb-lg-0">
 
                     <span class="heading-top d-block scrolled-init left mb-5"> Hi i'm Dan! Your </span>
 
@@ -320,13 +320,13 @@
 
     </header>
 
-    <main class="work-main py-10 py-md-11 py-xl-13">
+    <main class="work-main py-10 py-md-11 py-xl-14">
 
         <section class="w-100 container-fluid scrolled-init-offset left">
 
             <div class="row justify-content-center">
 
-                <div class="col-48 px-8 ps-md-9 pe-md-0 ps-xl-13">
+                <div class="col-48 px-8 ps-md-11 pe-md-0 ps-xl-14">
 
                     <?php
 
