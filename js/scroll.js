@@ -67,5 +67,5 @@ const backChange = () => {
 
 export const scroll = () => {
 
-    events(window, "scroll", backChange);
+   if (!window.touch) events(window, "scroll", backChange);
 };
