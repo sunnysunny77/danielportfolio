@@ -1,4 +1,7 @@
 main {
+    background-color: $color_2;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: color;
     &.before-odd,
     &.before-even,
     &.before-start,

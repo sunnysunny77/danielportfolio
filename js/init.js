@@ -37,11 +37,10 @@ export const init = () => {
 
     overflow: {
       x: "hidden",
+      y: "scroll",
     },
     scrollbars: {
       theme: theme,
-      dragScroll: window.touch ? false : true,
-      clickScroll: window.touch ? true : false,
   }});
 
   window.inst = document.querySelector(".os-theme-body.os-scrollbar-vertical") || document.querySelector(".os-theme-dark.os-scrollbar-vertical");
@@ -74,15 +73,14 @@ export const init = () => {
 
     if (event.animationName === "intro_work") {
        
-      OverlayScrollbars(document.body, {
+     OverlayScrollbars(document.body, {
 
         overflow: {
           x: "hidden",
+          y: "scroll",
         },
         scrollbars: {
           theme: theme,
-          dragScroll: window.touch ? false : true,
-          clickScroll: window.touch ? true : false,
       }});
     };
   });
