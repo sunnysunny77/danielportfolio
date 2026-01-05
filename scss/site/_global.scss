@@ -6,6 +6,9 @@ body {
     margin: 0;
     font-family: $font;
     overflow: hidden;
+    background-color: $color_10;
+    background-image: url(../images/dark-fish-skin.webp);
+    background-blend-mode: color;
 }
 
 .copy-tooltip {

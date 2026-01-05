@@ -1,98 +1,57 @@
 main {
-    background-color: $color_2;
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: color;
+    background-color: $color_2;
     &.before-odd,
     &.before-even,
     &.before-start,
     &.before-end {
-        &::before {
+      &::before {
             content: " ";
             position: fixed;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            animation-fill-mode: forwards;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
             z-index: 0;
             background-image: url(../images/dark-fish-skin.webp);
             background-blend-mode: color;
-        }
-        &.reverse {
-            &.before-odd::before {
-                animation-name: zeroRev;
-            }
-            &.before-even::before {
-                animation-name: oneRev;
-            }
-        }
+            background-color: $color_3;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            will-change: opacity;
+            opacity: 1;
+      }
     }
-    &.before-odd::before {
-        animation-name: zero;
+    &.before-odd::before  {
+        animation-name: odd;
     }
-    &.before-even::before {
-        animation-name: one;
+    &.before-even::before  {
+        animation-name: even;
     }
-    &.before-start::before {
-        animation-name: start;
+    &.before-start::before  {
+        animation-name: even;
     }
-    &.before-end::before {
-        animation-name: end;
+    &.before-end::before  {
+        animation-name: odd;
     }
 }
 
-@keyframes zero {
+@keyframes odd {
     0% {
-        background-color: $color_2;
+        opacity: 0;
     }
     100% {
-        background-color: $color_3;
+        opacity: 1;
     }
 }
 
-@keyframes one {
+@keyframes even {
     0% {
-        background-color: $color_3;
+        opacity: 1;
     }
     100% {
-        background-color: $color_2;
-    }
-}
-
-@keyframes zeroRev {
-    0% {
-        background-color: $color_2;
-    }
-    100% {
-        background-color: $color_3;
-    }
-}
-
-@keyframes oneRev {
-    0% {
-        background-color: $color_3;
-    }
-    100% {
-        background-color: $color_2;
-    }
-}
-
-@keyframes start {
-    0% {
-        background-color: $color_3;
-    }
-    100% {
-        background-color: $color_2;
-    }
-}
-
-@keyframes end {
-    0% {
-        background-color: $color_2;
-    }
-    100% {
-        background-color: $color_3;
+        opacity: 0;
     }
 }

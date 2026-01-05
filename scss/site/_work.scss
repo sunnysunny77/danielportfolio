@@ -142,8 +142,11 @@
     bottom: -28px;
     transition: bottom 1s;
     will-change: bottom;
+    @include min_md {
+        bottom: -60px;
+    }
     @include min_xl {
-        bottom: -104px;
+        bottom: -130px;
     }
     &.has-bottom {
         bottom: 0;
