@@ -18,7 +18,7 @@ main {
             background-blend-mode: color;
             background-color: $color_3;
             animation-fill-mode: forwards;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-timing-function: ease-out;
             will-change: opacity;
             opacity: 1;
@@ -40,7 +40,7 @@ main {
 
 @keyframes odd {
     0% {
-        opacity: 0;
+        opacity: 0.42;
     }
     100% {
         opacity: 1;
@@ -52,6 +52,6 @@ main {
         opacity: 1;
     }
     100% {
-        opacity: 0;
+        opacity: 0.42;
     }
 }

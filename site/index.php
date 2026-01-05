@@ -320,7 +320,7 @@
 
     </header>
 
-    <main class="work-main pb-8 pb-md-11 pb-xl-14 before-start">
+    <main class="work-main pb-9 pb-md-11 pb-xl-14 before-start">
 
         <section class="w-100 container-fluid scrolled-init-offset left">
 
@@ -334,7 +334,7 @@
 
                             ?>
 
-                                <div class="has-test row justify-content-md-end pt-8 pt-md-11 pt-xl-14">
+                                <div class="has-test row justify-content-md-end pt-9 pt-md-11 pt-xl-14">
 
                                     <div class="work-details col-48 col-md-18 col-lg-16 d-flex flex-column ps-5 pt-5 pb-7 ps-md-8">
 
