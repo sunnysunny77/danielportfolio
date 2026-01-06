@@ -49,7 +49,6 @@
 }
 
 .work-main {
-    font-size: clamp(16px, 2vw, 20px);
     h2 {
         color: $color_3;
         font-size: clamp(20px, 2.34vw, 24px);
@@ -68,6 +67,7 @@
         width: fit-content;
         background-color: transparent;
         border: none;
+        font-weight: 500;
         i {
             color: $color_9;
             font-size: clamp(15px, 2.125vw, 17.5px);
@@ -89,6 +89,7 @@
             color: $color_9;
             transition: color 0.25s;
             will-change: color;
+            font-size: clamp(16px, 2vw, 20px);
             &:hover i {
                 color: $color_3;
             }
@@ -101,8 +102,9 @@
             color: $color_9;
             &.title {
                 font-size: 14px;
-                font-size: clamp(14px, 2vw, 16px);
+                font-size: clamp(14px, 2vw, 16.5px);
                 color: $color_9;
+                font-weight: 500;
             }
         }
         .copy-tooltip {
@@ -113,6 +115,8 @@
             will-change: text-decoration-color;
             width: fit-content;
             text-underline-offset: 3px;
+            font-size: clamp(16px, 2vw, 19.5px);
+            font-weight: 400;
             &:hover {
                 text-decoration-color: transparent;
             }
@@ -139,17 +143,17 @@
 
 .has-move {
     position: relative;
-    bottom: -34px;
+    bottom: -48px;
     transition: bottom 1s;
     will-change: bottom;
     @include min_md {
-        bottom: -60px;
+        bottom: -70px;
     }
     @include min_xl {
-        bottom: -104px;
+        bottom: -140px;
     }
     @include min_xxl {
-        bottom: -160px;
+        bottom: -200px;
     }
     &.has-bottom {
         bottom: 0;

@@ -30,13 +30,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: transparentize($color_6, 0.975);
+    background-color: transparentize($color_4, 0.975);
     transition: background-color 0.5s cubic-bezier(0.66, 0.01, 0.27, 0.84);
     z-index: 1000;
     transform: translateX(100%);
     &.overlay-transition {
         transform: translateX(0);
-        background-color: transparentize($color_6, 0.88);
+        background-color: transparentize($color_4, 0.88);
     }
 }
 
@@ -57,7 +57,7 @@
 
 .slider_work-overlay-list-container {
     ul {
-        color: $color_5;
+        color: $color_6;
         font-size: clamp(16px, 1.5vw, 20px);
     }
     hr {
@@ -135,10 +135,10 @@
             align-items: center;
             i {
                 font-size: 22px;
-                color: $color_9;
-                transition: color 0.25s;
+                color: $color_2;
+                transition: color 0.2s;
                 &:hover {
-                    color: $color_6;
+                    color: $color_4;
                 }
             }
         }
@@ -160,7 +160,7 @@
     background-blend-mode: color;
     height: 133px;
     @include min_lg {
-        background: $color_9;
+        background: $color_2;
     }
 }
 

@@ -1,5 +1,4 @@
 .about-main {
-    color: $color_6;
     img {
         width: 100%;
         height: fit-content;
@@ -17,7 +16,7 @@
     }
     p {
         font-size: 16px;
-        color: $color_5;
+        color: $color_6;
     }
     a,
     .copy-tooltip {
@@ -25,14 +24,14 @@
         text-decoration-color: transparent;
         transition: text-decoration-color 0.25s;
         will-change: text-decoration-color;
-        color: $color_5;
+        color: $color_6;
         font-size: 14px;
         &:hover {
-            text-decoration-color: $color_5;
+            text-decoration-color: $color_6;
         }
     }
     .copy-tooltip {
-        color: $color_5;
+        color: 6;
         &::before {
             padding: 4.5px 12px;
             bottom: calc(-100% - 24px);
@@ -42,7 +41,7 @@
         }
     }
     hr {
-        border-color: $color_5;
+        border-color: $color_6;
         opacity: 0.67;
     }
 }
