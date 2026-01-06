@@ -1,34 +1,44 @@
-import { events, get_position } from "./utillites.js";
 
-const has_move_init = (index) => {
+let scrollY = 0;
 
-  let scrollY = window.scrollY + window.innerHeight;
+let positive = false;
 
-  if (scrollY > get_position(index)) {
-  
-    index.classList.add("has-bottom");
-  } else if (get_position(index) >  window.innerHeight) {
+const move = (obj) => {
 
-    index.classList.replace("has-bottom", "has-move") || index.classList.add("has-move");
+  const scroll_pos = window.scrollY;
 
-  }
+  if (scroll_pos > scrollY) {
+
+    positive = true;
+  } else if (scroll_pos < scrollY)  {
+
+    positive = false;
+  };
+
+  scrollY = window.scrollY;
+
+  obj.forEach((index) => {
+
+    if (!index.isIntersecting && !positive) {
+
+      index.target.classList.remove("has-bottom");
+      index.target.classList.add("has-move");
+      return;
+    };
+
+    index.target.classList.add("has-bottom");
+  });
 };
 
+const has_test = (obj) => {
+
+  const observer_move = new IntersectionObserver(move, {
+    rootMargin: "0px",
+  });
+
+  obj.forEach(index => observer_move.observe(index));
+};
 export const has_move = () => {
 
-    const obj = document.querySelectorAll(".has-test");
-
-    if (obj.length === 0) {
-
-      return;
-    }
-
-    events(window, "scroll", () => {
-
-      for (const index of obj) {
-
-          has_move_init(index);
-      }
-  
-    });
+  has_test(document.querySelectorAll(".has-test"));
 };
