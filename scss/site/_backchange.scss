@@ -1,32 +1,30 @@
 main {
+    position: relative;
+    min-height: 100vh;
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: color;
     background-color: $color_2;
     &::before {
-        content: " ";
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        content: "";
+        position: absolute;
+        inset: 0;
         z-index: 0;
         background-image: url(../images/dark-fish-skin.webp);
         background-blend-mode: color;
         background-color: $color_2;
         transition: background-color 1s;
         will-change: background-color;
-
     }
-    &.before-odd::before  {
+    &.before-odd::before {
         background-color: $color_3;
     }
-    &.before-even::before  {
+    &.before-even::before {
         background-color: $color_2;
     }
-    &.before-start::before  {
+    &.before-start::before {
         background-color: $color_2;
     }
-    &.before-end::before  {
+    &.before-end::before {
         background-color: $color_3;
     }
     &.before-odd {

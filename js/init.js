@@ -15,8 +15,9 @@ const scrolled = (obj, bool) => {
 
   obj.forEach(index => {
 
+    const top = index.getBoundingClientRect().top + window.scrollY;
     new IntersectionObserver(obsIsnt, {
-      rootMargin: bool ? `${index.offsetTop}px` : "0px",
+      rootMargin: bool ? `${top}px` : "0px",
     }).observe(index);
   });
 };
