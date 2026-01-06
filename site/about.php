@@ -144,7 +144,7 @@
 
     </nav>
 
-    <main class="about-main pt-10 pb-12 py-lg-14 before-start">
+    <main class="about-main pt-10 pb-12 py-lg-14">
 
         <section class="container">
 

@@ -32,7 +32,7 @@ const backChange = () => {
 
       } else  if (scrollY > get_position(main) + main.scrollHeight) {
 
-        if (!before_end) main.classList.add("before-end");
+        if (!before_end && before_i) main.classList.add("before-end");
 
         if (before_i) main.classList.remove(`before-${mod}`);
 
@@ -40,7 +40,7 @@ const backChange = () => {
 
       }  else  if (scrollY < prev_scroll && scrollY < get_position(main)) {
 
-        if (!before_start) main.classList.add("before-start");
+        if (!before_start && before_i) main.classList.add("before-start");
 
         if (before_i) main.classList.remove(`before-${mod}`);
 

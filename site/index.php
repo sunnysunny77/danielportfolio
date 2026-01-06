@@ -320,7 +320,7 @@
 
     </header>
 
-    <main class="work-main pb-9 pb-md-11 pb-xl-13 pb-xxl-15 before-start">
+    <main class="work-main pb-9 pb-md-11 pb-xl-13 pb-xxl-15">
 
         <section class="w-100 container-fluid scrolled-init-offset left">
 
