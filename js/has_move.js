@@ -1,4 +1,3 @@
-
 let scrollY = 0;
 
 let positive = false;
@@ -33,11 +32,13 @@ const move = (obj) => {
 const has_test = (obj) => {
 
   const observer_move = new IntersectionObserver(move, {
+
     rootMargin: "0px",
   });
 
   obj.forEach(index => observer_move.observe(index));
 };
+
 export const has_move = () => {
 
   has_test(document.querySelectorAll(".has-test"));
