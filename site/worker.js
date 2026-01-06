@@ -1,4 +1,4 @@
-const version = 10065;
+const version = 10066;
 const cacheName = `portfolio-v${version}`;
 
 const resources = [
@@ -13,14 +13,23 @@ const resources = [
   "./font/NunitoSans.ttf",
   "./webfonts/fa-regular-400.woff2",
   "./webfonts/fa-solid-900.woff2",
-  "./images/furniture.webp", 
-  "./images/fasera.webp", 
-  "./images/access.webp",
-  "./images/mylifestory.webp",
-  "./images/daves.webp", 
-  "./images/weather.webp", 
-  "./images/daniel.webp",
   "./images/store.webp",
+  "./images/store-m.webp",
+  "./images/mylifestory.webp",
+  "./images/mylifestory-m.webp",
+  "./images/fasera.webp", 
+  "./images/fasera-m.webp",
+  "./images/access.webp",
+  "./images/access-m.webp",
+  "./images/daves.webp",
+  "./images/daves-m.webp",
+  "./images/weather.webp",
+  "./images/weather-m.webp",
+  "./images/furniture.webp",
+  "./images/furniture-m.webp",
+  "./images/thecozycup.webp",
+  "./images/thecozycup-m.webp",
+  "./images/daniel.webp",
   "./images/pwa-logo-small.webp",
   "./images/pwa-logo.webp",
   "./images/play.webp",

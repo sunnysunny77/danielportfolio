@@ -20,6 +20,8 @@ const fonts = [
 const href_work = [
   "./images/store.webp",
   "./images/mylifestory.webp",
+  "./images/store-m.webp",
+  "./images/mylifestory-m.webp",
 ];
 
 const href_about = [
