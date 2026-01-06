@@ -2,56 +2,43 @@ main {
     background-image: url(../images/dark-fish-skin.webp);
     background-blend-mode: color;
     background-color: $color_2;
-    &.before-odd,
-    &.before-even,
-    &.before-start,
-    &.before-end {
-      &::before {
-            content: " ";
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 0;
-            background-image: url(../images/dark-fish-skin.webp);
-            background-blend-mode: color;
-            background-color: $color_3;
-            animation-fill-mode: forwards;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            will-change: opacity;
-            opacity: 0;
-      }
+    &::before {
+        content: " ";
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background-image: url(../images/dark-fish-skin.webp);
+        background-blend-mode: color;
+        background-color: $color_2;
+        transition: background-color 1s;
+        will-change: background-color;
+
     }
     &.before-odd::before  {
-        animation-name: odd;
+        background-color: $color_3;
     }
     &.before-even::before  {
-        animation-name: even;
+        background-color: $color_2;
     }
     &.before-start::before  {
-        animation-name: even;
+        background-color: $color_2;
     }
     &.before-end::before  {
-        animation-name: odd;
+        background-color: $color_3;
     }
-}
-
-@keyframes odd {
-    0% {
-        opacity: 0;
+    &.before-odd {
+        background-color: $color_3;
     }
-    100% {
-        opacity: 1;
+    &.before-even {
+        background-color: $color_2;
     }
-}
-
-@keyframes even {
-    0% {
-        opacity: 1;
+    &.before-start {
+        background-color: $color_2;
     }
-    100% {
-        opacity: 0;
+    &.before-end {
+        background-color: $color_3;
     }
 }
