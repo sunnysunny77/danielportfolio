@@ -11,7 +11,7 @@
             "title" => "Store App",
             "link" => "https://store.sunnyhome.site/",
             "credentials" => [ [ "title" => "PayPal:", "username" => "sb-iyl4x21604127@personal.example.com", "password" => "*]T0%Ae8" ], [ "title" => "Login:", "username" => "daniel@gmail.com", "password" => "passwordA1" ], ],
-            "image" => [ "src" => "./images/store.webp", "alt" => "Login App" ],
+            "image" => [ "src" => "./images/store.webp", "src_m" => "./images/store-m.webp", "alt" => "Login App" ],
             "list-item" => [ "Next Js React", "Headless Wordpress", "PWA", "Cookies", "PayPal Smart Button", "Captcha", "2FA", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
             "vid-src" => "./videos/store",
             "git" => "https://github.com/sunnysunny77/react-next-js-store",
@@ -19,7 +19,7 @@
         [ 
             "title" => "My Life Story",
             "link" => "https://holder.sunnyhome.site/",
-            "image" => [ "src" => "./images/mylifestory.webp", "alt" => "My Life Story" ],
+            "image" => [ "src" => "./images/mylifestory.webp", "src_m" => "./images/mylifestory-m.webp", "alt" => "My Life Story" ],
             "list-item" => [ "Under construction", "PWA", "Brochure site", "Secure CSP", "HTTP Observatory A+", "SSL A+" ],
             "vid-src" => "./videos/mylifestory",
             "git" => "https://github.com/sunnysunny77/mylifestoryonfilm",
@@ -27,14 +27,14 @@
         [
             "title" => "Fasera",
             "link" => "https://www.fasera.com/",
-            "image" => [ "src" => "./images/fasera.webp", "alt" => "Fasera" ],
+            "image" => [ "src" => "./images/fasera.webp", "src_m" => "./images/fasera-m.webp", "alt" => "Fasera" ],
             "list-item" => [ "Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
             "vid-src" => "./videos/fasera",
         ],
         [ 
             "title" => "Access Robotics",
             "link" => "https://accessrobotics.com.au/",
-            "image" => [ "src" => "./images/access.webp", "alt" => "Access Robotics" ],
+            "image" => [ "src" => "./images/access.webp", "src_m" => "./images/access-m.webp", "alt" => "Access Robotics" ],
             "list-item" => [ "Wordpress theme", "<i class='fa-regular fa-copyright'></i> Lateral Aspect", " Design copy" ],
             "vid-src" => "./videos/access",
         ],
@@ -42,7 +42,7 @@
             "title" => "Daves Blog",
             "link" => "https://davesblog.sunnyhome.site/",
             "credentials" => [ ["title" => "Admin:", "username" => "demo", "password" => "demo" ], ],
-            "image" => [ "src" => "./images/daves.webp", "alt" => "Daves Blog" ],
+            "image" => [ "src" => "./images/daves.webp", "src_m" => "./images/daves-m.webp", "alt" => "Daves Blog" ],
             "list-item" => [ "Design Copy", "PWA", "MVC - OOP - SQL - CMS", "PHP API Template", "HTTP Observatory A+", "SSL A+" ],
             "vid-src" => "./videos/daves",
             "git" => "https://github.com/sunnysunny77/davesblog",
@@ -50,7 +50,7 @@
         [ 
             "title" => "Weather App",
             "link" => "https://weather.sunnyhome.site/",
-            "image" => [ "src" => "./images/weather.webp", "alt" => "Weather App" ],
+            "image" => [ "src" => "./images/weather.webp", "src_m" => "./images/weather-m.webp", "alt" => "Weather App" ],
             "list-item" => [ "XML", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "vid-src" => "./videos/weather",
             "git" => "https://github.com/sunnysunny77/weatherxml",
@@ -58,7 +58,7 @@
         [ 
             "title" => "Furniture Warehouse",
             "link" => "https://furniture.sunnyhome.site/",
-            "image" => [ "src" => "./images/furniture.webp", "alt" => "Furniture" ],
+            "image" => [ "src" => "./images/furniture.webp", "src_m" => "./images/furniture-m.webp", "alt" => "Furniture" ],
             "list-item" => [ "Design Copy", "PWA", "HTTP Observatory A+", "SSL A+" ],
             "vid-src" => "./videos/furniture",
             "git" => "https://github.com/sunnysunny77/furniture",
@@ -66,7 +66,7 @@
         [
             "title" => "The Cozy Cup",
             "link" => "https://thecozycup.sunnyhome.site/",
-            "image" => [ "src" => "./images/thecozycup.webp", "alt" => "TCP" ],
+            "image" => [ "src" => "./images/thecozycup.webp", "src_m" => "./images/thecozycup-m.webp", "alt" => "TCP" ],
             "list-item" => [ "Wordpress", "PWA", "SSL A+", "ACF", "Elementor", "CPTUI"],
             "vid-src" => "./videos/thecozycup",
             "git" => "https://github.com/sunnysunny77/thecozycup",
@@ -459,7 +459,17 @@
 
                                                     <div class="work-image-overlay position-absolute"></div>
 
-                                                    <img src="<?php echo $row["image"]["src"]; ?>" width="760" height="475" alt="<?php echo $row["image"]["alt"]; ?>" />                           
+                                                    <img
+                                                        src="<?php echo $row['image']['src_m']; ?>"
+                                                        srcset="
+                                                            <?php echo $row['image']['src_m']; ?> 707w,
+                                                            <?php echo $row['image']['src']; ?> 1147w
+                                                        "
+                                                        sizes="(min-width: 1200px) 1147px, 707px"
+                                                        width="707"
+                                                        height="475"
+                                                        alt="<?php echo $row['image']['alt']; ?>"
+                                                    >
 
                                                 <?php
                                             }
