@@ -246,7 +246,7 @@
 
                                     <a class="mb-3 d-block" target="credit" href="https://credit.sunnyhome.site/"> AI Credit risk </a>
 
-                                    <a class="mb-3 d-block" target="agent" href="https://huggingface.co/spaces/ibyteohdear/agentLLM/"> AI Agent </a>
+                                    <a class="mb-3 d-block" target="agent" href="https://agent.sunnyhome.site/"> AI Agent </a>
 
                                 </div>
 
