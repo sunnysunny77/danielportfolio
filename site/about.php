@@ -248,6 +248,8 @@
 
                                     <a class="mb-3 d-block" target="agent" href="https://agent.sunnyhome.site/"> AI Agent </a>
 
+                                    <a class="mb-3 d-block" target="video" href="https://huggingface.co/spaces/ibyteohdear/Wan2-2-I2V-AOTI-Optimized/"> AI AOTI Video </a>
+
                                 </div>
 
                                 <div class="col-24 col-md-48 order-1 order-md-2">
