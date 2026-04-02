@@ -65,7 +65,7 @@
         ],
         [
             "title" => "The Cozy Cup",
-            "link" => "https://thecozycup.sunnyhome.site/",
+            "link" => "https://thecozycuponline.sunnyhome.site/",
             "image" => [ "src" => "./images/thecozycup.webp", "src_m" => "./images/thecozycup-m.webp", "alt" => "TCP" ],
             "list-item" => [ "Wordpress", "PWA", "SSL A+", "ACF", "Elementor", "CPTUI"],
             "vid-src" => "./videos/thecozycup",
