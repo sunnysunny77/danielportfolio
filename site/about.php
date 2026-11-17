@@ -244,8 +244,6 @@
 
                                     <a class="mb-3 d-block" target="captcha" href="https://hdr.sunnyhome.site/"> AI Captcha </a>
 
-                                    <a class="mb-3 d-block" target="credit" href="https://credit.sunnyhome.site/"> AI Credit risk </a>
-
                                 </div>
 
                                 <div class="col-24 col-md-48 order-1 order-md-2">
